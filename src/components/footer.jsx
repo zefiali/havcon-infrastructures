@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <motion.footer className="bg-gray-900 text-white"
+    <motion.footer className="bg-gray-500 text-black"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -40,37 +40,37 @@ export function Footer() {
                 />
                 </span>
               </div>
-              <span className="font-bold text-xl">Havcon Infrastructures</span>
+              <span className="text-black font-bold text-xl"><span className="text-red-500">Havcon</span> Infrastructures</span>
             </div>
-            <p className="text-gray-400 max-w-sm">
+            <p className="text-white max-w-sm">
               Creating infrastructure that drives growth. Our innovative construction solutions bring lasting value to every project
             </p>
             <div className="flex space-x-4">
               <Button
                 size="sm"
                 variant="ghost"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
+                className="text-red-400 hover:text-red-600 hover:bg-gray-800"
               >
                 <Facebook className="h-4 w-4" />
               </Button>
               <Button
                 size="sm"
                 variant="ghost"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
+                className="text-red-400 hover:text-red-600 hover:bg-gray-800"
               >
                 <Twitter className="h-4 w-4" />
               </Button>
               <Button
                 size="sm"
                 variant="ghost"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
+                className="text-red-400 hover:text-red-600 hover:bg-gray-800"
               >
                 <Instagram className="h-4 w-4" />
               </Button>
               <Button
                 size="sm"
                 variant="ghost"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
+                className="text-red-400 hover:text-red-600 hover:bg-gray-800"
               >
                 <Linkedin className="h-4 w-4" />
               </Button>
@@ -80,11 +80,11 @@ export function Footer() {
           {/* Services */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Services</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-white">
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Structural Steel & Fabrication
                 </Link>
@@ -92,7 +92,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Piling Foundation Construction
                 </Link>
@@ -100,7 +100,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Core and Shell Construction
                 </Link>
@@ -108,7 +108,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Road and Infrastructure
                 </Link>
@@ -116,7 +116,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Turnkey Interior
                 </Link>
@@ -124,7 +124,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Mass Excavation
                 </Link>
@@ -135,11 +135,11 @@ export function Footer() {
           {/* Company */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Company</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-white">
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   About Us
                 </Link>
@@ -147,7 +147,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/portfolio"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Projects
                 </Link>
@@ -155,7 +155,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-red-400 transition-colors"
                 >
                   Contact
                 </Link>
@@ -166,25 +166,25 @@ export function Footer() {
           {/* Contact & Newsletter */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Get In Touch</h3>
-            <div className="space-y-3 text-gray-400">
+            <div className="space-y-3 text-white">
               <div className="flex items-start">
-                <Mail className="lucide lucide-map-pin h-5 w-5 mr-3 text-gray-400 mt-0.5 flex-shrink-0" />
+                <Mail className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">havconinstrastructures@gmail.com</span>
               </div>
               <div className="flex items-start">
-                <Phone className="lucide lucide-map-pin h-5 w-5 mr-3 text-gray-400 mt-0.5 flex-shrink-0" />
+                <Phone className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">+91 99981 54353</span>
               </div>
               <div className="flex items-start">
-                <MapPin className="lucide lucide-map-pin h-5 w-5 mr-3 text-gray-400 mt-0.5 flex-shrink-0" />
+                <MapPin className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">24, Santram Park Society, Nr. Harani Warasia Ring Road, Vadodara - 390019</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-black mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white text-sm">
             © {new Date().getFullYear()} Havcon Infrastructures. All rights reserved.
           </p>
           {/* <div className="flex space-x-6 mt-4 md:mt-0">

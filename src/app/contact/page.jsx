@@ -21,14 +21,14 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}>
-            <Badge className="bg-purple-100 text-purple-800">Get In Touch</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Get In Touch</Badge>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
               Let&apos;s
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-red-600 to-black bg-clip-text text-transparent">
                 {" "}
-                Start Building{" "}
+                Start Building Something{" "}
               </span>
-              Something Amazing
+              Amazing
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Ready to transform your digital presence? Get in touch with our
@@ -142,7 +142,7 @@ export default function ContactPage() {
                         rows={4}
                       />
                     </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 py-5">
+                    <Button className="w-full border-white bg-red-800 text-white hover:bg-red-600 hover:text-white py-5">
                       Send Message
                       <Send className=" h-4 w-4" />
                     </Button>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                 <Card className="border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
                         <Mail className="h-6 w-6 text-white" />
                       </div>
                       <div className="space-y-1">
@@ -182,7 +182,7 @@ export default function ContactPage() {
                 <Card className="border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
                         <Phone className="h-6 w-6 text-white" />
                       </div>
                       <div className="space-y-1">
@@ -199,7 +199,7 @@ export default function ContactPage() {
                 <Card className="border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
                         <MapPin className="h-6 w-6 text-white" />
                       </div>
                       <div className="space-y-1">
@@ -222,7 +222,7 @@ export default function ContactPage() {
                 <Card className="border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
                         <MessageCircle className="h-6 w-6 text-white" />
                       </div>
                       <div className="space-y-1">
@@ -239,7 +239,7 @@ export default function ContactPage() {
                 </Card>
               </div>
 
-              <Card className="border-0 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+              <Card className="border-0 bg-gradient-to-br from-red-500 to-black text-white">
                 <CardContent className="p-6">
                   <div className="space-y-4">
                     <div className="flex items-center space-x-2">
@@ -250,7 +250,7 @@ export default function ContactPage() {
                       Schedule a free 30-minute consultation to discuss your
                       project and get expert advice.
                     </p>
-                    <Button className="bg-white text-blue-600 hover:bg-gray-100">
+                    <Button className="border-white bg-red-600 text-white hover:bg-red-400 hover:text-white">
                       Book Consultation
                     </Button>
                   </div>
@@ -265,7 +265,7 @@ export default function ContactPage() {
       <section className="py-10 lg:py-10 bg-gradient-to-br from-gray-50 to-slate-100">
         <div className="px-4 md:px-20">
           <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-purple-100 text-purple-800">FAQ</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">FAQ</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Frequently Asked Questions
             </h2>

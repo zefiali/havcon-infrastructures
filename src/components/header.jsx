@@ -33,7 +33,9 @@ export function Header() {
               />
               </span>
             </div>
-            <span className="font-bold text-xl">Havcon Infrastructures</span>
+            <span className="font-bold text-xl">
+              <span className="text-red-600">Havcon</span> Infrastructures
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -42,7 +44,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-base font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-base font-medium text-red-600 hover:bg-gray-200 rounded-lg p-4 hover:text-red-800 transition-colors"
               >
                 {item.name}
               </Link>
@@ -74,13 +76,13 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-lg font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-lg font-medium text-red-600 hover:bg-gray-200 rounded-lg p-1 hover:text-red-800 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
                   </Link>
                 ))}
-                <div className="flex flex-col space-y-3 pt-6 border-t">
+                {/* <div className="flex flex-col space-y-3 pt-6 border-t">
                   <Button
                     variant="outline"
                     className="border-gray-300 hover:bg-gray-50"
@@ -90,7 +92,7 @@ export function Header() {
                   <Button className="bg-blue-600 hover:bg-blue-700">
                     Get Started
                   </Button>
-                </div>
+                </div> */}
               </div>
             </SheetContent>
           </Sheet>

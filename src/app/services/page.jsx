@@ -27,22 +27,19 @@ export default function ServicesPage() {
         transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="absolute inset-0 bg-center bg-cover z-0"
-            style={{ backgroundImage: "url('/banner_3.jpg')", backgroundRepeat: "no-repeat" }} />
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-red-600 to-black opacity-90"></div>
+            <div className="absolute inset-0 bg-[url('/banner_3.jpg')] bg-cover bg-center mix-blend-overlay"></div>
             <motion.div className="relative space-y-8"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}>
-              <div className="space-y-4">
-                <Badge className="bg-purple-100 text-purple-800">Our Services</Badge>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">                  
-                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    {" "}
-                    Our Infrastructure Expertise{" "}
-                  </span>
+              <div className="text-white space-y-4">
+                <Badge className="bg-red-600 hover:bg-red-800">Our Services</Badge>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"> 
+                  Our Infrastructure Expertise
                   for Your Business
                 </h1>
-                <p className="text-xl font-bold text-popover-foreground max-w-4xl mx-auto">
+                <p className="text-xl font-bold max-w-4xl mx-auto">
                   {/* Engineering excellence tailored to complex industrial construction challenges */}
                   We deliver engineering excellence by providing innovative and tailor-made civil engineering solutions that address the most demanding challenges in industrial construction. Our approach combines advanced technologies, meticulous planning, and industry expertise to ensure each project is executed with precision, efficiency, and long-term reliability
                 </p>
@@ -207,7 +204,7 @@ export default function ServicesPage() {
                 >
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
                         <service.icon className="h-6 w-6 text-white" />
                       </div>
                       <h2 className="text-3xl font-bold">{service.title}</h2>
@@ -220,7 +217,7 @@ export default function ServicesPage() {
                   <div className="grid gap-3 sm:grid-cols-2">
                     {service.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start">
-                        <CheckCircle className="lucide lucide-map-pin h-5 w-5 mr-3 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-500 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-700">{feature}</span>
                       </div>
                     ))}
@@ -280,7 +277,7 @@ export default function ServicesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Process</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Process</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               How We Work
             </h2>
@@ -344,7 +341,7 @@ export default function ServicesPage() {
               >
                 <CardContent className="p-8">
                   <div className="space-y-4">
-                    <div className="text-4xl font-bold text-blue-600">
+                    <div className="text-4xl font-bold text-red-600">
                       {process.step}
                     </div>
                     <h3 className="text-xl font-semibold">{process.title}</h3>
@@ -359,7 +356,7 @@ export default function ServicesPage() {
       </motion.section>
 
       {/* CTA Section */}
-      <motion.section className="py-20 lg:py-20 bg-gradient-to-br from-blue-600 to-purple-600"
+      <motion.section className="py-20 lg:py-20 bg-gradient-to-br from-red-500 to-gray-700"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}>
@@ -379,7 +376,8 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                variant="outline"
+                className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white"
               >
                 <Link href="/contact" className="flex items-center">
                   Start Your Project
@@ -389,7 +387,7 @@ export default function ServicesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white bg-blue-600 hover:text-blue-600"
+                className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
               >
                 View Portfolio
               </Button>

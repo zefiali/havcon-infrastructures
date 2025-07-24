@@ -48,7 +48,7 @@ export function LiveChat() {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           onClick={() => setIsOpen(true)}
-          className="rounded-full w-14 h-14 bg-blue-600 hover:bg-blue-700 shadow-lg"
+          className="rounded-full w-14 h-14 bg-red-600 hover:bg-red-800 shadow-lg"
         >
           <MessageCircle className="h-6 w-6" />
         </Button>

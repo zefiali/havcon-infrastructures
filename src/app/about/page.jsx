@@ -24,24 +24,20 @@ export default function AboutPage() {
       transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="absolute inset-0 bg-center bg-cover z-0"
-            style={{ backgroundImage: "url('/banner_3.jpg')", backgroundRepeat: "no-repeat" }} />
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-red-600 to-black opacity-90"></div>
+            <div className="absolute inset-0 bg-[url('/banner_3.jpg')] bg-cover bg-center mix-blend-overlay"></div>
             <motion.div className="relative space-y-8"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}>
-              <div className="space-y-4">
-                <Badge className="bg-purple-100 text-purple-800">About Us</Badge>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                  
-                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    {" "}
-                    We&apos;re Passionate About
-                    {" "}
-                  </span>
-                  Crafting Resilient Infrastructure
+              <div className="space-y-4 text-white">
+                <Badge className="bg-red-600 hover:bg-red-800">About Us</Badge>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">  
+                  We&apos;re Passionate About
+                  Crafting Resilient Infrastructure             
                 </h1>
-                <p className="text-xl font-bold text-slate-800 max-w-4xl mx-auto">
+                <br/>
+                <p className="text-xl font-bold max-w-4xl mx-auto">
                   Havcon Infrastructures, founded in 2022 by visionary Civil Engineer Mr. Saurin Shah, is an ISO 9001:2015 certified firm committed to excellence in civil engineering. With over a decade of industry experience, the company delivers high-quality, timely, and cost-effective industrial projects, consistently exceeding client expectations with precision and dedication
                 </p>
               </div>
@@ -73,7 +69,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Mission and Vision</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Mission and Vision</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Integrated Transformative Process
             </h2>
@@ -95,7 +91,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Values</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Values</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               What Drives Us Forward
             </h2>
@@ -137,7 +133,7 @@ export default function AboutPage() {
               >
                 <CardContent className="p-8">
                   <div className="space-y-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto">
+                    <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mx-auto">
                       <value.icon className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold">{value.title}</h3>
@@ -161,7 +157,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Team</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Team</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Meet the Experts
             </h2>
@@ -228,7 +224,7 @@ export default function AboutPage() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-2">
+                  <p className="text-red-600 font-medium mb-2">
                     {member.role}
                   </p>
                   <p className="text-gray-600 text-sm">{member.bio}</p>
@@ -240,7 +236,7 @@ export default function AboutPage() {
       </motion.section>
 
       {/* CTA Section */}
-      <motion.section className="py-10 lg:py-10 bg-gradient-to-br from-blue-600 to-purple-600"
+      <motion.section className="py-10 lg:py-10 bg-gradient-to-br from-red-500 to-gray-700"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}>
@@ -260,7 +256,8 @@ export default function AboutPage() {
               </p>
               <Button
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                variant="outline"
+                className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
               >
                 <Link href="/contact" className="flex items-center">
                   Get In Touch

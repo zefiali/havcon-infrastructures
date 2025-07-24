@@ -16,17 +16,10 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Globe,
-  Palette,
-  BarChart3,
   ExternalLink,
   Calendar,
   Users,
   User,
-  FileCode,
-  Monitor,
-  Server,
-  Database,
   Map,
   Library,
   ShieldEllipsis,
@@ -423,8 +416,9 @@ export default function HomePage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}>
-        <div className="absolute inset-0 z-0"
-          style={{ backgroundImage: "url('/hero1.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat" }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-red-500 to-black opacity-90"></div>
+        {/* <video autoplay="" muted="" loop="" playsinline="" class="h-full w-full object-cover brightness-50"><source src="/videos/hero-construction-background.mp4" type="video/mp4"></video> */}
+        <div className="absolute inset-0 bg-[url('/hero1.png')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="relative mx-auto px-4 md:px-20">
           <div className="flex gap-16 items-center justify-between max-lg:flex-col">
             <motion.div className="space-y-8"
@@ -433,12 +427,12 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.2 }}>
               <div className="max-w-3xl">
                 <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                  <span className="bg-gradient-to-r from-blue-800 to-blue-500 bg-clip-text text-transparent">
+                  <span className="text-white bg-clip-text text-transparent">
                     Engineered to Perform, Constructed to Last
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl font-bold mb-8 max-w-3xl mx-auto leading-relaxed text-black">
-                  Transform your infrastructure with cutting-edge civil engineering solutions, innovative structural designs, and strategic planning that turns visions into enduring, high-performing developments
+                <p className="text-xl md:text-2xl font-bold mb-8 max-w-3xl mx-auto leading-relaxed text-white">
+                  Transforming infrastructure with innovative engineering, smart design, and strategic planning
                 </p>
               </div>
               <motion.div
@@ -448,14 +442,15 @@ export default function HomePage() {
                 transition={{ duration: 0.6, delay: 0.6 }}>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8">
+                  variant="outline"
+                  className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white px-8">
                   Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-gray-300 hover:bg-gray-50">
+                  className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white">
                   View Our Work
                 </Button>
               </motion.div>
@@ -488,7 +483,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Impact</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Impact</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Numbers That Matter
             </h2>
@@ -529,7 +524,7 @@ export default function HomePage() {
               >
                 <CardContent className="p-8">
                   <div className="space-y-2">
-                    <div className="text-4xl font-bold text-blue-600">
+                    <div className="text-4xl font-bold text-red-600">
                       {stat.number}
                     </div>
                     <h3 className="text-lg font-semibold">{stat.label}</h3>
@@ -553,7 +548,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">
               Our Services
             </Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
@@ -646,7 +641,7 @@ export default function HomePage() {
               >
                 <CardContent className="p-8">
                   <div className="space-y-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <service.icon className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold">{service.title}</h3>
@@ -657,7 +652,7 @@ export default function HomePage() {
                           key={idx}
                           className="flex items-center text-sm text-gray-600"
                         >
-                          <CheckCircle className="h-4 w-4 text-blue-500 mr-2" />
+                          <CheckCircle className="h-4 w-4 text-red-500 mr-2" />
                           {feature}
                         </li>
                       ))}
@@ -681,7 +676,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Work</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Work</Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Featured Projects
             </h2>
@@ -698,7 +693,7 @@ export default function HomePage() {
             {featuredProjects.map((project, index) => (
               <Card
                 key={index}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-0 cursor-pointer"
+                className="group overflow-hidden hover:shadow-xl hover:text-red-600 transition-all duration-300 border-0 cursor-pointer"
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="relative overflow-hidden">
@@ -728,7 +723,7 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-gray-300 hover:bg-gray-50"
+                className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
               >
                 View All Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -749,7 +744,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">Our Clients</Badge>
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Clients</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               Trusted by Industry Leaders
             </h2>
@@ -788,7 +783,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
-            <Badge className="bg-purple-100 text-purple-800">
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">
               Testimonials
             </Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
@@ -873,7 +868,7 @@ export default function HomePage() {
       </motion.section>
 
       {/* CTA Section */}
-      <motion.section className="py-10 lg:py-10 bg-gradient-to-br from-blue-600 to-purple-600"
+      <motion.section className="py-10 lg:py-10 bg-gradient-to-br from-red-500 to-gray-700"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}>
@@ -893,7 +888,8 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                variant="outline"
+                className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white"
               >
                 Get Free Consultation
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -901,7 +897,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white bg-blue-600 text-white hover:bg-white hover:text-blue-600"
+                className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
               >
                 Call Us Now
               </Button>

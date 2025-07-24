@@ -29,7 +29,7 @@ export default function PortfolioPage() {
   const projects = [
     {
       title: "TechStart E-commerce Platform",
-      category: "E-commerce",
+      category: "Current Projects",
       description:
         "A modern e-commerce platform with advanced features including real-time inventory, multi-vendor support, and AI-powered recommendations.",
       fullDescription:
@@ -74,7 +74,7 @@ export default function PortfolioPage() {
     },
     {
       title: "FinanceApp Mobile Banking",
-      category: "Mobile App",
+      category: "Current Projects",
       description:
         "Secure mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.",
       fullDescription:
@@ -119,7 +119,7 @@ export default function PortfolioPage() {
     },
     {
       title: "HealthCare SaaS Dashboard",
-      category: "Web Application",
+      category: "Current Projects",
       description:
         "Comprehensive healthcare management system with patient records, appointment scheduling, and telemedicine capabilities.",
       fullDescription:
@@ -164,7 +164,7 @@ export default function PortfolioPage() {
     },
     {
       title: "RestaurantPro Website & Ordering",
-      category: "Web Development",
+      category: "Current Projects",
       description:
         "Beautiful restaurant website with online ordering system, table reservations, and integrated payment processing.",
       fullDescription:
@@ -209,7 +209,7 @@ export default function PortfolioPage() {
     },
     {
       title: "FitTracker Mobile App",
-      category: "Mobile App",
+      category: "Completed Projects",
       description:
         "Comprehensive fitness tracking application with workout plans, nutrition tracking, and social features for motivation.",
       fullDescription:
@@ -254,7 +254,7 @@ export default function PortfolioPage() {
     },
     {
       title: "Corporate Rebrand & Website",
-      category: "Branding & Web",
+      category: "Completed Projects",
       description:
         "Complete brand identity transformation with new logo, website, and marketing materials for a growing tech company.",
       fullDescription:
@@ -299,7 +299,7 @@ export default function PortfolioPage() {
     },
     {
       title: "EduPlatform Learning Management",
-      category: "Web Application",
+      category: "Completed Projects",
       description:
         "Advanced learning management system with video streaming, interactive quizzes, and progress tracking for online education.",
       fullDescription:
@@ -344,7 +344,7 @@ export default function PortfolioPage() {
     },
     {
       title: "RealEstate Property Portal",
-      category: "Web Development",
+      category: "Completed Projects",
       description:
         "Modern property listing platform with advanced search, virtual tours, and integrated CRM for real estate professionals.",
       fullDescription:
@@ -389,7 +389,7 @@ export default function PortfolioPage() {
     },
     {
       title: "EventManager Mobile App",
-      category: "Mobile App",
+      category: "Completed Projects",
       description:
         "Event management application with ticket sales, attendee check-in, and real-time event updates and networking features.",
       fullDescription:
@@ -436,11 +436,8 @@ export default function PortfolioPage() {
 
   const categories = [
     "All",
-    "Web Development",
-    "Mobile App",
-    "E-commerce",
-    "Web Application",
-    "Branding & Web",
+    "Current Projects",
+    "Completed Projects"
   ];
 
   const filteredProjects =
@@ -457,21 +454,18 @@ export default function PortfolioPage() {
         transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="absolute inset-0 bg-center bg-cover z-0"
-            style={{ backgroundImage: "url('/banner_3.jpg')", backgroundRepeat: "no-repeat" }} />
-            <motion.div className="relative space-y-8"
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-red-600 to-black opacity-90"></div>
+            <div className="absolute inset-0 bg-[url('/banner_3.jpg')] bg-cover bg-center mix-blend-overlay"></div>
+            <motion.div className="relative space-y-8 text-white"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}>
-              <Badge className="bg-purple-100 text-purple-800">Our Portfolio</Badge>
+              <Badge className="bg-red-600 hover:bg-red-800 text-white">Our Portfolio</Badge>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  {" "}
-                  Our Latest Work{" "}
-                </span>
+                Our Latest Work
                 & Success Stories
               </h1>
-              <p className="text-xl font-bold text-popover-foreground max-w-4xl mx-auto">
+              <p className="text-xl font-bold max-w-4xl mx-auto">
                 Explore our diverse portfolio of civil engineering projects, from industrial plants and commercial buildings to roads and utility infrastructure. See how we've helped clients across sectors achieve their development goals through innovative solutions and a commitment to quality and precision. Each project reflects our dedication to engineering excellence, timely execution, and long-term value
               </p>
             </motion.div>
@@ -487,14 +481,14 @@ export default function PortfolioPage() {
         <div className="px-4 md:px-20">
           <div className="flex flex-wrap justify-center gap-2">
             {categories.map((category) => (
-              <motion.div whileHover={{ y: -10, scale: 1.02 }}>
+              <motion.div whileHover={{ y: -5, scale: 1.02 }}>
               <Button
                 key={category}
                 variant={category === activeCategory ? "default" : "outline"}
                 onClick={() => setActiveCategory(category)}
                 className={
                   category === activeCategory
-                    ? "bg-blue-600 hover:bg-blue-700"
+                    ? "bg-red-600 hover:bg-red-700"
                     : "border-gray-300 hover:bg-gray-50"
                 }
               >
@@ -507,7 +501,7 @@ export default function PortfolioPage() {
       </motion.section>
 
       {/* Portfolio Grid */}
-      <section className="py-20 lg:py-32">
+      <section className="py-10 lg:py-10">
         <div className="px-4 md:px-20">
           <motion.div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
             initial={{ opacity: 0 }}
@@ -559,13 +553,13 @@ export default function PortfolioPage() {
                       <Github className="h-4 w-4" />
                     </Button>
                   </div>
-                  <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
+                  <Badge className="absolute top-4 left-4 bg-red-600 hover:bg-red-800 text-white">
                     {project.category}
                   </Badge>
                 </div>
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-semibold group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-semibold group-hover:text-red-600 transition-colors">
                       {project.title}
                     </h3>
                     <p className="text-gray-600 text-sm">
@@ -620,7 +614,7 @@ export default function PortfolioPage() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="w-full border-gray-300 hover:bg-gray-50 group-hover:border-blue-600 group-hover:text-blue-600"
+                    className="w-full border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
                   >
                     View Details
                     <ArrowRight className="ml-2 h-3 w-3" />
@@ -633,62 +627,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* <section className="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-slate-100">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-slate-100 text-slate-800">Our Impact</Badge>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-              Numbers That Matter
-            </h2>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                number: "500+",
-                label: "Projects Completed",
-                description:
-                  "Successfully delivered projects across various industries",
-              },
-              {
-                number: "98%",
-                label: "Client Satisfaction",
-                description:
-                  "Consistently high client satisfaction and retention rate",
-              },
-              {
-                number: "2M+",
-                label: "Users Reached",
-                description:
-                  "Combined user base across all our client projects",
-              },
-              {
-                number: "150%",
-                label: "Average ROI",
-                description: "Average return on investment for our clients",
-              },
-            ].map((stat, index) => (
-              <Card
-                key={index}
-                className="text-center border-0 bg-white/80 backdrop-blur-sm"
-              >
-                <CardContent className="p-8">
-                  <div className="space-y-2">
-                    <div className="text-4xl font-bold text-blue-600">
-                      {stat.number}
-                    </div>
-                    <h3 className="text-lg font-semibold">{stat.label}</h3>
-                    <p className="text-sm text-gray-600">{stat.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-blue-600 to-purple-600">
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-red-500 to-gray-700">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div className="text-center space-y-8 text-white"
           initial={{ opacity: 0, x: 30 }}
@@ -705,7 +645,8 @@ export default function PortfolioPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                variant="outline"
+                className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white"
               >
                 <Link href="/contact" className="flex items-center">
                   Start Your Project
@@ -715,7 +656,7 @@ export default function PortfolioPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 bg-blue-600"
+                className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white"
               >
                 Download Portfolio PDF
               </Button>
@@ -735,7 +676,7 @@ export default function PortfolioPage() {
               <DialogHeader>
                 <div className="flex items-start justify-between">
                   <div className="space-y-2">
-                    <Badge className="bg-blue-100 text-blue-800">
+                    <Badge className="bg-red-600 hover:bg-red-800 text-white">
                       {selectedProject.category}
                     </Badge>
                     <DialogTitle className="text-2xl font-bold">
@@ -760,7 +701,7 @@ export default function PortfolioPage() {
               </div>
 
               {/* Project Info Grid */}
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <Calendar className="h-4 w-4 mr-2" />
@@ -776,7 +717,7 @@ export default function PortfolioPage() {
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <h4 className="font-semibold">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-1">
                     {selectedProject.technologies.map((tech, idx) => (
@@ -785,7 +726,7 @@ export default function PortfolioPage() {
                       </Badge>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 <div className="space-y-2">
                   <h4 className="font-semibold">Key Results:</h4>
@@ -857,21 +798,14 @@ export default function PortfolioPage() {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
                 <Button
-                  className="bg-blue-600 hover:bg-blue-700"
+                  className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
                   onClick={() => window.open(selectedProject.link, "_blank")}
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
                   View Live Project
                 </Button>
-                <Button
-                  variant="outline"
-                  onClick={() => window.open(selectedProject.github, "_blank")}
-                >
-                  <Github className="h-4 w-4 mr-2" />
-                  View Source Code
-                </Button>
                 <Button variant="outline" asChild>
-                  <Link href="/contact">
+                  <Link href="/contact" className="hover:text-red-600">
                     Start Similar Project
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Link>
