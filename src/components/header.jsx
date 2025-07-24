@@ -34,12 +34,13 @@ export function Header() {
               </span>
             </div>
             <span className="font-bold text-xl">
-              <span className="text-red-600">Havcon</span> Infrastructures
+              <span className="text-red-800">Havcon</span> Infrastructures
+              <p className="text-xs text-red-600 font-semibold">ISO 9001:2015 Certified Company</p>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-5">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -50,18 +51,6 @@ export function Header() {
               </Link>
             ))}
           </nav>
-
-          <div className="hidden md:flex items-center space-x-4">
-            {/* <Button
-              variant="outline"
-              className="border-gray-300 hover:bg-gray-50"
-            >
-              <Link href={"/login"}>Login</Link>
-            </Button>
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              <Link href={"/signup"}>Get Started</Link>
-            </Button> */}
-          </div>
 
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -82,17 +71,6 @@ export function Header() {
                     {item.name}
                   </Link>
                 ))}
-                {/* <div className="flex flex-col space-y-3 pt-6 border-t">
-                  <Button
-                    variant="outline"
-                    className="border-gray-300 hover:bg-gray-50"
-                  >
-                    Login
-                  </Button>
-                  <Button className="bg-blue-600 hover:bg-blue-700">
-                    Get Started
-                  </Button>
-                </div> */}
               </div>
             </SheetContent>
           </Sheet>

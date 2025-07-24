@@ -40,7 +40,9 @@ export function Footer() {
                 />
                 </span>
               </div>
-              <span className="text-black font-bold text-xl"><span className="text-red-500">Havcon</span> Infrastructures</span>
+              <span className="text-black font-bold text-xl"><span className="text-red-800">Havcon</span> Infrastructures
+                <p className="text-xs text-red-800 font-semibold">ISO 9001:2015 Certified Company</p>
+              </span>
             </div>
             <p className="text-white max-w-sm">
               Creating infrastructure that drives growth. Our innovative construction solutions bring lasting value to every project

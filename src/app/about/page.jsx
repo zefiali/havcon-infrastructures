@@ -38,7 +38,7 @@ export default function AboutPage() {
                 </h1>
                 <br/>
                 <p className="text-xl font-bold max-w-4xl mx-auto">
-                  Havcon Infrastructures, founded in 2022 by visionary Civil Engineer Mr. Saurin Shah, is an ISO 9001:2015 certified firm committed to excellence in civil engineering. With over a decade of industry experience, the company delivers high-quality, timely, and cost-effective industrial projects, consistently exceeding client expectations with precision and dedication
+                  Havcon Infrastructures, founded in 2022 by visionary Civil Engineer Mr. Saurin Shah, is an ISO 9001:2015 Certified Company committed to excellence in civil engineering. With over a decade of industry experience, the company delivers high-quality, timely, and cost-effective industrial projects, consistently exceeding client expectations with precision and dedication
                 </p>
               </div>
             </motion.div>
