@@ -416,9 +416,15 @@ export default function HomePage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-red-500 to-black opacity-90"></div>
-        {/* <video autoplay="" muted="" loop="" playsinline="" class="h-full w-full object-cover brightness-50"><source src="/videos/hero-construction-background.mp4" type="video/mp4"></video> */}
-        <div className="absolute inset-0 bg-[url('/hero1.png')] bg-cover bg-center mix-blend-overlay"></div>
+        <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/home_page_video.mov"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"></div>
         <div className="relative mx-auto px-4 md:px-20">
           <div className="flex gap-16 items-center justify-between max-lg:flex-col">
             <motion.div className="space-y-8"
@@ -455,19 +461,6 @@ export default function HomePage() {
                 </Button>
               </motion.div>
             </motion.div>
-            {/* <motion.div className="relative w-full flex items-center justify-center"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-[2.5rem] blur-3xl opacity-20" />
-              <Image
-                src="/hero1.png"
-                alt="Digital Agency Hero"
-                width={500}
-                height={500}
-                className="relative rounded-[2.5rem] shadow-2xl"
-              />
-            </motion.div> */}
           </div>
         </div>
       </motion.section>
