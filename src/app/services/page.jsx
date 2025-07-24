@@ -207,7 +207,7 @@ export default function ServicesPage() {
                       <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
                         <service.icon className="h-6 w-6 text-white" />
                       </div>
-                      <h2 className="text-3xl font-bold">{service.title}</h2>
+                      <h3 className="text-xl font-bold">{service.title}</h3>
                     </div>
                     <p className="text-xl text-gray-600">
                       {service.description}
@@ -222,28 +222,6 @@ export default function ServicesPage() {
                       </div>
                     ))}
                   </div>
-
-                 {/*  <div className="space-y-3">
-                    <h4 className="font-semibold text-gray-900">
-                      Technologies We Use:
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {service.technologies.map((tech, idx) => (
-                        <Badge
-                          key={idx}
-                          variant="secondary"
-                          className="bg-gray-100 text-gray-700"
-                        >
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  <Button className="bg-blue-600 hover:bg-blue-700">
-                    Learn More
-                    <ArrowRight className="h-4 w-4" />
-                  </Button> */}
                 </div>
 
                 <div
