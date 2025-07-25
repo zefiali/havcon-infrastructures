@@ -31,9 +31,8 @@ export default function ContactPage() {
               Amazing
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Ready to transform your digital presence? Get in touch with our
-              team and let&apos;s discuss how we can help bring your vision to
-              life.
+              Ready to elevate your project? Connect with our civil engineering experts 
+              to turn your vision into a lasting, high-performance reality
             </p>
           </motion.div>
         </div>
@@ -189,7 +188,7 @@ export default function ContactPage() {
                         <h3 className="font-semibold">Call Us</h3>
                         <p className="text-gray-600">+91 99981 54353</p>
                         <p className="text-sm text-gray-500">
-                          Mon-Fri, 9AM-6PM EST
+                          Mon-Sat, 9AM-7PM IST
                         </p>
                       </div>
                     </div>
@@ -231,7 +230,7 @@ export default function ContactPage() {
                           Available on our website
                         </p>
                         <p className="text-sm text-gray-500">
-                          Mon-Fri, 9AM-6PM EST
+                          Mon-Sat, 9AM-7PM IST
                         </p>
                       </div>
                     </div>

@@ -7,28 +7,19 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import {
   ArrowRight,
   CheckCircle,
   Star,
-  ExternalLink,
-  Calendar,
-  Users,
-  User,
   Map,
   Library,
   ShieldEllipsis,
   CableCar,
   Sofa,
   BrickWall,
-  Github,
 } from "lucide-react";
 import Image from "next/image";
+import { featuredProjects } from "@/data/featuredProjects";
+import ProjectDialog from "@/components/projectsDialog";
 
 export default function HomePage() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -90,254 +81,6 @@ export default function HomePage() {
       return () => clearInterval(timer);
     }
   }, [isVisible]);
-
-  const featuredProjects = [
-    {
-      title: "E-commerce Platform",
-      category: "Web Development",
-      image: "/project1.webp",
-      description: "Modern e-commerce solution with advanced features",
-      fullDescription:
-        "A comprehensive e-commerce platform built for a growing retail business. The platform features a modern, responsive design with advanced product filtering, real-time inventory management, and seamless checkout experience. We implemented a custom CMS for easy product management and integrated multiple payment gateways for global reach.",
-      duration: "4 months",
-      teamSize: 5,
-      clientName: "RetailMax Inc.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Stripe",
-        "PostgreSQL",
-        "Tailwind CSS",
-        "Vercel",
-      ],
-      results: [
-        "300% increase in online sales",
-        "50% reduction in cart abandonment",
-        "99.9% uptime achieved",
-        "Mobile conversion rate improved by 180%",
-      ],
-      challenges: [
-        "Complex inventory management across multiple warehouses",
-        "Integration with legacy ERP system",
-        "High-performance requirements for product catalog",
-      ],
-      solutions: [
-        "Implemented real-time inventory sync with Redis caching",
-        "Built custom API middleware for ERP integration",
-        "Optimized database queries and implemented CDN for images",
-      ],
-      testimonial: {
-        content:
-          "The new platform exceeded our expectations. Sales have tripled and our customers love the seamless shopping experience.",
-        author: "Sarah Mitchell",
-        role: "CEO, RetailMax Inc.",
-      },
-    },
-    {
-      title: "Mobile Banking App",
-      category: "Mobile App",
-      image: "/project2.webp",
-      description: "Secure and intuitive banking application",
-      fullDescription:
-        "A cutting-edge mobile banking application designed with security and user experience at its core. The app features biometric authentication, real-time transaction notifications, budget tracking, and seamless money transfers. Built with React Native for cross-platform compatibility and integrated with banking APIs for real-time data.",
-      duration: "6 months",
-      teamSize: 7,
-      clientName: "SecureBank",
-      technologies: [
-        "React Native",
-        "Node.js",
-        "MongoDB",
-        "AWS",
-        "Plaid API",
-        "Firebase",
-      ],
-      results: [
-        "1M+ downloads in first 6 months",
-        "4.8/5 app store rating",
-        "60% increase in digital transactions",
-        "40% reduction in customer service calls",
-      ],
-      challenges: [
-        "Strict security and compliance requirements",
-        "Complex integration with core banking systems",
-        "Cross-platform performance optimization",
-      ],
-      solutions: [
-        "Implemented end-to-end encryption and biometric security",
-        "Built secure API gateway with rate limiting and monitoring",
-        "Optimized app performance with native modules where needed",
-      ],
-      testimonial: {
-        content:
-          "Our customers are thrilled with the new app. It's intuitive, secure, and has significantly improved our digital banking experience.",
-        author: "Michael Chen",
-        role: "CTO, SecureBank",
-      },
-    },
-    {
-      title: "SaaS Dashboard",
-      category: "UI/UX Design",
-      image: "/project3.webp",
-      description: "Clean and functional dashboard interface",
-      fullDescription:
-        "A comprehensive SaaS dashboard redesign focused on improving user experience and data visualization. The project involved extensive user research, wireframing, and prototyping to create an intuitive interface that helps users make data-driven decisions quickly. Features include customizable widgets, advanced filtering, and real-time analytics.",
-      duration: "3 months",
-      teamSize: 4,
-      clientName: "DataFlow Solutions",
-      technologies: [
-        "Figma",
-        "React",
-        "D3.js",
-        "Chart.js",
-        "Tailwind CSS",
-        "Framer Motion",
-      ],
-      results: [
-        "45% increase in user engagement",
-        "30% reduction in support tickets",
-        "25% improvement in task completion rate",
-        "90% positive user feedback",
-      ],
-      challenges: [
-        "Complex data visualization requirements",
-        "Multiple user roles with different needs",
-        "Legacy system integration constraints",
-      ],
-      solutions: [
-        "Created modular component system for flexible layouts",
-        "Implemented role-based UI customization",
-        "Designed progressive disclosure patterns for complex features",
-      ],
-      testimonial: {
-        content:
-          "The new dashboard has transformed how our users interact with their data. It's beautiful, functional, and incredibly user-friendly.",
-        author: "Lisa Rodriguez",
-        role: "Product Manager, DataFlow Solutions",
-      },
-    },
-    {
-      title: "Restaurant Website",
-      category: "Web Development",
-      image: "/project4.webp",
-      description: "Appetizing website with online ordering system",
-      fullDescription:
-        "A mouth-watering restaurant website with integrated online ordering system. The site features an interactive menu, table reservation system, and seamless food delivery integration. We focused on creating an appetizing visual experience while ensuring fast loading times and mobile optimization for on-the-go customers.",
-      duration: "2 months",
-      teamSize: 3,
-      clientName: "Bella Vista Restaurant",
-      technologies: [
-        "WordPress",
-        "WooCommerce",
-        "PHP",
-        "MySQL",
-        "Square API",
-        "Google Maps API",
-      ],
-      results: [
-        "200% increase in online orders",
-        "150% boost in table reservations",
-        "35% increase in average order value",
-        "95% customer satisfaction rate",
-      ],
-      challenges: [
-        "Integration with existing POS system",
-        "Real-time menu updates and inventory",
-        "Peak hour performance optimization",
-      ],
-      solutions: [
-        "Built custom POS integration with webhook synchronization",
-        "Implemented real-time inventory management system",
-        "Optimized server configuration and implemented caching",
-      ],
-      testimonial: {
-        content:
-          "Our online presence has never been stronger. The website perfectly captures our restaurant's atmosphere and the ordering system works flawlessly.",
-        author: "Antonio Rossi",
-        role: "Owner, Bella Vista Restaurant",
-      },
-    },
-    {
-      title: "Fitness App",
-      category: "Mobile App",
-      image: "/project5.webp",
-      description: "Comprehensive fitness tracking application",
-      fullDescription:
-        "A comprehensive fitness tracking application that helps users achieve their health goals. The app includes workout planning, nutrition tracking, progress monitoring, and social features to keep users motivated. Built with a focus on user engagement and data accuracy, integrating with popular fitness devices and health platforms.",
-      duration: "5 months",
-      teamSize: 6,
-      clientName: "FitLife Technologies",
-      technologies: [
-        "Flutter",
-        "Firebase",
-        "HealthKit",
-        "Google Fit",
-        "TensorFlow",
-        "Node.js",
-      ],
-      results: [
-        "500K+ active users",
-        "4.7/5 app store rating",
-        "80% user retention after 30 days",
-        "Featured in App Store fitness category",
-      ],
-      challenges: [
-        "Accurate fitness data tracking across devices",
-        "Motivating long-term user engagement",
-        "Complex workout plan customization",
-      ],
-      solutions: [
-        "Integrated with multiple fitness APIs for comprehensive tracking",
-        "Implemented gamification and social features",
-        "Built AI-powered workout recommendation engine",
-      ],
-      testimonial: {
-        content:
-          "This app has revolutionized how our users approach fitness. The engagement rates are incredible and the feedback has been overwhelmingly positive.",
-        author: "Jennifer Park",
-        role: "Founder, FitLife Technologies",
-      },
-    },
-    {
-      title: "Corporate Rebrand",
-      category: "Branding",
-      image: "/project6.webp",
-      description: "Complete brand identity transformation",
-      fullDescription:
-        "A complete corporate rebranding project that transformed a traditional manufacturing company into a modern, tech-forward organization. The project included logo design, brand guidelines, website redesign, marketing materials, and digital asset creation. We conducted extensive market research and stakeholder interviews to ensure the new brand resonated with target audiences.",
-      duration: "4 months",
-      teamSize: 5,
-      clientName: "TechManufacturing Corp",
-      technologies: [
-        "Adobe Creative Suite",
-        "Figma",
-        "Brand Guidelines",
-        "Print Design",
-        "Web Design",
-      ],
-      results: [
-        "40% increase in brand recognition",
-        "25% improvement in lead quality",
-        "60% increase in website engagement",
-        "Successfully launched across 15 markets",
-      ],
-      challenges: [
-        "Balancing traditional values with modern appeal",
-        "Coordinating rebrand across multiple touchpoints",
-        "Managing stakeholder expectations and feedback",
-      ],
-      solutions: [
-        "Developed comprehensive brand strategy with clear positioning",
-        "Created detailed brand guidelines and asset library",
-        "Implemented phased rollout plan with stakeholder checkpoints",
-      ],
-      testimonial: {
-        content:
-          "The rebrand has completely transformed our market presence. We're now seen as an innovative leader in our industry, and it's reflected in our business growth.",
-        author: "Robert Kim",
-        role: "Marketing Director, TechManufacturing Corp",
-      },
-    },
-  ];
 
   const allSkills = [
     // Frontend
@@ -450,7 +193,7 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white px-8">
-                  Start Your Project
+                    <Link href="/contact">Start Your Project</Link>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button
@@ -686,7 +429,7 @@ export default function HomePage() {
             {featuredProjects.map((project, index) => (
               <Card
                 key={index}
-                className="group overflow-hidden hover:shadow-xl hover:text-red-600 transition-all duration-300 border-0 cursor-pointer"
+                className="group overflow-hidden hover:shadow-xl text-red-500 hover:text-red-800 transition-all duration-300 border-0 cursor-pointer"
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="relative overflow-hidden">
@@ -698,7 +441,7 @@ export default function HomePage() {
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <Badge className="absolute top-4 left-4 bg-white/90 text-gray-800">
+                  <Badge className="absolute top-4 left-4 bg-red-500 text-white">
                     {project.category}
                   </Badge>
                 </div>
@@ -900,168 +643,7 @@ export default function HomePage() {
       </motion.section>
 
       {/* Project Details Modal */}
-      <Dialog
-        open={!!selectedProject}
-        onOpenChange={() => setSelectedProject(null)}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-          {selectedProject && (
-            <>
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold">
-                  {selectedProject.title}
-                </DialogTitle>
-              </DialogHeader>
-
-              <div className="space-y-6">
-                {/* Project Image */}
-                <div className="relative overflow-hidden rounded-lg">
-                  <Image
-                    src={selectedProject.image || "/placeholder.svg"}
-                    alt={selectedProject.title}
-                    width={800}
-                    height={400}
-                    className="w-full h-64 object-cover"
-                  />
-                  <Badge className="absolute top-4 left-4 bg-white/90 text-gray-800">
-                    {selectedProject.category}
-                  </Badge>
-                </div>
-
-                {/* Project Info */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="flex items-center space-x-2">
-                    <Calendar className="h-4 w-4 text-blue-500" />
-                    <span className="text-sm text-gray-600">
-                      Duration: {selectedProject.duration}
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Users className="h-4 w-4 text-blue-500" />
-                    <span className="text-sm text-gray-600">
-                      Team Size: {selectedProject.teamSize}
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <User className="h-4 w-4 text-blue-500" />
-                    <span className="text-sm text-gray-600">
-                      Client: {selectedProject.clientName}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Description */}
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">
-                    Project Overview
-                  </h3>
-                  <p className="text-gray-600">
-                    {selectedProject.fullDescription}
-                  </p>
-                </div>
-
-                {/* Technologies */}
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">
-                    Technologies Used
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedProject.technologies.map((tech, index) => (
-                      <Badge
-                        key={index}
-                        variant="secondary"
-                        className="bg-blue-100 text-blue-800"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Results */}
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Key Results</h3>
-                  <ul className="space-y-2">
-                    {selectedProject.results.map((result, index) => (
-                      <li key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span className="text-gray-600">{result}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Challenges & Solutions */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="text-lg font-semibold mb-3">Challenges</h3>
-                    <ul className="space-y-2">
-                      {selectedProject.challenges.map((challenge, index) => (
-                        <li key={index} className="flex items-start space-x-2">
-                          <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0" />
-                          <span className="text-gray-600 text-sm">
-                            {challenge}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-3">Solutions</h3>
-                    <ul className="space-y-2">
-                      {selectedProject.solutions.map((solution, index) => (
-                        <li key={index} className="flex items-start space-x-2">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-                          <span className="text-gray-600 text-sm">
-                            {solution}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Testimonial */}
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold mb-3">
-                    Client Testimonial
-                  </h3>
-                  <blockquote className="text-gray-600 italic mb-4">
-                    &quot;{selectedProject.testimonial.content}&quot;
-                  </blockquote>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-                      <User className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <div className="font-semibold">
-                        {selectedProject.testimonial.author}
-                      </div>
-                      <div className="text-sm text-gray-600">
-                        {selectedProject.testimonial.role}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View Live Demo
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-gray-300 hover:bg-gray-50"
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    View Source Code
-                  </Button>
-                </div>
-              </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
+      <ProjectDialog selectedProject={selectedProject} setSelectedProject={setSelectedProject} />
     </div>
   );
 }

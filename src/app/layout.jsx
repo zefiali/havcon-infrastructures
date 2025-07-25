@@ -2,9 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { LiveChat } from "@/components/live-chat";
-import { NewsletterPopup } from "@/components/newsletter-popup";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +20,12 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
-        <LiveChat />
+        <FloatingWhatsApp
+        phoneNumber="+919998154353"
+        accountName="Havcon Infrastructures"
+        avatar="/ui_avatar.png"
+        statusMessage="Available"
+      />
         <ScrollToTop />
       </body>
     </html>
