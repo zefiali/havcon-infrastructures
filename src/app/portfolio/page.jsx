@@ -207,13 +207,16 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-red-500 to-gray-700">
+      <motion.section className="py-20 lg:py-32 bg-gradient-to-br from-red-500 to-gray-700"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.div className="text-center space-y-8 text-white"
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}>
+          initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Ready to Create Your Success Story?
             </h2>
@@ -242,7 +245,7 @@ export default function PortfolioPage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Project Details Modal */}
       <ProjectDialog selectedProject={selectedProject} setSelectedProject={setSelectedProject} />

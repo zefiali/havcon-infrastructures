@@ -610,9 +610,9 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.div className="text-center space-y-8 text-white"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Ready to Transform Your Business?
