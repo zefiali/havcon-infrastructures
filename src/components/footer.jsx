@@ -171,11 +171,11 @@ export function Footer() {
             <div className="space-y-3 text-white">
               <div className="flex items-start">
                 <Mail className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
-                <span className="text-sm">havconinstrastructures@gmail.com</span>
+                <span className="text-sm"><Link className="hover:text-gray-200" href="/contact">havconinstrastructures@gmail.com</Link></span>
               </div>
               <div className="flex items-start">
                 <Phone className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
-                <span className="text-sm">+91 99981 54353</span>
+                <span className="text-sm"><Link className="hover:text-gray-200" href={`tel:${+919998154353}`}>+91 99981 54353</Link></span>                
               </div>
               <div className="flex items-start">
                 <MapPin className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />

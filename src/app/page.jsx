@@ -200,7 +200,9 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white">
+                  <Link href="/portfolio">
                   View Our Work
+                  </Link>
                 </Button>
               </motion.div>
             </motion.div>
@@ -626,16 +628,18 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 className="border-white text-white bg-gradient-to-r from-red-800 to-red-700 hover:from-red-700 hover:to-red-600 hover:text-white"
-              >
+              > <Link href="/contact">
                 Get Free Consultation
+                </Link>
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
-              >
+              > <Link href={`tel:${+919998154353}`}>
                 Call Us Now
+                </Link>
               </Button>
             </div>
           </motion.div>

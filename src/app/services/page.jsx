@@ -366,8 +366,9 @@ export default function ServicesPage() {
                 size="lg"
                 variant="outline"
                 className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
-              >
+              > <Link href="/portfolio">
                 View Portfolio
+                </Link>
               </Button>
             </div>
           </motion.div>

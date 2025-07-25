@@ -16,6 +16,7 @@ export function Header() {
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -40,7 +41,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-5">
+          <nav className="hidden md:flex items-center space-x-3">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -51,6 +52,17 @@ export function Header() {
               </Link>
             ))}
           </nav>
+
+          <div className="hidden md:flex items-center space-x-4">
+            <Button
+                size="lg"
+                variant="outline"
+                className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
+              > <Link href={`tel:${+919998154353}`}>
+                Call Us Now
+                </Link>
+              </Button>
+          </div>
 
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -71,6 +83,14 @@ export function Header() {
                     {item.name}
                   </Link>
                 ))}
+                <Button
+                size="lg"
+                variant="outline"
+                className="border-white bg-red-800 text-white hover:bg-red-600 hover:text-white"
+              > <Link href={`tel:${+919998154353}`}>
+                Call Us Now
+                </Link>
+              </Button>
               </div>
             </SheetContent>
           </Sheet>
