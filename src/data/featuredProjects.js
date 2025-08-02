@@ -321,11 +321,11 @@ export const AllProjects = [
         "Construction of a Pre-Engineered Building (PEB) shed measuring 50m x 51m x 7m, including internal RCC roads and associated ancillary works. Scope includes structural steel fabrication, foundation works, site development, and utility infrastructure.",
       fullDescription:
         "The project involves the construction of a Pre-Engineered Building (PEB) shed with dimensions of 50 meters in length, 51 meters in width, and 7 meters in height, designed for industrial operations such as manufacturing, warehousing, or assembly. The structure will comprise a prefabricated steel framework, roofing, cladding, and necessary foundation works to support dynamic industrial loads. In addition, the project includes the construction of internal RCC (Reinforced Cement Concrete) roads for durable and heavy-duty vehicle movement within the premises. Ancillary works include site leveling, drainage systems, utility connections (electrical, water, compressed air, etc.), peripheral development, and any supporting infrastructure such as office space, security cabins, and service areas. The entire development will adhere to relevant industrial standards and safety codes.",
-      image: "../ProjectImgs/Grapehen/main.jpg",
+      image: "../ProjectImgs/Grapehen/main.jpeg",
       technologies: [
       ],
       sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Grapehen/main.jpg' },
+        {id: 1, bg: '../ProjectImgs/Grapehen/main.jpeg' },
         {id: 2, bg: '../ProjectImgs/Grapehen/img1.jpg' },
         {id: 3, bg: '../ProjectImgs/Grapehen/img2.jpg' },
         {id: 4, bg: '../ProjectImgs/Grapehen/img3.jpg' },
