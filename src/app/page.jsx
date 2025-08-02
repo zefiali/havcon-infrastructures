@@ -56,7 +56,7 @@ export default function HomePage() {
         experience: 15,
         projects: 25,
         clients: 98,
-        rating: 150,
+        rating: 2,
       };
       const duration = 2000;
       const steps = 60;
@@ -82,13 +82,13 @@ export default function HomePage() {
     }
   }, [isVisible]);
 
-  const allSkills = [
+  const clientLogos = [
     // Frontend
     {
       name: "",
       icon: <Image
-        src="/iocl.png"
-        alt="Digital Agency Hero"
+        src="/client_logos/Aiedan_logo.png"
+        alt="Aiedan Industries"
         width={500}
         height={500}
         className="relative max-w-full max-h-full"
@@ -98,8 +98,8 @@ export default function HomePage() {
     {
       name: "",
       icon: <Image
-        src="/nandolia.png"
-        alt="Digital Agency Hero"
+        src="/client_logos/graphene_logo.png"
+        alt="Graphene Conposites"
         width={500}
         height={500}
         className="relative max-w-full max-h-full"
@@ -109,8 +109,8 @@ export default function HomePage() {
     {
       name: "JavaScript",
       icon: <Image
-        src="/jindalrail.png"
-        alt="Digital Agency Hero"
+        src="/client_logos/KP_Human.png"
+        alt="KP Human Development"
         width={500}
         height={500}
         className="relative max-w-full max-h-full"
@@ -120,8 +120,8 @@ export default function HomePage() {
     {
       name: "HTML/CSS",
       icon: <Image
-        src="/pgcil.png"
-        alt="Digital Agency Hero"
+        src="/client_logos/KPGroup.jpg"
+        alt="KP Group"
         width={500}
         height={500}
         className="relative max-w-full max-h-full"
@@ -131,24 +131,13 @@ export default function HomePage() {
     {
       name: "Tailwind CSS",
       icon: <Image
-        src="/inox.png"
+        src="/client_logos/NandoliaFood.png"
         alt="Digital Agency Hero"
         width={500}
         height={500}
         className="relative max-w-full max-h-full"
       />,
       color: "bg-cyan-100 text-cyan-800",
-    },
-    {
-      name: "Node.js",
-      icon: <Image
-        src="/abb.webp"
-        alt="Digital Agency Hero"
-        width={500}
-        height={500}
-        className="relative max-w-full max-h-full"
-      />,
-      color: "bg-green-100 text-green-800",
     }
   ];
 
@@ -234,26 +223,26 @@ export default function HomePage() {
             {[
               {
                 number: counts.projects + ' +',
-                label: "Projects Completed",
+                label: "Projects Successfully Completed Across India",
                 description:
-                  "Successfully delivered projects across various industries",
+                  "Including RCC buildings, industrial sheds, roads, drainage systems, and turnkey developments.",
               },
               {
                 number: counts.clients + ' %',
-                label: "Client Satisfaction",
+                label: "On-Time Project Delivery Rate",
                 description:
-                  "Consistently high client satisfaction and retention rate",
+                  "Demonstrating our commitment to deadlines, quality standards, and client satisfaction.",
               },
               {
                 number: counts.experience,
-                label: "Years Of Experience",
+                label: "Years of Civil Engineering Excellence",
                 description:
-                  "Decades of experience driving results",
+                  "Providing comprehensive construction solutions across industrial, institutional, and residential sectors since 2012.",
               },
               {
-                number: counts.rating + ' %',
-                label: "Average ROI",
-                description: "Average return on investment for our clients",
+                number: counts.rating + ' Lakh Sq.M',
+                label: "Build Structures",
+                description: "Covering industrial buildings, commercial complexes, institutional facilities, and infrastructure works.",
               },
             ].map((stat, index) => (
               <Card
@@ -490,12 +479,12 @@ export default function HomePage() {
               Our landmark clients are the foundation of our success — industry leaders who value precision, quality, and timely delivery.
             </p>
           </motion.div>
-          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12"
+          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
-            {allSkills.slice(0, 12).map((skill, index) => (
+            {clientLogos.slice(0, 12).map((skill, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center p-8 h-40 bg-white border hover:shadow-lg transition-all duration-300 hover:scale-105">
@@ -505,11 +494,6 @@ export default function HomePage() {
               </div>
             ))}
           </motion.div>
-          {/* <div className="text-center">
-          <Button size="lg" variant="outline" asChild>
-            <Link href="/skills">View All Skills</Link>
-          </Button>
-        </div> */}
         </div>
       </motion.section>
 

@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { categories, featuredProjects } from "@/data/featuredProjects";
+import { AllProjects, categories } from "@/data/featuredProjects";
 import ProjectDialog from "@/components/projectsDialog";
 
 export default function PortfolioPage() {
@@ -21,8 +21,8 @@ export default function PortfolioPage() {
 
   const filteredProjects =
     activeCategory === "All"
-      ? featuredProjects
-      : featuredProjects.filter((project) => project.category === activeCategory);
+      ? AllProjects
+      : AllProjects.filter((project) => project.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
@@ -94,7 +94,6 @@ export default function PortfolioPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10, scale: 1.02 }}
               >
               <Card
                 key={index}
@@ -144,50 +143,6 @@ export default function PortfolioPage() {
                     <p className="text-gray-600 text-sm">
                       {project.description}
                     </p>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div>
-                      <h4 className="font-medium text-sm text-gray-900 mb-2">
-                        Equipments:
-                      </h4>
-                      <div className="flex flex-wrap gap-1">
-                        {project.technologies.slice(0, 4).map((tech, idx) => (
-                          <Badge
-                            key={idx}
-                            variant="secondary"
-                            className="text-xs bg-red-500 text-white"
-                          >
-                            {tech}
-                          </Badge>
-                        ))}
-                        {project.technologies.length > 4 && (
-                          <Badge
-                            variant="secondary"
-                            className="text-xs bg-gray-100 text-gray-700"
-                          >
-                            +{project.technologies.length - 4} more
-                          </Badge>
-                        )}
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-medium text-sm text-gray-900 mb-2">
-                        Key Results:
-                      </h4>
-                      <ul className="space-y-1">
-                        {project.results.slice(0, 3).map((result, idx) => (
-                          <li
-                            key={idx}
-                            className="text-xs text-gray-600 flex items-center"
-                          >
-                            <div className="w-1 h-1 bg-blue-500 rounded-full mr-2" />
-                            {result}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
                   </div>
 
                   <Button

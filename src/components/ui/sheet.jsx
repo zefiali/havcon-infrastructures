@@ -54,6 +54,7 @@ const SheetContent = React.forwardRef(({ side = "right", className, children, ..
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
       <SheetTitle></SheetTitle>
+      <SheetDescription></SheetDescription>
       {children}
     </SheetPrimitive.Content>
   </SheetPortal>

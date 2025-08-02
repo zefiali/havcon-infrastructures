@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Users, User, CheckCircle, Github, ExternalLink } from "lucide-react";
 import React from "react";
 import Slider from "./slider";
+import { Banknote } from "lucide-react";
 
 export default function ProjectDialog({ selectedProject, setSelectedProject }) {
   if (!selectedProject) return null;
@@ -32,13 +33,12 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
 
           {/* Project Image */}
           <div className="relative overflow-hidden rounded-lg">
-            <Slider />
+            <Slider selectedProject={selectedProject}/>
           </div>
 
           {/* Info */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <InfoItem icon={<Calendar className="h-4 w-4 text-red-500" />} label={`Duration: ${selectedProject.duration}`} />
-            <InfoItem icon={<Users className="h-4 w-4 text-red-500" />} label={`Team Size: ${selectedProject.teamSize}`} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoItem icon={<Banknote className="h-4 w-4 text-red-500" />} label={`Amount: ${selectedProject.duration}`} />
             <InfoItem icon={<User className="h-4 w-4 text-red-500" />} label={`Client: ${selectedProject.clientName}`} />
           </div>
 
@@ -46,7 +46,7 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
           <Section title="Project Overview" content={selectedProject.fullDescription} />
 
           {/* Technologies */}
-          <Section title="Equipments Used">
+          {/* <Section title="Equipments Used">
             <div className="flex flex-wrap gap-2">
               {selectedProject.technologies.map((tech, index) => (
                 <Badge key={index} variant="secondary" className="bg-red-500 text-white">
@@ -54,7 +54,7 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
                 </Badge>
               ))}
             </div>
-          </Section>
+          </Section> */}
 
           {/* Results */}
           <Section title="Key Results">
