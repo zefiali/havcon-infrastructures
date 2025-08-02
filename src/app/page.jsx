@@ -120,7 +120,7 @@ export default function HomePage() {
     {
       name: "HTML/CSS",
       icon: <Image
-        src="/client_logos/KPGroup.jpg"
+        src="/client_logos/KP_Energy.jpg"
         alt="KP Group"
         width={500}
         height={500}
