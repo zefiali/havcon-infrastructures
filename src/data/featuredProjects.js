@@ -115,16 +115,16 @@ export const featuredProjects = [
         "Construction of an industrial plant building measuring 30m x 15m x 24m, including structural, roofing, and flooring works suitable for heavy equipment and operations. Scope also includes all ancillary works such as utility connections, access infrastructure, and site development.",
       fullDescription:
         "The scope of work involves the construction of a main plant building with dimensions of 30 meters (length) x 15 meters (width) x 24 meters (height). The structure will be designed to accommodate industrial equipment and processes, with considerations for load-bearing capacity, ventilation, and operational efficiency.",
-      image: "./ProjectImgs/Aeidan/main.jpg",
+      image: "./ProjectImgs/Aeidan/main.jpeg",
       technologies: [
       ],
       sliderImages: [
-        {id: 1, bg: './ProjectImgs/Aeidan/main.jpg' },
-        {id: 2, bg: './ProjectImgs/Aeidan/img1.jpg' },
-        {id: 3, bg: './ProjectImgs/Aeidan/img2.jpg' },
-        {id: 4, bg: './ProjectImgs/Aeidan/img3.jpg' },
-        {id: 5, bg: './ProjectImgs/Aeidan/img4.png' },
-        {id: 6, bg: './ProjectImgs/Aeidan/img5.jpg' },
+        {id: 1, bg: './ProjectImgs/Aeidan/main.jpeg' },
+        {id: 2, bg: './ProjectImgs/Aeidan/img1.jpeg' },
+        {id: 3, bg: './ProjectImgs/Aeidan/img2.jpeg' },
+        {id: 4, bg: './ProjectImgs/Aeidan/img3.jpeg' },
+        {id: 5, bg: './ProjectImgs/Aeidan/img4.jpeg' },
+        {id: 6, bg: './ProjectImgs/Aeidan/img5.jpeg' },
       ],
       results: [
         "Completion of 30m x 15m x 24m industrial plant building within planned schedule and specifications.",
@@ -274,16 +274,16 @@ export const AllProjects = [
         "Construction of an industrial plant building measuring 30m x 15m x 24m, including structural, roofing, and flooring works suitable for heavy equipment and operations. Scope also includes all ancillary works such as utility connections, access infrastructure, and site development.",
       fullDescription:
         "The scope of work involves the construction of a main plant building with dimensions of 30 meters (length) x 15 meters (width) x 24 meters (height). The structure will be designed to accommodate industrial equipment and processes, with considerations for load-bearing capacity, ventilation, and operational efficiency.",
-      image: "../ProjectImgs/Aeidan/main.jpg",
+      image: "../ProjectImgs/Aeidan/main.jpeg",
       technologies: [
       ],
       sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Aeidan/main.jpg' },
-        {id: 2, bg: '../ProjectImgs/Aeidan/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Aeidan/img2.jpg' },
-        {id: 4, bg: '../ProjectImgs/Aeidan/img3.jpg' },
-        {id: 5, bg: '../ProjectImgs/Aeidan/img4.png' },
-        {id: 6, bg: '../ProjectImgs/Aeidan/img5.jpg' },
+        {id: 1, bg: '../ProjectImgs/Aeidan/main.jpeg' },
+        {id: 2, bg: '../ProjectImgs/Aeidan/img1.jpeg' },
+        {id: 3, bg: '../ProjectImgs/Aeidan/img2.jpeg' },
+        {id: 4, bg: '../ProjectImgs/Aeidan/img3.jpeg' },
+        {id: 5, bg: '../ProjectImgs/Aeidan/img4.jpeg' },
+        {id: 6, bg: '../ProjectImgs/Aeidan/img5.jpeg' },
       ],
       results: [
         "Completion of 30m x 15m x 24m industrial plant building within planned schedule and specifications.",
@@ -326,11 +326,11 @@ export const AllProjects = [
       ],
       sliderImages: [
         {id: 1, bg: '../ProjectImgs/Grapehen/main.jpeg' },
-        {id: 2, bg: '../ProjectImgs/Grapehen/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Grapehen/img2.jpg' },
-        {id: 4, bg: '../ProjectImgs/Grapehen/img3.jpg' },
-        {id: 5, bg: '../ProjectImgs/Grapehen/img4.jpg' },
-        {id: 6, bg: '../ProjectImgs/Grapehen/img5.jpg' },
+        {id: 2, bg: '../ProjectImgs/Grapehen/img1.jpeg' },
+        {id: 3, bg: '../ProjectImgs/Grapehen/img2.jpeg' },
+        {id: 4, bg: '../ProjectImgs/Grapehen/img3.jpeg' },
+        {id: 5, bg: '../ProjectImgs/Grapehen/img4.jpeg' },
+        {id: 6, bg: '../ProjectImgs/Grapehen/img5.jpeg' },
       ],
       results: [
         "PEB shed: 50m x 51m x 7m dimensions.",
