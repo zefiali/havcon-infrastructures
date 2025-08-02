@@ -36,6 +36,8 @@ export const featuredProjects = [
       duration: "₹4000 lakhs",
       teamSize: "14 developers",
       clientName: "Pradhu Nu Ghar",
+      location: "Jhagadia, Bharuch",
+      consultant: "-",
       challenges: [
         "Mobility limitations of residents",
         "Complex space planning",
@@ -90,6 +92,8 @@ export const featuredProjects = [
       duration: "₹400 lakhs",
       teamSize: "10 developers",
       clientName: "Champa Ba Estate-2",
+      location: "Savli, Vadodara",
+      consultant: "-",
       challenges: [
         "Varying shop dimensions",
         "Resource coordination issues",
@@ -137,6 +141,8 @@ export const featuredProjects = [
       duration: "₹500 lakhs",
       teamSize: "2 Civil Engg",
       clientName: "Aeidan Industries",
+      location: "Ankleshwar, Gujarat",
+      consultant: "PMC",
       challenges: [
         "Limited site access",
         "Safety compliance issues",
@@ -158,7 +164,7 @@ export const featuredProjects = [
 ];
 
 export const AllProjects = [
-  {
+   {
       title: "India's 1st Old Age Homes",
       category: "Current Projects",
       description:
@@ -195,6 +201,8 @@ export const AllProjects = [
       duration: "₹4000 lakhs",
       teamSize: "14 developers",
       clientName: "Pradhu Nu Ghar",
+      location: "Jhagadia, Bharuch",
+      consultant: "-",
       challenges: [
         "Mobility limitations of residents",
         "Complex space planning",
@@ -249,6 +257,8 @@ export const AllProjects = [
       duration: "₹400 lakhs",
       teamSize: "10 developers",
       clientName: "Champa Ba Estate-2",
+      location: "Savli, Vadodara",
+      consultant: "-",
       challenges: [
         "Varying shop dimensions",
         "Resource coordination issues",
@@ -296,6 +306,8 @@ export const AllProjects = [
       duration: "₹500 lakhs",
       teamSize: "2 Civil Engg",
       clientName: "Aeidan Industries",
+      location: "Ankleshwar, Gujarat",
+      consultant: "PMC",
       challenges: [
         "Limited site access",
         "Safety compliance issues",
@@ -344,6 +356,8 @@ export const AllProjects = [
       duration: "₹350 lakhs",
       teamSize: "12 developers",
       clientName: "Grapehen Composites",
+      location: "Ankleshwar, Gujarat",
+      consultant: "PMC",
       challenges: [
         "Weather-related delays",
         "Design coordination gaps",
@@ -397,6 +411,8 @@ export const AllProjects = [
       duration: "₹200 lakhs",
       teamSize: "15 developers",
       clientName: "Nandolia Organic Chemicals Pvt. Ltd.",
+      location: "Sayakha, Bharuch",
+      consultant: "Udgam Consultancy",
       challenges: [
         "Uneven site levels",
         "Weather interruptions",
@@ -450,6 +466,8 @@ export const AllProjects = [
       duration: "₹100 lakhs",
       teamSize: "6 developers",
       clientName: "Nandolia Food Products",
+      location: "Sidhpur, Gujarat",
+      consultant: "Udgam Consultancy",
       challenges: [
         "Aging structural elements",
         "Low load capacity",
@@ -499,6 +517,8 @@ export const AllProjects = [
       duration: "₹50 lakhs",
       teamSize: "8 designers & developers",
       clientName: "KP Solarism",
+      location: "Padra, Gujarat",
+      consultant: "-",
       challenges: [
         "Remote site location",
         "Drainage issues during rain",

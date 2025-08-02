@@ -10,6 +10,8 @@ import { Calendar, Users, User, CheckCircle, Github, ExternalLink } from "lucide
 import React from "react";
 import Slider from "./slider";
 import { Banknote } from "lucide-react";
+import { MapPinCheck } from "lucide-react";
+import { UserRoundPen } from "lucide-react";
 
 export default function ProjectDialog({ selectedProject, setSelectedProject }) {
   if (!selectedProject) return null;
@@ -27,6 +29,10 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
                 <DialogTitle className="text-2xl font-bold">
                   {selectedProject.title}
                 </DialogTitle>
+                {/* Description */}
+                <p className="text-gray-600">
+                    {selectedProject.fullDescription}
+                </p>
               </div>
             </div>
           </DialogHeader>
@@ -37,13 +43,12 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
           </div>
 
           {/* Info */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <InfoItem icon={<Banknote className="h-4 w-4 text-red-500" />} label={`Amount: ${selectedProject.duration}`} />
             <InfoItem icon={<User className="h-4 w-4 text-red-500" />} label={`Client: ${selectedProject.clientName}`} />
+            <InfoItem icon={<MapPinCheck className="h-4 w-4 text-red-500" />} label={`Location: ${selectedProject.location}`} />
+            <InfoItem icon={<UserRoundPen className="h-4 w-4 text-red-500" />} label={`Consultant: ${selectedProject.consultant}`} />
           </div>
-
-          {/* Description */}
-          <Section title="Project Overview" content={selectedProject.fullDescription} />
 
           {/* Technologies */}
           {/* <Section title="Equipments Used">
