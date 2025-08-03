@@ -15,6 +15,7 @@ export function Header() {
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/portfolio" },
+    { name: "Unit Convertor", href: "/unitconvertor" },
     { name: "Contact", href: "/contact" },
   ];
 

@@ -140,6 +140,14 @@ export function Footer() {
             <ul className="space-y-2 text-white">
               <li>
                 <Link
+                  href="/"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="hover:text-red-400 transition-colors"
                 >
@@ -152,6 +160,14 @@ export function Footer() {
                   className="hover:text-red-400 transition-colors"
                 >
                   Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/unitconvertor"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Unit Convertor
                 </Link>
               </li>
               <li>
