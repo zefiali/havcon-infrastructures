@@ -80,7 +80,7 @@ export default function SpeedDistancePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <Tabs defaultValue="area" className="w-full">
           <TabsList className="grid w-full grid-cols-3 h-full">
             <TabsTrigger value="area" className="py-2">
