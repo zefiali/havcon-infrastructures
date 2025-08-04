@@ -42,18 +42,6 @@ export default function AboutPage() {
                 </p>
               </div>
             </motion.div>
-            {/* <motion.div className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}>
-              <Image
-                src="/about-us-new.jpg"
-                alt="About Us"
-                width={600}
-                height={400}
-                className="rounded-3xl shadow-2xl object-fill"
-              />
-            </motion.div> */}
           </div>
         </div>
       </motion.section>
@@ -127,6 +115,13 @@ export default function AboutPage() {
                   "Every project is built to exceed expectations through rigorous standards and constant quality checks.",
               },
             ].map((value, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
               <Card  
                 key={index}              
                 className="text-center border-0 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
@@ -141,6 +136,7 @@ export default function AboutPage() {
                   </div>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </motion.div>
         </div>
@@ -208,6 +204,13 @@ export default function AboutPage() {
                 bio: "Agile certified PM ensuring projects deliver on time",
               },
             ].map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
               <Card
                 key={index}
                 className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-0 cursor-pointer"
@@ -230,6 +233,7 @@ export default function AboutPage() {
                   <p className="text-gray-600 text-sm">{member.bio}</p>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </motion.div>
         </div>

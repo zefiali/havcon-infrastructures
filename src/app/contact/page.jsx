@@ -44,7 +44,10 @@ export default function ContactPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}>
         <div className="px-4 md:px-20">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <motion.div className="grid gap-12 lg:grid-cols-2 lg:gap-16"
+          initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}>
             {/* Contact Form */}
             <Card className="border-0 bg-white/80 backdrop-blur-sm shadow-xl">
               <CardContent className="p-8">
@@ -256,67 +259,9 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.section>
-
-      {/* FAQ Section */}
-      <section className="py-10 lg:py-10 bg-gradient-to-br from-gray-50 to-slate-100">
-        <div className="px-4 md:px-20">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-red-600 hover:bg-red-800 text-white">FAQ</Badge>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {[
-              {
-                question: "How long does a typical project take?",
-                answer:
-                  "Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex applications can take 3-6 months. We'll provide a detailed timeline during our initial consultation.",
-              },
-              {
-                question: "Do you provide ongoing support?",
-                answer:
-                  "Yes, we offer comprehensive support and maintenance packages. This includes updates, security monitoring, performance optimization, and technical support.",
-              },
-              {
-                question: "What's your development process?",
-                answer:
-                  "We follow a proven 4-step process: Discovery & Strategy, Design & Prototyping, Development & Testing, and Launch & Support. We keep you involved throughout each phase.",
-              },
-              {
-                question: "Can you work with our existing team?",
-                answer:
-                  "We're experienced in collaborating with in-house teams and can integrate seamlessly with your existing workflows and tools.",
-              },
-              {
-                question: "Do you offer fixed-price projects?",
-                answer:
-                  "We offer both fixed-price and hourly billing options. For well-defined projects, we prefer fixed-price contracts to give you budget certainty.",
-              },
-              {
-                question: "What technologies do you specialize in?",
-                answer:
-                  "We specialize in modern web technologies including React, Next.js, Node.js, Python, and mobile development with React Native and Flutter.",
-              },
-            ].map((faq, index) => (
-              <Card
-                key={index}
-                className="border-0 bg-white/80 backdrop-blur-sm"
-              >
-                <CardContent className="p-6">
-                  <div className="space-y-3">
-                    <h3 className="font-semibold text-lg">{faq.question}</h3>
-                    <p className="text-gray-600">{faq.answer}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

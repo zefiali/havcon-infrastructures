@@ -362,6 +362,13 @@ export default function HomePage() {
                 ],
               },
             ].map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
               <Card
                 key={index}
                 className="group hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm"
@@ -387,6 +394,7 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </motion.div>
         </div>
@@ -418,6 +426,13 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
             {featuredProjects.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
               <Card
                 key={index}
                 className="group overflow-hidden hover:shadow-xl text-red-500 hover:text-red-800 transition-all duration-300 border-0 cursor-pointer"
@@ -443,6 +458,7 @@ export default function HomePage() {
                   <p className="text-gray-600">{project.description}</p>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </motion.div>
           <div className="text-center mt-12">
@@ -485,6 +501,13 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
             {clientLogos.slice(0, 12).map((skill, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
               <div
                 key={index}
                 className="flex flex-col items-center p-8 h-40 bg-white border hover:shadow-lg transition-all duration-300 hover:scale-105">
@@ -492,6 +515,7 @@ export default function HomePage() {
                   {skill.icon}
                 </div>
               </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
@@ -547,6 +571,13 @@ export default function HomePage() {
                 avatar: "/user2.avif",
               },
             ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
               <Card
                 key={index}
                 className="border-0 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
@@ -584,6 +615,7 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </motion.div>
         </div>

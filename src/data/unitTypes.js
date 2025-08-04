@@ -1,12 +1,12 @@
 // Unit types categorized by length, weight, and volume
 export const unitTypes = {
     lengthUnits: [
-        "Millimeters(mm)",
-        "Centimeters(cm)",
-        "Meters(m)",
-        "Kilometers(km)",
-        "Inches(in)",
-        "Feet(ft)"
+        { label: "Millimeters(mm)", value: "mm" },
+        { label: "Centimeters(cm)", value: "cm" },
+        { label: "Meters(m)", value: "m" },
+        { label: "Kilometers(km)", value: "km" },
+        { label: "Inches(in)", value: "in" },
+        { label: "Feet(ft)", value: "ft" }
     ],
     area: [
         { label: "Square Millimeters(mm²)", value: "mm2" },

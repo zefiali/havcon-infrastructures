@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowLeft, Zap } from "lucide-react";
-import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -10,9 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import {motion} from "framer-motion";
 import {
   Select,
   SelectContent,
@@ -97,14 +95,17 @@ export default function SpeedDistancePage() {
           </TabsList>
 
           <TabsContent value="area" className="mt-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <motion.div className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}>
               <Card>
                 <CardHeader>
-                  <CardTitle>Convert Area</CardTitle>
+                  <CardTitle className="text-red-600">Convert Area</CardTitle>
                   <CardDescription>Formula = {"( "} Entered Value × From Unit {" )"} / To Unit</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 gap-2">
                     <div className="flex flex-col gap-2">
                      <Label htmlFor="distance-speed-unit">Unit From</Label>
                       <Select
@@ -123,7 +124,7 @@ export default function SpeedDistancePage() {
                         </SelectContent>
                       </Select>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 pt-4">
                       <Label htmlFor="distance-speed-unit">Unit To</Label>
                       <Select
                         value={toAreaUnit}
@@ -142,7 +143,7 @@ export default function SpeedDistancePage() {
                       </Select>
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 gap-2">
+                  <div className="grid grid-cols-1 gap-2 pt-4">
                     <div className="flex flex-col gap-2">
                       <Label htmlFor="areaVal">Enter Value</Label>
                       <Input
@@ -159,19 +160,19 @@ export default function SpeedDistancePage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Area Convertion Result</CardTitle>
+                  <CardTitle className="text-red-600">Area Conversion Result</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-amber-50 p-6 rounded-lg text-center">
                     <div className="lg:text-3xl sm:text-2xl font-bold text-amber-600 mb-2">
                       {areaResult.toFixed(3)}
                     </div>
-                    <div className="lg:text-lg sm:text-2xl text-amber-700 mb-4">
-                      {toAreaUnit}
+                    <div className="text-sm text-amber-700 mb-4">
+                      { unitTypes.area.find(unit => unit.value === toAreaUnit)?.label }
                     </div>
                     <div className="text-sm text-amber-600">
-                      Formula = ({areaValue === "" ? 'Entered Value' : areaValue} ×{" "}
-                      {fromAreaUnit}) /{" "} {toAreaUnit}
+                      Calculation = ({areaValue === "" ? 'Entered Value' : areaValue} ×{" "}
+                      {conversionRates.area[fromAreaUnit]}) /{" "} {conversionRates.area[toAreaUnit]}
                     </div>
                   </div>
                   <div className="mt-4 space-y-2 text-sm text-gray-600">
@@ -182,18 +183,21 @@ export default function SpeedDistancePage() {
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </TabsContent>
 
           <TabsContent value="length" className="mt-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <motion.div className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}>
               <Card>
                 <CardHeader>
-                  <CardTitle>Convert Length</CardTitle>
+                  <CardTitle className="text-red-600">Convert Length</CardTitle>
                   <CardDescription>Formula = {"( "} Entered Value × From Unit {" )"} / To Unit</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 gap-2">
                     <div className="flex flex-col gap-2">
                      <Label htmlFor="distance-speed-unit">Unit From</Label>
                       <Select
@@ -206,13 +210,13 @@ export default function SpeedDistancePage() {
                         <SelectContent>
                           {
                             unitTypes.lengthUnits.map((unit)=>{
-                              return <SelectItem value={unit.slice(unit.indexOf('(')+1, unit.indexOf(')'))}>{unit}</SelectItem>
+                              return <SelectItem value={unit.value}>{unit.label}</SelectItem>
                             })
                         }
                         </SelectContent>
                       </Select>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 pt-4">
                       <Label htmlFor="distance-speed-unit">Unit To</Label>
                       <Select
                         value={toLengthUnit}
@@ -224,14 +228,14 @@ export default function SpeedDistancePage() {
                         <SelectContent>
                             {
                             unitTypes.lengthUnits.map((unit)=>{
-                              return <SelectItem value={unit.slice(unit.indexOf('(')+1, unit.indexOf(')'))}>{unit}</SelectItem>
+                              return <SelectItem value={unit.value}>{unit.label}</SelectItem>
                             })
                             }
                         </SelectContent>
                       </Select>
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 gap-2">
+                  <div className="grid grid-cols-1 gap-2 pt-4">
                     <div className="flex flex-col gap-2">
                       <Label htmlFor="lengthVal">Enter Value</Label>
                       <Input
@@ -248,41 +252,44 @@ export default function SpeedDistancePage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Length Convertion Result</CardTitle>
+                  <CardTitle className="text-red-600">Length Conversion Result</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-amber-50 p-6 rounded-lg text-center">
                     <div className="lg:text-3xl sm:text-2xl font-bold text-amber-600 mb-2">
                       {lengthResult.toFixed(3)}
                     </div>
-                    <div className="lg:text-lg sm:text-2xl text-amber-700 mb-4">
-                      {toLengthUnit}
+                    <div className="text-sm text-amber-700 mb-4">
+                      { unitTypes.lengthUnits.find(unit => unit.value === toLengthUnit)?.label }
                     </div>
                     <div className="text-sm text-amber-600">
                       Formula = ({lengthValue === "" ? 'Entered Value' : lengthValue} ×{" "}
-                      {fromLengthUnit}) /{" "} {toLengthUnit}
+                      { conversionRates.length[fromLengthUnit]}) /{" "} {conversionRates.length[toLengthUnit] }
                     </div>
                   </div>
                   <div className="mt-4 space-y-2 text-sm text-gray-600">
                     <div>Also equals:</div>
                     <div>
-                      • {((lengthValue * conversionRates.length[fromLengthUnit]) / conversionRates.length.m).toFixed(3)} meters
+                      • {((lengthValue * conversionRates.length[fromLengthUnit]) / conversionRates.length.m).toFixed(3)} m
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </TabsContent>
 
           <TabsContent value="time" className="mt-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <motion.div className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}>
               <Card>
                 <CardHeader>
-                  <CardTitle>Convert Volume</CardTitle>
+                  <CardTitle className="text-red-600">Convert Volume</CardTitle>
                   <CardDescription>Formula = {"( "} Entered Value × From Unit {" )"} / To Unit</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 gap-2">
                     <div className="flex flex-col gap-2">
                      <Label htmlFor="distance-speed-unit">Unit From</Label>
                       <Select
@@ -301,7 +308,7 @@ export default function SpeedDistancePage() {
                         </SelectContent>
                       </Select>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 pt-4">
                       <Label htmlFor="distance-speed-unit">Unit To</Label>
                       <Select
                         value={toVolUnit}
@@ -320,7 +327,7 @@ export default function SpeedDistancePage() {
                       </Select>
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 gap-2">
+                  <div className="grid grid-cols-1 gap-2 pt-4">
                     <div className="flex flex-col gap-2">
                       <Label htmlFor="volumeVal">Enter Value</Label>
                       <Input
@@ -337,19 +344,19 @@ export default function SpeedDistancePage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Volume Convertion Result</CardTitle>
+                  <CardTitle className="text-red-600">Volume Conversion Result</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-amber-50 p-6 rounded-lg text-center">
                     <div className="lg:text-3xl sm:text-2xl font-bold text-amber-600 mb-2">
                       {volResult.toFixed(3)}
                     </div>
-                    <div className="lg:text-lg sm:text-2xl text-amber-700 mb-4">
-                      {toVolUnit}
+                    <div className="text-sm text-amber-700 mb-4">
+                      {unitTypes.volume.find(unit => unit.value === toVolUnit)?.label}
                     </div>
                     <div className="text-sm text-amber-600">
-                      Formula = ({volValue === "" ? 'Entered Value' : volValue} ×{" "}
-                      {fromVolUnit}) /{" "} {toVolUnit}
+                      Calculation = ({volValue === "" ? 'Entered Value' : volValue} ×{" "}
+                      { conversionRates.volume[fromVolUnit]}) /{" "} {conversionRates.volume[toVolUnit]}
                     </div>
                   </div>
                   <div className="mt-4 space-y-2 text-sm text-gray-600">
@@ -360,7 +367,7 @@ export default function SpeedDistancePage() {
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </TabsContent>
         </Tabs>
       </div>
