@@ -13,6 +13,7 @@ import {
   Building2,
   ShieldCheck
 } from "lucide-react";
+import { teamMembers } from "@/data/team";
 
 export default function AboutPage() {
   return (
@@ -166,44 +167,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
-            {[
-              {
-                name: "Alex Johnson",
-                role: "CEO & Founder",
-                image: "/user1.jpg",
-                bio: "10+ years in digital strategy and business development",
-              },
-              {
-                name: "Sarah Chen",
-                role: "Creative Director",
-                image: "/user2.avif",
-                bio: "Award-winning designer with expertise in UX/UI",
-              },
-              {
-                name: "Mike Rodriguez",
-                role: "Lead Developer",
-                image: "/user1.jpg",
-                bio: "Full-stack developer specializing in modern web technologies",
-              },
-              {
-                name: "Emily Davis",
-                role: "Marketing Strategist",
-                image: "/user3.jpg",
-                bio: "Digital marketing expert with proven ROI track record",
-              },
-              {
-                name: "David Kim",
-                role: "Mobile Developer",
-                image: "/user1.jpg",
-                bio: "iOS and Android specialist with 50+ apps published",
-              },
-              {
-                name: "Lisa Thompson",
-                role: "Project Manager",
-                image: "/user2.avif",
-                bio: "Agile certified PM ensuring projects deliver on time",
-              },
-            ].map((member, index) => (
+            {teamMembers.map((member, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -215,16 +179,6 @@ export default function AboutPage() {
                 key={index}
                 className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-0 cursor-pointer"
               >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                   <p className="text-red-600 font-medium mb-2">

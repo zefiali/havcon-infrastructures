@@ -7,8 +7,68 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "",
+    budget: "",
+    projectDetails: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null);
+
+const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("✅ Email sent successfully!");
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          budget: "",
+          projectDetails: "",
+        });
+      } else {
+        const err = await res.json();
+        setStatus(`❌ Failed: ${err.error?.message || "Unknown error"}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("❌ Failed to send email.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
       {/* Hero Section */}
@@ -31,7 +91,7 @@ export default function ContactPage() {
               Amazing
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Ready to elevate your project? Connect with our civil engineering experts 
+              Ready to elevate your project? Connect with our civil engineering experts
               to turn your vision into a lasting, high-performance reality
             </p>
           </motion.div>
@@ -45,7 +105,7 @@ export default function ContactPage() {
         transition={{ duration: 0.8 }}>
         <div className="px-4 md:px-20">
           <motion.div className="grid gap-12 lg:grid-cols-2 lg:gap-16"
-          initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}>
             {/* Contact Form */}
@@ -59,26 +119,25 @@ export default function ContactPage() {
                       within 24 hours.
                     </p>
                   </div>
-
-                  <form className="space-y-4">
+                  <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
                         <label
-                          htmlFor="firstName"
+                          htmlFor="firstname"
                           className="text-sm font-medium"
                         >
                           First Name
                         </label>
-                        <Input id="firstName" placeholder="John" />
+                        <Input name="firstname" placeholder="John" value={formData.firstname} onChange={handleChange} />
                       </div>
                       <div className="space-y-2">
                         <label
-                          htmlFor="lastName"
+                          htmlFor="lastname"
                           className="text-sm font-medium"
                         >
                           Last Name
                         </label>
-                        <Input id="lastName" placeholder="Doe" />
+                        <Input name="lastname" placeholder="Doe" value={formData.lastname} onChange={handleChange} />
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -86,9 +145,11 @@ export default function ContactPage() {
                         Email
                       </label>
                       <Input
-                        id="email"
+                        name="email"
                         type="email"
                         placeholder="john@example.com"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="space-y-2">
@@ -96,22 +157,24 @@ export default function ContactPage() {
                         Phone (Optional)
                       </label>
                       <Input
-                        id="phone"
+                        name="phone"
                         type="tel"
                         placeholder="+91 99999 99999"
+                        value={formData.phone}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="company" className="text-sm font-medium">
                         Company
                       </label>
-                      <Input id="company" placeholder="Your Company Name" />
+                      <Input name="company" placeholder="Your Company Name" value={formData.company} onChange={handleChange} />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="service" className="text-sm font-medium">
                         Service Interested In
                       </label>
-                      <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      <select name="service" value={formData.service} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option>Select a service</option>
                         <option>Structural Steel & Fabrication</option>
                         <option>Piling Foundation Construction</option>
@@ -125,7 +188,7 @@ export default function ContactPage() {
                       <label htmlFor="budget" className="text-sm font-medium">
                         Project Budget
                       </label>
-                      <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      <select name="budget" value={formData.budget} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option>Select budget range (in Lakhs)</option>
                         <option>₹2,00,000 - ₹10,00,000</option>
                         <option>₹10,00,000 - ₹25,00,000</option>
@@ -135,17 +198,18 @@ export default function ContactPage() {
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium">
+                      <label htmlFor="projectDetails" className="text-sm font-medium">
                         Project Details
                       </label>
                       <Textarea
-                        id="message"
+                        value={formData.projectDetails} onChange={handleChange}
+                        name="projectDetails"
                         placeholder="Tell us about your project, goals, and any specific requirements..."
                         rows={4}
                       />
                     </div>
-                    <Button className="w-full border-white bg-red-800 text-white hover:bg-red-600 hover:text-white py-5">
-                      Send Message
+                    <Button type="submit" disabled={loading} className="w-full border-white bg-red-800 text-white hover:bg-red-600 hover:text-white py-5">                      
+                      {loading ? "Sending..." : "Send Message"}
                       <Send className=" h-4 w-4" />
                     </Button>
                   </form>
@@ -172,7 +236,7 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-semibold">Email Us</h3>
-                        <p className="text-gray-600">havconinstrastructures@gmail.com</p>
+                        <p className="text-gray-600">havconinstrastructures@gmail.com <br /> projects@havconinfra.com</p>
                         <p className="text-sm text-gray-500">
                           We&apos;ll respond within 24 hours
                         </p>
@@ -210,7 +274,7 @@ export default function ContactPage() {
                           24, Santram Park Society,
                           <br />
                           Nr. Harani Warasia Ring Road,
-                          <br/>
+                          <br />
                           Vadodara - 390019
                         </p>
                         <p className="text-sm text-gray-500">

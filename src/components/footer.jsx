@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion"
 import {
   Facebook,
@@ -40,7 +39,7 @@ export function Footer() {
                 />
                 </span>
               </div>
-              <span className="text-black font-bold text-xl"><span className="text-red-800">Havcon</span> Infrastructures
+              <span className="text-black font-bold text-xl"><span className="text-red-600">Havcon</span> Infrastructures
                 <p className="text-xs text-red-800 font-semibold">ISO 9001:2015 Certified Company</p>
               </span>
             </div>
@@ -187,7 +186,7 @@ export function Footer() {
             <div className="space-y-3 text-white">
               <div className="flex items-start">
                 <Mail className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
-                <span className="text-sm"><Link className="hover:text-gray-200" href="/contact">havconinstrastructures@gmail.com</Link></span>
+                <span className="text-sm"><Link className="hover:text-gray-200" href="/contact">havconinstrastructures@gmail.com <br/> projects@havconinfra.com</Link></span>
               </div>
               <div className="flex items-start">
                 <Phone className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
