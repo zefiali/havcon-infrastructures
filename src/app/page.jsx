@@ -552,7 +552,7 @@ export default function HomePage() {
                 content:
                   "The team delivered an exceptional website that exceeded our expectations. Our conversion rate increased by 150% within the first month.",
                 rating: 5,
-                avatar: "/user3.jpg",
+                avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
               },
               {
                 name: "Michael Chen",
@@ -560,7 +560,7 @@ export default function HomePage() {
                 content:
                   "Professional, creative, and results-driven. They transformed our digital presence and helped us reach new heights.",
                 rating: 5,
-                avatar: "/user1.jpg",
+                avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
               },
               {
                 name: "Emily Rodriguez",
@@ -568,7 +568,7 @@ export default function HomePage() {
                 content:
                   "Outstanding work on our mobile app. The user experience is incredible and our customers love it.",
                 rating: 5,
-                avatar: "/user2.avif",
+                avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
               },
             ].map((testimonial, index) => (
               <motion.div
