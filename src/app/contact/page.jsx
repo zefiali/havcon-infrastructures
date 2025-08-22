@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Label } from "@/components/ui/label";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ const handleChange = (e) => {
     setStatus(null);
 
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("https://vercel-email-35ho.vercel.app/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -122,28 +123,28 @@ const handleChange = (e) => {
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label
+                        <Label
                           htmlFor="firstname"
                           className="text-sm font-medium"
                         >
                           First Name
-                        </label>
+                        </Label>
                         <Input name="firstname" placeholder="John" value={formData.firstname} onChange={handleChange} />
                       </div>
                       <div className="space-y-2">
-                        <label
+                        <Label
                           htmlFor="lastname"
                           className="text-sm font-medium"
                         >
                           Last Name
-                        </label>
+                        </Label>
                         <Input name="lastname" placeholder="Doe" value={formData.lastname} onChange={handleChange} />
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
+                      <Label htmlFor="email" className="text-sm font-medium">
                         Email
-                      </label>
+                      </Label>
                       <Input
                         name="email"
                         type="email"
@@ -153,9 +154,9 @@ const handleChange = (e) => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="phone" className="text-sm font-medium">
+                      <Label htmlFor="phone" className="text-sm font-medium">
                         Phone (Optional)
-                      </label>
+                      </Label>
                       <Input
                         name="phone"
                         type="tel"
@@ -165,15 +166,15 @@ const handleChange = (e) => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="company" className="text-sm font-medium">
+                      <Label htmlFor="company" className="text-sm font-medium">
                         Company
-                      </label>
+                      </Label>
                       <Input name="company" placeholder="Your Company Name" value={formData.company} onChange={handleChange} />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="service" className="text-sm font-medium">
+                      <Label htmlFor="service" className="text-sm font-medium">
                         Service Interested In
-                      </label>
+                      </Label>
                       <select name="service" value={formData.service} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option>Select a service</option>
                         <option>Structural Steel & Fabrication</option>
@@ -185,9 +186,9 @@ const handleChange = (e) => {
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="budget" className="text-sm font-medium">
+                      <Label htmlFor="budget" className="text-sm font-medium">
                         Project Budget
-                      </label>
+                      </Label>
                       <select name="budget" value={formData.budget} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option>Select budget range (in Lakhs)</option>
                         <option>₹2,00,000 - ₹10,00,000</option>
@@ -198,9 +199,9 @@ const handleChange = (e) => {
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="projectDetails" className="text-sm font-medium">
+                      <Label htmlFor="projectDetails" className="text-sm font-medium">
                         Project Details
-                      </label>
+                      </Label>
                       <Textarea
                         value={formData.projectDetails} onChange={handleChange}
                         name="projectDetails"
