@@ -46,7 +46,7 @@ export function Footer() {
             <p className="text-white max-w-sm">
               Creating infrastructure that drives growth. Our innovative construction solutions bring lasting value to every project
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <Button
                 size="sm"
                 variant="ghost"
@@ -75,7 +75,7 @@ export function Footer() {
               >
                 <Linkedin className="h-4 w-4" />
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
@@ -95,7 +95,7 @@ export function Footer() {
                   href="/services"
                   className="hover:text-red-400 transition-colors"
                 >
-                  Piling Foundation Construction
+                  Concrete Pad / Walls
                 </Link>
               </li>
               <li>
@@ -103,7 +103,7 @@ export function Footer() {
                   href="/services"
                   className="hover:text-red-400 transition-colors"
                 >
-                  Core and Shell Construction
+                  RCC Frame Structures
                 </Link>
               </li>
               <li>
@@ -119,15 +119,7 @@ export function Footer() {
                   href="/services"
                   className="hover:text-red-400 transition-colors"
                 >
-                  Turnkey Interior
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="hover:text-red-400 transition-colors"
-                >
-                  Mass Excavation
+                  Architectural Civil Works
                 </Link>
               </li>
             </ul>
@@ -151,6 +143,22 @@ export function Footer() {
                   className="hover:text-red-400 transition-colors"
                 >
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/equipments"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Equipment
                 </Link>
               </li>
               <li>
@@ -186,7 +194,7 @@ export function Footer() {
             <div className="space-y-3 text-white">
               <div className="flex items-start">
                 <Mail className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />
-                <span className="text-sm"><Link className="hover:text-gray-200" href="/contact">havconinstrastructures@gmail.com <br/> projects@havconinfra.com</Link></span>
+                <span className="text-sm"><Link className="hover:text-gray-200" href="/contact"> projects@havconinfra.com <br/> havconinstrastructures@gmail.com</Link></span>
               </div>
               <div className="flex items-start">
                 <Phone className="lucide lucide-map-pin h-5 w-5 mr-3 text-red-400 mt-0.5 flex-shrink-0" />

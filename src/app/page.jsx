@@ -9,17 +9,13 @@ import { motion } from "framer-motion";
 import {
   ArrowRight,
   CheckCircle,
-  Star,
-  Map,
-  Library,
-  ShieldEllipsis,
-  CableCar,
-  Sofa,
-  BrickWall,
+  Star
 } from "lucide-react";
 import Image from "next/image";
 import { featuredProjects } from "@/data/featuredProjects";
 import ProjectDialog from "@/components/projectsDialog";
+import { clientLogos, jobClientLogos } from "@/data/client_logos";
+import { services } from "@/data/services";
 
 export default function HomePage() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -81,65 +77,6 @@ export default function HomePage() {
       return () => clearInterval(timer);
     }
   }, [isVisible]);
-
-  const clientLogos = [
-    // Frontend
-    {
-      name: "",
-      icon: <Image
-        src="/client_logos/Aiedan_logo.png"
-        alt="Aiedan Industries"
-        width={500}
-        height={500}
-        className="relative max-w-full max-h-full"
-      />,
-      color: "bg-blue-100 text-blue-800",
-    },
-    {
-      name: "",
-      icon: <Image
-        src="/client_logos/graphene_logo.png"
-        alt="Graphene Conposites"
-        width={500}
-        height={500}
-        className="relative max-w-full max-h-full"
-      />,
-      color: "bg-gray-100 text-gray-800",
-    },
-    {
-      name: "JavaScript",
-      icon: <Image
-        src="/client_logos/KP_Human.png"
-        alt="KP Human Development"
-        width={500}
-        height={500}
-        className="relative max-w-full max-h-full"
-      />,
-      color: "bg-yellow-100 text-yellow-800",
-    },
-    {
-      name: "HTML/CSS",
-      icon: <Image
-        src="/client_logos/KP_Energy.jpg"
-        alt="KP Group"
-        width={500}
-        height={500}
-        className="relative max-w-full max-h-full"
-      />,
-      color: "bg-orange-100 text-orange-800",
-    },
-    {
-      name: "Tailwind CSS",
-      icon: <Image
-        src="/client_logos/NandoliaFood.png"
-        alt="Digital Agency Hero"
-        width={500}
-        height={500}
-        className="relative max-w-full max-h-full"
-      />,
-      color: "bg-cyan-100 text-cyan-800",
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
@@ -290,78 +227,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
-            {[
-              {
-                icon: CableCar,
-                title: "Structural Steel & Fabrication",
-                description:
-                  "Structural steel fabrication involves transforming raw steel into precision components like beams and columns through cutting, shaping, and assembly. The process follows industry standards (AISC, IS 800, Eurocode) and includes quality checks to ensure durable, load-bearing structures.",
-                features: [
-                  "Shop drawings and engineering support",
-                  "Fabrication of beams, columns, trusses",
-                  "On-site erection and installation",
-                  "Surface treatment and specialised painting",
-                ],
-              },
-              {
-                icon: Library,
-                title: "Piling Foundation Construction",
-                description:
-                  "Piling foundation construction is a deep foundation method that uses long, slender columns—usually made of steel, concrete, or wood—driven deep into the ground to support structures. It transfers structural loads from weak surface soils to stronger, stable layers of soil or rock found deeper below.",
-                features: [
-                  "Specialized piling for complex ground conditions.",
-                  "Advanced machinery for precise pile installation.",
-                  "Soil stabilization and anchoring solutions.",
-                  "Focus on precision and environmental safety.",
-                ],
-              },
-              {
-                icon: ShieldEllipsis,
-                title: "Core and Shell Construction",
-                description:
-                  "Core and shell construction is the initial phase of a building project, involving the structural framework—foundation, slabs, beams, exterior walls, and roof. It forms the outer shell while leaving interiors unfinished for tenant-specific customization. Ideal for commercial and industrial projects, it combines flexibility with strong structural integrity.",
-                features: [
-                  "Specialized in core and shell civil works",
-                  "Deliver strong, sustainable structural frameworks",
-                  "Ideal for high-rises, commercial, and industrial units"
-                ],
-              },
-              {
-                icon: Map,
-                title: "Road and Infrastructure",
-                description:
-                  "Road Infrastructure Services encompass the end-to-end development and maintenance of road networks vital to transportation, logistics, and regional connectivity. These services span the full project lifecycle — from initial planning and design to construction, upgrades, and ongoing maintenance.",
-                features: [
-                  "PQC/RCC road construction and repair", 
-                  "Pavement, walkway, and hardscape development", 
-                  "Drainage and stormwater management systems",
-                  "Earthworks and precise site grading",
-                ],
-              },
-              {
-                icon: Sofa,
-                title: "Turnkey Interior",
-                description:
-                  "Turnkey interior solutions offer an end-to-end service where a single contractor manages every aspect of the interior design project — from initial planning and design to execution and furnishing. This streamlined approach allows clients to simply hand over the responsibility and receive a fully completed, move-in-ready space.",
-                features: [
-                  "MEP, finishes, and furnishings handled",
-                  "Tailored for offices, retail, hospitality",
-                  "Space planning and civil works included",
-                ],
-              },
-              {
-                icon: BrickWall,
-                title: "Mass Excavation",
-                description:
-                  "Excavation involves the removal of soil, rock, or other materials from a site to prepare it for foundations or underground services. This process continues until the required depth is achieved—typically where the soil offers sufficient Safe Bearing Capacity (SBC) to support structural loads.",
-                features: [
-                  "Rock breaking and trenching",
-                  "Bulk earthworks and mass excavation",
-                  "Site preparation and grading",
-                  "Soil stabilization and compaction",
-                ],
-              },
-            ].map((service, index) => (
+            {services.map((service, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -495,12 +361,44 @@ export default function HomePage() {
               Our landmark clients are the foundation of our success — industry leaders who value precision, quality, and timely delivery.
             </p>
           </motion.div>
-          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-12"
+          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
             {clientLogos.slice(0, 12).map((skill, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+              <div
+                key={index}
+                className="flex flex-col items-center p-8 h-40 bg-white border hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <div className="relative w-full h-full flex items-center justify-center">
+                  {skill.icon}
+                </div>
+              </div>
+              </motion.div>
+            ))}
+          </motion.div>
+          <motion.div className="text-center space-y-4 mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Our client portfolio during job tenure reflects years of dedication, trust, and quality service, proudly serving businesses and individuals across Gujarat’s construction sector
+            </p>
+          </motion.div>
+          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}>
+            {jobClientLogos.slice(0, 12).map((skill, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}

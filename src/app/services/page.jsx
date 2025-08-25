@@ -6,16 +6,11 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import {
   CheckCircle,
-  CableCar,
-  Library,
-  ShieldEllipsis,
-  Map,
-  Sofa,
-  BrickWall,
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { services } from "@/data/services";
 
 export default function ServicesPage() {
   return (
@@ -68,126 +63,7 @@ export default function ServicesPage() {
       transition={{ duration: 0.8 }}>
         <div className="px-4 md:px-20">
           <motion.div className="grid gap-12 lg:gap-16">
-            {[
-              {
-                icon: CableCar,
-                title: "Structural Steel & Fabrication",
-                description:
-                  "Structural steel fabrication involves transforming raw steel into precision components like beams and columns through cutting, shaping, and assembly. The process follows industry standards (AISC, IS 800, Eurocode) and includes quality checks to ensure durable, load-bearing structures.",
-                features: [
-                  "Shop drawings and engineering support",
-                  "Fabrication of beams, columns, trusses",
-                  "On-site erection and installation",
-                  "Surface treatment and specialised painting",
-                ],
-                image: "/service1.jpg",
-                technologies: [
-                  "React",
-                  "Next.js",
-                  "TypeScript",
-                  "Node.js",
-                  "MongoDB",
-                ],
-              },
-              {
-                icon: Library,
-                title: "Piling Foundation Construction",
-                description:
-                  "Piling foundation construction is a deep foundation method that uses long, slender columns—usually made of steel, concrete, or wood—driven deep into the ground to support structures. It transfers structural loads from weak surface soils to stronger, stable layers of soil or rock found deeper below.",
-                features: [
-                  "Specialized piling for complex ground conditions.",
-                  "Advanced machinery for precise pile installation.",
-                  "Soil stabilization and anchoring solutions.",
-                  "Focus on precision and environmental safety.",
-                ],
-                image: "/service2.webp",
-                technologies: [
-                  "React Native",
-                  "Flutter",
-                  "Swift",
-                  "Kotlin",
-                  "Firebase",
-                ],
-              },
-              {
-                icon: ShieldEllipsis,
-                title: "Core and Shell Construction",
-                description:
-                  "Core and shell construction is the initial phase of a building project, involving the structural framework—foundation, slabs, beams, exterior walls, and roof. It forms the outer shell while leaving interiors unfinished for tenant-specific customization. Ideal for commercial and industrial projects, it combines flexibility with strong structural integrity.",
-                features: [
-                  "Specialized in core and shell civil works",
-                  "Deliver strong, sustainable structural frameworks",
-                  "Ideal for high-rises, commercial, and industrial units"
-                ],
-                image: "/service3.jpg",
-                technologies: [
-                  "Figma",
-                  "Adobe XD",
-                  "Sketch",
-                  "InVision",
-                  "Principle",
-                ],
-              },
-              {
-                icon: Map,
-                title: "Road and Infrastructure",
-                description:
-                  "Road Infrastructure Services encompass the end-to-end development and maintenance of road networks vital to transportation, logistics, and regional connectivity. These services span the full project lifecycle — from initial planning and design to construction, upgrades, and ongoing maintenance.",
-                features: [
-                  "PQC/RCC road construction and repair", 
-                  "Pavement, walkway, and hardscape development", 
-                  "Drainage and stormwater management systems",
-                  "Earthworks and precise site grading",
-                ],
-                image: "/service4.webp",
-                technologies: [
-                  "Google Ads",
-                  "Facebook Ads",
-                  "Google Analytics",
-                  "SEMrush",
-                  "Mailchimp",
-                ],
-              },
-              {
-                icon: Sofa,
-                title: "Turnkey Interior",
-                description:
-                  "Turnkey interior solutions offer an end-to-end service where a single contractor manages every aspect of the interior design project — from initial planning and design to execution and furnishing. This streamlined approach allows clients to simply hand over the responsibility and receive a fully completed, move-in-ready space.",
-                features: [
-                  "MEP, finishes, and furnishings handled",
-                  "Tailored for offices, retail, hospitality",
-                  "Space planning and civil works included",
-                ],
-                image: "/service5.jpg",
-                technologies: [
-                  "Shopify",
-                  "WooCommerce",
-                  "Stripe",
-                  "PayPal",
-                  "Magento",
-                ],
-              },
-              {
-                icon: BrickWall,
-                title: "Mass Excavation",
-                description:
-                  "Excavation involves the removal of soil, rock, or other materials from a site to prepare it for foundations or underground services. This process continues until the required depth is achieved—typically where the soil offers sufficient Safe Bearing Capacity (SBC) to support structural loads.",
-                features: [
-                  "Rock breaking and trenching",
-                  "Bulk earthworks and mass excavation",
-                  "Site preparation and grading",
-                  "Soil stabilization and compaction",
-                ],
-                image: "/service6.webp",
-                technologies: [
-                  "Google Analytics",
-                  "Mixpanel",
-                  "Hotjar",
-                  "Tableau",
-                  "Power BI",
-                ],
-              },
-            ].map((service, index) => (
+            {services.map((service, index) => (
               <motion.div
                 key={index}
                 className={`grid gap-8 lg:grid-cols-2 lg:gap-16 items-center ${

@@ -9,6 +9,7 @@ import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Label } from "@/components/ui/label";
+import { services } from "@/data/services";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
 
-const handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -129,7 +130,7 @@ const handleChange = (e) => {
                         >
                           First Name
                         </Label>
-                        <Input name="firstname" placeholder="John" value={formData.firstname} onChange={handleChange} />
+                        <Input name="firstname" placeholder="Enter First Name" value={formData.firstname} onChange={handleChange} />
                       </div>
                       <div className="space-y-2">
                         <Label
@@ -138,7 +139,7 @@ const handleChange = (e) => {
                         >
                           Last Name
                         </Label>
-                        <Input name="lastname" placeholder="Doe" value={formData.lastname} onChange={handleChange} />
+                        <Input name="lastname" placeholder="Enter Last Name" value={formData.lastname} onChange={handleChange} />
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -148,7 +149,7 @@ const handleChange = (e) => {
                       <Input
                         name="email"
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder="Enter Email Id"
                         value={formData.email}
                         onChange={handleChange}
                       />
@@ -160,6 +161,8 @@ const handleChange = (e) => {
                       <Input
                         name="phone"
                         type="tel"
+                        pattern="^[6789]\d{9}$"
+                        maxLength="10"
                         placeholder="+91 99999 99999"
                         value={formData.phone}
                         onChange={handleChange}
@@ -176,13 +179,13 @@ const handleChange = (e) => {
                         Service Interested In
                       </Label>
                       <select name="service" value={formData.service} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <option>Select a service</option>
-                        <option>Structural Steel & Fabrication</option>
-                        <option>Piling Foundation Construction</option>
-                        <option>Core and Shell Construction</option>
-                        <option>Road and Infrastructure</option>
-                        <option>Turnkey Interior</option>
-                        <option>Mass Excavation</option>
+                        <option value="">Select an Service</option>
+                        {services.map((item) => (
+                          <option key={item.title} value={item.title}>
+                            {item.title}
+                          </option>
+                        ))}
+                        <option key="Others" value="Others">Others</option>
                       </select>
                     </div>
                     <div className="space-y-2">
@@ -191,11 +194,11 @@ const handleChange = (e) => {
                       </Label>
                       <select name="budget" value={formData.budget} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option>Select budget range (in Lakhs)</option>
-                        <option>₹2,00,000 - ₹10,00,000</option>
-                        <option>₹10,00,000 - ₹25,00,000</option>
-                        <option>₹25,00,000 - ₹50,00,000</option>
+                        <option>₹10,00,000 - ₹50,00,000</option>
                         <option>₹50,00,000 - ₹1,00,00,000</option>
-                        <option>₹1,00,00,000 +</option>
+                        <option>₹1,00,00,000 - ₹2,00,00,000</option>
+                        <option>₹2,00,00,000 - ₹5,00,00,000</option>
+                        <option>₹10,00,00,000 +</option>
                       </select>
                     </div>
                     <div className="space-y-2">
@@ -209,7 +212,7 @@ const handleChange = (e) => {
                         rows={4}
                       />
                     </div>
-                    <Button type="submit" disabled={loading} className="w-full border-white bg-red-800 text-white hover:bg-red-600 hover:text-white py-5">                      
+                    <Button type="submit" disabled={loading} className="w-full border-white bg-red-800 text-white hover:bg-red-600 hover:text-white py-5">
                       {loading ? "Sending..." : "Send Message"}
                       <Send className=" h-4 w-4" />
                     </Button>
@@ -237,7 +240,7 @@ const handleChange = (e) => {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-semibold">Email Us</h3>
-                        <p className="text-gray-600">havconinstrastructures@gmail.com <br /> projects@havconinfra.com</p>
+                        <p className="text-gray-600">projects@havconinfra.com <br /> havconinstrastructures@gmail.com</p>
                         <p className="text-sm text-gray-500">
                           We&apos;ll respond within 24 hours
                         </p>

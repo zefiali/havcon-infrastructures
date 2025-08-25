@@ -33,7 +33,7 @@ export const featuredProjects = [
       ],
       link: "#",
       github: "#",
-      duration: "₹4000 lakhs",
+      duration: "₹1000 lakhs",
       teamSize: "14 developers",
       clientName: "Pradhu Nu Ghar",
       location: "Jhagadia, Bharuch",
@@ -64,7 +64,7 @@ export const featuredProjects = [
       description:
         "Construction of 54 shop units on a turnkey basis, covering all civil, structural, electrical, and finishing works. Scope includes end-to-end execution from design to handover, ready for operational use.",
       fullDescription:
-        "The project involves the turnkey construction of 54 individual shop buildings, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
+        "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
       image: "./ProjectImgs/Champaba/main.jpg",
       technologies: [
         "Flutter",
@@ -89,7 +89,7 @@ export const featuredProjects = [
       ],
       link: "#",
       github: "#",
-      duration: "₹400 lakhs",
+      duration: "₹4000 lakhs",
       teamSize: "10 developers",
       clientName: "Champa Ba Estate-2",
       location: "Savli, Vadodara",
@@ -141,7 +141,7 @@ export const featuredProjects = [
       duration: "₹500 lakhs",
       teamSize: "2 Civil Engg",
       clientName: "Aeidan Industries",
-      location: "Ankleshwar, Gujarat",
+      location: "Jaghadiya, Gujarat",
       consultant: "PMC",
       challenges: [
         "Limited site access",
@@ -198,7 +198,7 @@ export const AllProjects = [
       ],
       link: "#",
       github: "#",
-      duration: "₹4000 lakhs",
+      duration: "₹1000 lakhs",
       teamSize: "14 developers",
       clientName: "Pradhu Nu Ghar",
       location: "Jhagadia, Bharuch",
@@ -229,7 +229,7 @@ export const AllProjects = [
       description:
         "Construction of 54 shop units on a turnkey basis, covering all civil, structural, electrical, and finishing works. Scope includes end-to-end execution from design to handover, ready for operational use.",
       fullDescription:
-        "The project involves the turnkey construction of 54 individual shop buildings, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
+        "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
       image: "../ProjectImgs/Champaba/main.jpg",
       technologies: [
         "Flutter",
@@ -254,7 +254,7 @@ export const AllProjects = [
       ],
       link: "#",
       github: "#",
-      duration: "₹400 lakhs",
+      duration: "₹4000 lakhs",
       teamSize: "10 developers",
       clientName: "Champa Ba Estate-2",
       location: "Savli, Vadodara",
@@ -306,7 +306,7 @@ export const AllProjects = [
       duration: "₹500 lakhs",
       teamSize: "2 Civil Engg",
       clientName: "Aeidan Industries",
-      location: "Ankleshwar, Gujarat",
+      location: "Jaghadiya, Gujarat",
       consultant: "PMC",
       challenges: [
         "Limited site access",
@@ -356,7 +356,7 @@ export const AllProjects = [
       duration: "₹350 lakhs",
       teamSize: "12 developers",
       clientName: "Grapehen Composites",
-      location: "Ankleshwar, Gujarat",
+      location: "Savli, Gujarat",
       consultant: "PMC",
       challenges: [
         "Weather-related delays",
@@ -467,7 +467,7 @@ export const AllProjects = [
       teamSize: "6 developers",
       clientName: "Nandolia Food Products",
       location: "Sidhpur, Gujarat",
-      consultant: "Udgam Consultancy",
+      consultant: "PMC",
       challenges: [
         "Aging structural elements",
         "Low load capacity",

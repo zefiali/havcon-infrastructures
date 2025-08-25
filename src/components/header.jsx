@@ -14,6 +14,7 @@ export function Header() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
+    { name: "Equipment", href: "/equipments" },
     { name: "Projects", href: "/portfolio" },
     { name: "Unit Convertor", href: "/unitconvertor" },
     { name: "Contact", href: "/contact" },
@@ -41,7 +42,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-3">
+          <nav className="hidden md:flex items-center space-x-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}

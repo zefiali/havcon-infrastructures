@@ -38,8 +38,8 @@ export default function AboutPage() {
                   Crafting Resilient Infrastructure             
                 </h1>
                 <br/>
-                <p className="text-xl font-bold max-w-4xl mx-auto">
-                  Havcon Infrastructures, founded in 2022 by visionary Civil Engineer Mr. Saurin Shah, is an ISO 9001:2015 Certified Company committed to excellence in civil engineering. With over a decade of industry experience, the company delivers high-quality, timely, and cost-effective industrial projects, consistently exceeding client expectations with precision and dedication
+                <p className="text-xl font-bold max-w-3xl mx-auto">
+                  Havcon Infrastructures, established in 2022 by Civil Engineer Mr. Saurin Shah, reflects 15 years of field expertise. We specialize in delivering reliable, ethical, and cost-effective construction solutions, ensuring structural durability, design excellence, and complete client satisfaction across residential, commercial, and industrial projects in Gujarat
                 </p>
               </div>
             </motion.div>
