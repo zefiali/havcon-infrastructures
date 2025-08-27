@@ -81,7 +81,12 @@ export default function Slider({ selectedProject }) {
         slides={slides.map((s) => ({ src: s.bg }))}
         plugins={[Zoom]}
         on={{ view: ({ index }) => setCurrent(index) }}
-        controller={{ closeOnBackdropClick: false }} // ✅ only close via X
+        controller={{
+          closeOnBackdropClick: false, // ❌ don’t close on tap outside
+          closeOnPullDown: false,      // ❌ don’t close when swiping down
+          closeOnPullUp: false,        // ❌ don’t close when swiping up
+          // ✅ swipe left/right still works for navigation
+        }}
       />
     </div>
   );
