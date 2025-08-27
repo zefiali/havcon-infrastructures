@@ -82,10 +82,13 @@ export default function Slider({ selectedProject }) {
         plugins={[Zoom]}
         on={{ view: ({ index }) => setCurrent(index) }}
         controller={{
-          closeOnBackdropClick: false, // ❌ don’t close on tap outside
-          closeOnPullDown: false,      // ❌ don’t close when swiping down
-          closeOnPullUp: false,        // ❌ don’t close when swiping up
-          // ✅ swipe left/right still works for navigation
+          closeOnBackdropClick: false, // don’t close on clicking outside
+          closeOnPullDown: false,      // don’t close on mobile pull down
+          closeOnPullUp: false,        // don’t close on pull up
+          closeOnTap: false,           // don’t close on tap (mobile single tap)
+          closeOnSwipeUp: false,       // prevent closing on swipe up
+          closeOnSwipeDown: false,     // prevent closing on swipe down
+          closeOnEsc: false            // disable ESC key close too
         }}
       />
     </div>
