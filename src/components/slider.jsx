@@ -29,16 +29,6 @@ export default function Slider({ selectedProject }) {
   const nextSlide = () => setCurrent((p) => (p + 1) % slides.length);
   const prevSlide = () => setCurrent((p) => (p - 1 + slides.length) % slides.length);
 
-  // PhotoSwipe options — disable single-tap / vertical drag close so dialog isn't affected.
-  const photoswipeOptions = {
-    clickToCloseNonZoomable: false,
-    closeOnScroll: false,
-    closeOnVerticalDrag: false,
-    clickToClose: false,
-    pinchToClose: false,
-    // allowPanToNext: true  // default is usually fine
-  };
-
   return (
     <Gallery>
       <div className="relative w-full max-w-4xl mx-auto overflow-hidden h-64 lg:h-96 mt-10 rounded-lg shadow-lg">
@@ -55,31 +45,50 @@ export default function Slider({ selectedProject }) {
               <Item
                 original={slide.bg}
                 thumbnail={slide.bg}
-                width={1200}
-                height={800}
+                width={1600}
+                height={900}
               >
                 {({ ref, open }) => (
-                  <Image
-                    ref={ref}
-                    src={slide.bg}
-                    alt={`Slide ${index + 1}`}
-                    width={700}
-                    height={400}
-                    className="cursor-pointer object-cover rounded-lg"
+                  <div
+                    className="relative w-full h-full group cursor-zoom-in"
                     onClick={(e) => {
-                      // stop event bubbling to parent dialog + ensure slider index is synced
                       e.stopPropagation();
-                      setCurrent(index); // sync slider index
-                      open(); // open PhotoSwipe
+                      setCurrent(index);
+                      open();
                     }}
-                  />
+                  >
+                    <Image
+                      ref={ref}
+                      src={slide.bg}
+                      alt={`Slide ${index + 1}`}
+                      fill
+                      className="object-cover rounded-lg"
+                    />
+                    {/* Zoom icon on hover */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/30 rounded-lg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-12 w-12 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 )}
               </Item>
             </div>
           ))}
         </div>
 
-        {/* slider arrows (main slider) */}
+        {/* slider arrows */}
         <button
           onClick={(e) => {
             e.stopPropagation();
