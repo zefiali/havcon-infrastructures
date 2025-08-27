@@ -17,8 +17,11 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
   if (!selectedProject) return null;
 
   return (
-    <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+    <Dialog open={!!selectedProject} onOpenChange={(open) => { if (!open) setSelectedProject(null); }}>
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto" onInteractOutside={(e) => e.preventDefault()}
+        onEscapeKeyDown={(e) => {
+          e.preventDefault();
+        }}>
         <div className="space-y-6">
           <DialogHeader>
             <div className="flex items-start justify-between">
@@ -31,7 +34,7 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
                 </DialogTitle>
                 {/* Description */}
                 <p className="text-gray-600">
-                    {selectedProject.fullDescription}
+                  {selectedProject.fullDescription}
                 </p>
               </div>
             </div>
@@ -39,7 +42,7 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
 
           {/* Project Image */}
           <div className="relative overflow-hidden rounded-lg">
-            <Slider selectedProject={selectedProject}/>
+            <Slider selectedProject={selectedProject} />
           </div>
 
           {/* Info */}
