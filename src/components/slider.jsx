@@ -31,16 +31,16 @@ export default function Slider({ selectedProject }) {
 
   // PhotoSwipe options — disable single-tap / vertical drag close so dialog isn't affected.
   const photoswipeOptions = {
-    clickToCloseNonZoomable: false, // don't close if image not zoomable
-    closeOnScroll: false,           // prevent accidental scroll-close
-    closeOnVerticalDrag: false,     // stops swipe-down-to-close
-    pinchToClose: false,            // stops pinch-to-close
-    allowPanToNext: true,           // allow swipe to next image
-    wheelToZoom: true
+    clickToCloseNonZoomable: false,
+    closeOnScroll: false,
+    closeOnVerticalDrag: false,
+    clickToClose: false,
+    pinchToClose: false,
+    // allowPanToNext: true  // default is usually fine
   };
 
   return (
-    <Gallery options={photoswipeOptions}>
+    <Gallery>
       <div className="relative w-full max-w-4xl mx-auto overflow-hidden h-64 lg:h-96 mt-10 rounded-lg shadow-lg">
         {/* Slider track */}
         <div
