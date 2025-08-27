@@ -81,6 +81,7 @@ export default function Slider({ selectedProject }) {
         slides={slides.map((s) => ({ src: s.bg }))}
         plugins={[Zoom]}
         on={{ view: ({ index }) => setCurrent(index) }}
+        controller={{ closeOnBackdropClick: false }} // ✅ only close via X
       />
     </div>
   );
