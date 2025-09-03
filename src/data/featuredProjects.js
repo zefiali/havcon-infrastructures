@@ -64,7 +64,7 @@ export const featuredProjects = [
       title: "Commercial Building",
       category: "Current Projects",
       description:
-        "Construction of 54 shop units on a turnkey basis, covering all civil, structural, electrical, and finishing works. Scope includes end-to-end execution from design to handover, ready for operational use.",
+        "Turnkey development of 54 shop units, including civil, structural, electrical, and finishing works. Scope covers complete execution from design through construction to final handover, ensuring operational spaces ready for immediate use with strong emphasis on quality and timely delivery.",
       fullDescription:
         "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
       image: "./ProjectImgs/Champaba/main.jpg",
@@ -160,7 +160,7 @@ export const featuredProjects = [
         "Flexible project management",
       ],
       testimonial: {
-        text: "We sincerely admire the team’s unwavering commitment to safety and quality. Their expertise in coordinating complex projects with multiple agencies and achieving timely completion was truly commendable.",
+        text: "We admire the team’s strong commitment to safety and quality. Their expertise managing complex projects with multiple agencies and ensuring timely delivery was commendable.",
         author: "Mr. Kaiz Nandolia",
         position: "Managing Director, Aeiden Industries",
         rating: 5,
@@ -233,7 +233,7 @@ export const AllProjects = [
       title: "Commercial Building",
       category: "Current Projects",
       description:
-        "Construction of 54 shop units on a turnkey basis, covering all civil, structural, electrical, and finishing works. Scope includes end-to-end execution from design to handover, ready for operational use.",
+        "Turnkey development of 54 shop units, including civil, structural, electrical, and finishing works. Scope covers complete execution from design through construction to final handover, ensuring operational spaces ready for immediate use with strong emphasis on quality and timely delivery.",
       fullDescription:
         "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
       image: "../ProjectImgs/Champaba/main.jpg",
@@ -327,7 +327,7 @@ export const AllProjects = [
         "Flexible project management",
       ],
       testimonial: {
-        text: "We sincerely admire the team’s unwavering commitment to safety and quality. Their expertise in coordinating complex projects with multiple agencies and achieving timely completion was truly commendable.",
+        text: "We admire the team’s strong commitment to safety and quality. Their expertise managing complex projects with multiple agencies and ensuring timely delivery was commendable.",
         author: "Mr. Kaiz Nandolia",
         position: "Managing Director, Aeiden Industries",
       },
