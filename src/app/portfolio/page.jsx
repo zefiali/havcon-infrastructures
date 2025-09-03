@@ -109,28 +109,7 @@ export default function PortfolioPage() {
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button
-                      size="sm"
-                      className="bg-white/90 text-gray-900 hover:bg-white"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(project.link, "_blank");
-                      }}
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="bg-white/90 text-gray-900 hover:bg-white"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(project.github, "_blank");
-                      }}
-                    >
-                      <Github className="h-4 w-4" />
-                    </Button>
-                  </div>
+                  <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">                  </div>
                   <Badge className="absolute top-4 left-4 bg-red-600 hover:bg-red-800 text-white">
                     {project.category}
                   </Badge>

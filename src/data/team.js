@@ -25,7 +25,7 @@ export const teamMembers = [
     },
     {
         name: "Rutvi Shah",
-        role: "Account Head",
+        role: "Accounts Head",
         image: "../ProjectImgs/team_photo/dummy_avatar.jpg",
         bio: "Account Head delivering results through client management and strategic planning",
     },

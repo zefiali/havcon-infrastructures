@@ -53,9 +53,11 @@ export const featuredProjects = [
         "Temporary access creation"
       ],
       testimonial: {
-        text: "The platform has revolutionized our online education delivery. Student engagement and completion rates have never been higher.",
-        author: "Prof. Amanda Wilson",
-        position: "Director of Online Learning, EduTech Solutions",
+        text: "Despite many difficulties and revisions throughout the project, the team handled the project exceptionally well.",
+        author: "Mr. Mohan Nayar",
+        position: "Managing Trustee, Disable Welfare Trust of India",
+        rating: 5,
+        avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
       },
     },
     {
@@ -77,7 +79,7 @@ export const featuredProjects = [
       sliderImages: [
         {id: 1, bg: './ProjectImgs/Champaba/main.jpg' },
         {id: 2, bg: './ProjectImgs/Champaba/img1.jpg' },
-        {id: 3, bg: './ProjectImgs/Champaba/img2.jpg' },
+        {id: 3, bg: './ProjectImgs/Champaba/img2.png' },
         {id: 4, bg: './ProjectImgs/Champaba/img3.jpg' },
       ],
       results: [
@@ -107,9 +109,11 @@ export const featuredProjects = [
         "Flexible change management",
       ],
       testimonial: {
-        text: "The app has exceeded all our expectations. User engagement is through the roof and retention rates are incredible.",
-        author: "Jessica Park",
-        position: "Product Manager, FitLife Technologies",
+        text: "Their work on our project was outstanding. The team was respectful, professional, and ensured the worksite remained spotless and tidy every single day without fail.",
+        author: "Mr. Ashwin Mangukiya",
+        position: "Owner, Champa Ba Estate-2",
+        rating: 5,
+        avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
       },
     },
     {
@@ -156,10 +160,12 @@ export const featuredProjects = [
         "Flexible project management",
       ],
       testimonial: {
-        text: "The team delivered beyond our expectations. Our platform now handles 10x more traffic with better performance.",
-        author: "Sarah Johnson",
-        position: "CTO, TechStart Inc.",
-      },
+        text: "We sincerely admire the team’s unwavering commitment to safety and quality. Their expertise in coordinating complex projects with multiple agencies and achieving timely completion was truly commendable.",
+        author: "Mr. Kaiz Nandolia",
+        position: "Managing Director, Aeiden Industries",
+        rating: 5,
+        avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
+      },      
     }
 ];
 
@@ -218,9 +224,9 @@ export const AllProjects = [
         "Temporary access creation"
       ],
       testimonial: {
-        text: "The platform has revolutionized our online education delivery. Student engagement and completion rates have never been higher.",
-        author: "Prof. Amanda Wilson",
-        position: "Director of Online Learning, EduTech Solutions",
+        text: "Despite many difficulties and revisions throughout the project, the team handled the project exceptionally well.",
+        author: "Mr. Mohan Nayar",
+        position: "Managing Trustee, Disable Welfare Trust of India",
       },
     },
     {
@@ -242,7 +248,7 @@ export const AllProjects = [
       sliderImages: [
         {id: 1, bg: '../ProjectImgs/Champaba/main.jpg' },
         {id: 2, bg: '../ProjectImgs/Champaba/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Champaba/img2.jpg' },
+        {id: 3, bg: '../ProjectImgs/Champaba/img2.png' },
         {id: 4, bg: '../ProjectImgs/Champaba/img3.jpg' },
       ],
       results: [
@@ -272,9 +278,9 @@ export const AllProjects = [
         "Flexible change management",
       ],
       testimonial: {
-        text: "The app has exceeded all our expectations. User engagement is through the roof and retention rates are incredible.",
-        author: "Jessica Park",
-        position: "Product Manager, FitLife Technologies",
+        text: "Their work on our project was outstanding. The team was respectful, professional, and ensured the worksite remained spotless and tidy every single day without fail.",
+        author: "Mr. Ashwin Mangukiya",
+        position: "Owner, Champa Ba Estate-2",
       },
     },
     {
@@ -321,9 +327,9 @@ export const AllProjects = [
         "Flexible project management",
       ],
       testimonial: {
-        text: "The team delivered beyond our expectations. Our platform now handles 10x more traffic with better performance.",
-        author: "Sarah Johnson",
-        position: "CTO, TechStart Inc.",
+        text: "We sincerely admire the team’s unwavering commitment to safety and quality. Their expertise in coordinating complex projects with multiple agencies and achieving timely completion was truly commendable.",
+        author: "Mr. Kaiz Nandolia",
+        position: "Managing Director, Aeiden Industries",
       },
     },
     {
@@ -371,9 +377,9 @@ export const AllProjects = [
         "Sequenced erection scheduling",
       ],
       testimonial: {
-        text: "This app has revolutionized how our customers interact with their finances. The security and UX are outstanding.",
-        author: "Michael Chen",
-        position: "Head of Digital, SecureBank",
+        text: "",
+        author: "",
+        position: "",
       },
     },
     {
@@ -426,9 +432,9 @@ export const AllProjects = [
         "Strict safety protocols"
       ],
       testimonial: {
-        text: "Our practice efficiency has improved dramatically. The telemedicine feature was a game-changer during the pandemic.",
-        author: "Dr. Emily Rodriguez",
-        position: "Chief Medical Officer, MedCare Solutions",
+        text: "The project had some minor delays, but the quality of finished product is outstanding. They were very responsive to our concern and made sure we were completely satisfied.",
+        author: "Mr. Abid Nandolia",
+        position: "Managing Director, Nandolia Organic Chemicals Pvt. Ltd.",
       },
     },
     {
@@ -481,9 +487,9 @@ export const AllProjects = [
         "Standards-based execution",
       ],
       testimonial: {
-        text: "Our online presence has completely transformed. Orders have doubled and customer satisfaction is at an all-time high.",
-        author: "Marco Rossi",
-        position: "Owner, Bella Vista Restaurants",
+        text: "",
+        author: "",
+        position: "",
       },
     },
     {
@@ -532,9 +538,9 @@ export const AllProjects = [
         "Surface binding treatment",
       ],
       testimonial: {
-        text: "Our new brand identity has transformed how clients perceive us. The website is absolutely stunning and performs incredibly well.",
-        author: "David Kim",
-        position: "CEO, InnovateTech Corp",
+        text: "",
+        author: "",
+        position: "",
       },
     }
 ];

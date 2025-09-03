@@ -178,6 +178,24 @@ export const constructionMachinery = [
     "capacity": "62.5 KVA",
     "yearCondition": "2022 - In good working condition",
     "ownership": "Owned"
+  },
+  {
+    "srNo": 24,
+    "name": "Site Office / Porta Cabin",
+    "units": "2 Nos.",
+    "make": "Sharp Enterprise",
+    "capacity": "20ft x 10ft",
+    "yearCondition": "2022 - In good working condition",
+    "ownership": "Owned"
+  },
+  {
+    "srNo": 25,
+    "name": "Storage Container",
+    "units": "2 Nos.",
+    "make": "Sharp Enterprise",
+    "capacity": "8ft x 10ft",
+    "yearCondition": "2022 - In good working condition",
+    "ownership": "Owned"
   }
 ];
 
@@ -204,6 +222,7 @@ export const labEquipment = [
       { name: "(IV) Vibrating table (1m x 1m), variable frequency & amplitude (British standard)", qty: "1 Nos" },
       { name: "(V) Flow table (as per ISI specs)", qty: "2 Nos" },
       { name: "(VI) Slump cone", qty: "4 Nos" },
+      { name: "(VII) Cube Testing Machine", qty: "3 Nos" },
     ],
   },
 ];

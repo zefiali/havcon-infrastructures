@@ -104,29 +104,17 @@ export default function ProjectDialog({ selectedProject, setSelectedProject }) {
           <div className="bg-gray-50 p-6 rounded-lg">
             <h3 className="text-lg font-semibold mb-3">Client Testimonial</h3>
             <blockquote className="text-gray-600 italic mb-4">
-              &quot;{selectedProject.testimonial.text}&quot;
+              &quot;{selectedProject.testimonial.text.trim() ? selectedProject.testimonial.text.trim() : "No testimonial available."}&quot;
             </blockquote>
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-black rounded-full flex items-center justify-center">
                 <User className="h-5 w-5 text-white" />
               </div>
               <div>
-                <div className="font-semibold">{selectedProject.testimonial.author}</div>
-                <div className="text-sm text-gray-600">{selectedProject.testimonial.position}</div>
+                <div className="font-semibold">{selectedProject.testimonial.author.trim() ? selectedProject.testimonial.author.trim() : "Anonymous"}</div>
+                <div className="text-sm text-gray-600">{selectedProject.testimonial.position.trim() ? selectedProject.testimonial.position.trim() : "Unknown Position"}</div>
               </div>
             </div>
-          </div>
-
-          {/* Actions */}
-          <div className="flex flex-col sm:flex-row gap-3 pt-4">
-            <Button className="bg-red-800 text-white hover:bg-red-600 hover:text-white">
-              <ExternalLink className="h-4 w-4 mr-2" />
-              View Client Website
-            </Button>
-            {/* <Button variant="outline" className="border-gray-300 hover:bg-gray-50">
-              <Github className="h-4 w-4 mr-2" />
-              View Source Code
-            </Button> */}
           </div>
         </div>
       </DialogContent>

@@ -162,24 +162,24 @@ export default function HomePage() {
                 number: counts.projects + ' +',
                 label: "Projects Successfully Completed Across India",
                 description:
-                  "Including RCC buildings, industrial sheds, roads, drainage systems, and turnkey developments.",
+                  "Including RCC buildings, Industrial Sheds, Roads, Drainage systems, and Turnkey developments.",
               },
               {
                 number: counts.clients + ' %',
                 label: "On-Time Project Delivery Rate",
                 description:
-                  "Demonstrating our commitment to deadlines, quality standards, and client satisfaction.",
+                  "Demonstrating our commitment to deadlines, Quality standards, and Client satisfaction.",
               },
               {
                 number: counts.experience,
                 label: "Years of Civil Engineering Excellence",
                 description:
-                  "Providing comprehensive construction solutions across industrial, institutional, and residential sectors since 2012.",
+                  "Providing comprehensive construction solutions across Industrial, Institutional, and Residential sectors since 2012.",
               },
               {
                 number: counts.rating + ' Lakh Sq.M',
                 label: "Build Structures",
-                description: "Covering industrial buildings, commercial complexes, institutional facilities, and infrastructure works.",
+                description: "Covering Industrial buildings, Commercial complexes, Institutional facilities, and Infrastructure works.",
               },
             ].map((stat, index) => (
               <Card
@@ -443,32 +443,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
-            {[
-              {
-                name: "Sarah Johnson",
-                role: "CEO, TechStart",
-                content:
-                  "The team delivered an exceptional website that exceeded our expectations. Our conversion rate increased by 150% within the first month.",
-                rating: 5,
-                avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
-              },
-              {
-                name: "Michael Chen",
-                role: "Founder, GrowthCo",
-                content:
-                  "Professional, creative, and results-driven. They transformed our digital presence and helped us reach new heights.",
-                rating: 5,
-                avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
-              },
-              {
-                name: "Emily Rodriguez",
-                role: "Marketing Director, InnovateLab",
-                content:
-                  "Outstanding work on our mobile app. The user experience is incredible and our customers love it.",
-                rating: 5,
-                avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
-              },
-            ].map((testimonial, index) => (
+            {featuredProjects.map((testimonial, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -483,7 +458,7 @@ export default function HomePage() {
                 <CardContent className="p-8">
                   <div className="space-y-4">
                     <div className="flex items-center space-x-1">
-                      {[...Array(testimonial.rating)].map((_, i) => (
+                      {[...Array(testimonial.testimonial.rating)].map((_, i) => (
                         <Star
                           key={i}
                           className="h-4 w-4 fill-amber-400 text-amber-400"
@@ -491,22 +466,22 @@ export default function HomePage() {
                       ))}
                     </div>
                     <p className="text-gray-600 italic">
-                      &quot;{testimonial.content}&quot;
+                      &quot;{testimonial.testimonial.text}&quot;
                     </p>
                     <div className="flex items-center space-x-3">
                       <figure className="w-12 h-12">
                         <Image
-                          src={testimonial.avatar || "/placeholder.svg"}
-                          alt={testimonial.name}
+                          src={testimonial.testimonial.avatar || "/placeholder.svg"}
+                          alt={testimonial.testimonial.avatar}
                           width={60}
                           height={60}
                           className="rounded-full w-full h-full object-cover"
                         />
                       </figure>
                       <div>
-                        <div className="font-semibold">{testimonial.name}</div>
+                        <div className="font-semibold">{testimonial.testimonial.author}</div>
                         <div className="text-sm text-gray-600">
-                          {testimonial.role}
+                          {testimonial.testimonial.position}
                         </div>
                       </div>
                     </div>
