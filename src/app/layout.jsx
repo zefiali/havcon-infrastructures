@@ -11,11 +11,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   metadataBase: new URL("https://havconinfra.com"), // 👈 non-www preferred
   title: {
-    default: "Havcon Infrastructures | Civil & Industrial Construction Experts",
+    default: "Havcon Infrastructures | ISO 9001:2015 Certified Company",
     template: "%s | Havcon Infrastructures",
   },
   description:
-    "Havcon Infrastructures specializes in RCC works, industrial sheds, flooring, roads, and turnkey civil projects across India. Delivering quality, safety, and timely completion.",
+    "Havcon Infrastructures specializes in RCC works, industrial sheds, flooring, roads, and turnkey civil projects across India, with a strong presence in Vadodara, Halol, Ahmedabad, Ankleshwar, and Bharuch. We are committed to delivering quality, safety, and timely completion.",
   keywords: [
     "civil engineering",
     "infrastructure",
@@ -39,14 +39,14 @@ export const metadata = {
     canonical: "https://havconinfra.com",
   },
   openGraph: {
-    title: "Havcon Infrastructures | Civil Engineering & Construction",
+    title: "Havcon Infrastructures | ISO 9001:2015 Certified Company",
     description:
-      "Trusted civil engineering company for industrial and residential infrastructure.",
+      "Delivering reliable civil engineering solutions for industrial and residential infrastructure in Vadodara, Halol, Ahmedabad, Ankleshwar, and Bharuch.",
     url: "https://havconinfra.com",
     siteName: "Havcon Infrastructures",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://havconinfra.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Havcon Infrastructures",
@@ -59,12 +59,12 @@ export const metadata = {
     card: "summary_large_image",
     site: "@havconinfra",
     creator: "@havconinfra",
-    images: ["/og-image.png"],
+    images: ["https://havconinfra.com/og-image.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "https://havconinfra.com/favicon.ico",
+    shortcut: "https://havconinfra.com/favicon-16x16.png",
+    apple: "https://havconinfra.com/apple-touch-icon.png",
   },
 };
 
