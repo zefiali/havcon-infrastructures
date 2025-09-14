@@ -62,18 +62,6 @@ export default function NotFound() {
                 >
                   About Us
                 </Link>
-                <Link
-                  href="/blog"
-                  className="text-blue-600 hover:text-blue-700 text-sm underline"
-                >
-                  Blog
-                </Link>
-                <Link
-                  href="/pricing"
-                  className="text-blue-600 hover:text-blue-700 text-sm underline"
-                >
-                  Pricing
-                </Link>
               </div>
             </div>
           </CardContent>
