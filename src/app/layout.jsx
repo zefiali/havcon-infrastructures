@@ -23,7 +23,17 @@ export const metadata = {
     "RCC works",
     "industrial sheds",
     "roads",
+    "Vadodara best construction company",
+    "turnkey projects",
+    "Structural Steel",
+    "Concrete Pads",
+    "RCC Frame Structures",
+    "Pre-engineered Buildings",
     "Havcon Infrastructures",
+    "Havcon Infra",
+    "Havcon",
+    "havconinfra",
+    "Architectural Civil Works"
   ],
   alternates: {
     canonical: "https://havconinfra.com",
@@ -36,7 +46,7 @@ export const metadata = {
     siteName: "Havcon Infrastructures",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Havcon Infrastructures",
@@ -49,7 +59,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@havconinfra",
     creator: "@havconinfra",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -69,6 +79,55 @@ export default function RootLayout({ children }) {
     sameAs: [
     ],
   };
+
+  const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Havcon Infrastructures",
+  "url": "https://havconinfra.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://havconinfra.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://havconinfra.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "item": "https://havconinfra.com/about"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Services",
+      "item": "https://havconinfra.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Portfolio",
+      "item": "https://havconinfra.com/portfolio"
+    },    
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Contact",
+      "item": "https://havconinfra.com/contact"
+    }
+  ]
+};
 
   return (
     <html lang="en">
@@ -90,6 +149,19 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
+        {/* Website Schema */}
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+
+      {/* Breadcrumb Schema */}
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       </body>
     </html>
   );
