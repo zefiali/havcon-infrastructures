@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://havconinfra.com
+
+# Sitemaps
+Sitemap: https://havconinfra.com/sitemap.xml

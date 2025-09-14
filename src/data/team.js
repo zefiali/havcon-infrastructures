@@ -36,7 +36,7 @@ export const teamMembers = [
         bio: "Purchase Head managing procurement and supplier relationships.",
     },
     {
-        name: "Nafiz Rana",
+        name: "Nafis Rana",
         role: "Jr. Engineer",
         image: "../ProjectImgs/team_photo/dummy_avatar.jpg",
         bio: "Junior Engineer supporting project delivery and execution.",

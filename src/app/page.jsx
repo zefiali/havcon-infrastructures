@@ -16,6 +16,7 @@ import { featuredProjects } from "@/data/featuredProjects";
 import ProjectDialog from "@/components/projectsDialog";
 import { clientLogos, jobClientLogos } from "@/data/client_logos";
 import { services } from "@/data/services";
+import Script from "next/script";
 
 export default function HomePage() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -28,6 +29,18 @@ export default function HomePage() {
   });
 
   const sectionRef = useRef(null);
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Havcon Infrastructures",
+    "url": "https://havcon-infrastructures.com",
+    "logo": "https://havcon-infrastructures.com/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/havcon-infrastructures/",
+      "https://twitter.com/havconinfra"
+    ]
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -80,6 +93,11 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
+    <Script
+        id="schema-org"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       {/* Hero Section */}
       <motion.section className="relative min-h-screen flex overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 py-32 lg:py-32"
         initial={{ opacity: 0 }}
