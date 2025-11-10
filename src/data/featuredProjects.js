@@ -361,7 +361,7 @@ export const AllProjects = [
       github: "#",
       duration: "₹350 lakhs",
       teamSize: "12 developers",
-      clientName: "Grapehen Composites",
+      clientName: "Grapehene Composites",
       location: "Savli, Gujarat",
       consultant: "PMC",
       challenges: [

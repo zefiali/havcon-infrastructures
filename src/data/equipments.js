@@ -45,7 +45,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 9,
+    "srNo": 6,
     "name": "Bar Bending Machine (32 mm) with Planetary Gearbox",
     "units": "2 Nos.",
     "make": "Smit Corporation / Sona Construction Technologies Pvt. Ltd. - Model: GUTE TW42",
@@ -54,7 +54,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 10,
+    "srNo": 7,
     "name": "Bar Cutting Machine (40 mm)",
     "units": "1 Nos.",
     "make": "Smit Corporation - Model: GQ50",
@@ -63,7 +63,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 11,
+    "srNo": 8,
     "name": "Vibrators with 3 HP Petrol / Diesel Engine",
     "units": "3 Nos.",
     "make": "Various",
@@ -72,7 +72,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 12,
+    "srNo": 9,
     "name": "Vibrators with 2 HP Single Phase Electric Motor",
     "units": "4 Nos.",
     "make": "Various",
@@ -81,7 +81,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 13,
+    "srNo": 10,
     "name": "Needle Vibrators (Portable)",
     "units": "10 Nos.",
     "make": "Various",
@@ -90,7 +90,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 14,
+    "srNo": 11,
     "name": "Weighing Machine",
     "units": "2 Nos.",
     "make": "Electronic",
@@ -99,7 +99,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 15,
+    "srNo": 12,
     "name": "Shuttering Plates",
     "units": "12000 Sq.ft.",
     "make": "Steel",
@@ -108,7 +108,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 16,
+    "srNo": 13,
     "name": "Adjustable Props",
     "units": "1500 Nos.",
     "make": "Steel",
@@ -117,7 +117,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 17,
+    "srNo": 14,
     "name": "Steel Scaffolding",
     "units": "2500 Sq.ft.",
     "make": "Steel",
@@ -126,7 +126,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 18,
+    "srNo": 15,
     "name": "Survey Instruments (Auto Level, Total Station)",
     "units": "3 Nos.",
     "make": "Leica / Bosch",
@@ -135,7 +135,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 19,
+    "srNo": 16,
     "name": "Dewatering Pump (Diesel Engine Driven)",
     "units": "4 Nos.",
     "make": "V-Guard",
@@ -144,7 +144,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 20,
+    "srNo": 17,
     "name": "Water Tank",
     "units": "5 Nos.",
     "make": "Syntex",
@@ -153,7 +153,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 21,
+    "srNo": 18,
     "name": "Tractor with Trolley",
     "units": "1 Nos.",
     "make": "Mahindra",
@@ -162,7 +162,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 22,
+    "srNo": 19,
     "name": "Pickup Vehicle",
     "units": "1 Nos.",
     "make": "Mahindra Bolero",
@@ -171,7 +171,7 @@ export const constructionMachinery = [
     "ownership": "Leased"
   },
   {
-    "srNo": 23,
+    "srNo": 20,
     "name": "DG Set",
     "units": "1 Nos.",
     "make": "Kirloskar",
@@ -180,7 +180,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 24,
+    "srNo": 21,
     "name": "Site Office / Porta Cabin",
     "units": "2 Nos.",
     "make": "Sharp Enterprise",
@@ -189,7 +189,7 @@ export const constructionMachinery = [
     "ownership": "Owned"
   },
   {
-    "srNo": 25,
+    "srNo": 22,
     "name": "Storage Container",
     "units": "2 Nos.",
     "make": "Sharp Enterprise",
