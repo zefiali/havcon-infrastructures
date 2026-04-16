@@ -288,44 +288,7 @@ export default function ContactPage() {
                     </div>
                   </CardContent>
                 </Card>
-
-                <Card className="border-0 bg-white/80 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-black rounded-xl flex items-center justify-center">
-                        <MessageCircle className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="space-y-1">
-                        <h3 className="font-semibold">Live Chat</h3>
-                        <p className="text-gray-600">
-                          Available on our website
-                        </p>
-                        <p className="text-sm text-gray-500">
-                          Mon-Sat, 9AM-7PM IST
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
-
-              <Card className="border-0 bg-gradient-to-br from-red-500 to-black text-white">
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="h-5 w-5" />
-                      <h3 className="font-semibold">Free Consultation</h3>
-                    </div>
-                    <p className="text-blue-100">
-                      Schedule a free 30-minute consultation to discuss your
-                      project and get expert advice.
-                    </p>
-                    <Button className="border-white bg-red-600 text-white hover:bg-red-400 hover:text-white">
-                      Book Consultation
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </motion.div>
         </div>

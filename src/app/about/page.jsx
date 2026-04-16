@@ -3,9 +3,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import {
   ShieldUser,
   ArrowRight,
@@ -16,28 +17,31 @@ import {
 import { teamMembers } from "@/data/team";
 
 export default function AboutPage() {
+  const [zoomImage, setZoomImage] = useState(null);
+  const [zoomStyle, setZoomStyle] = useState({ transform: "scale(1)" });
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
       {/* Hero Section */}
       <motion.section className="relative py-10 lg:py-10 bg-gradient-to-br from-blue-50 via-white to-purple-50"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="absolute inset-0 bg-gradient-to-br from-black via-red-600 to-black opacity-90"></div>
             <div className="absolute inset-0 bg-[url('/banner_3.jpg')] bg-cover bg-center mix-blend-overlay"></div>
             <motion.div className="relative space-y-8"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}>
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}>
               <div className="space-y-4 text-white">
                 <Badge className="bg-red-600 hover:bg-red-800">About Us</Badge>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">  
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                   We&apos;re Passionate About
-                  Crafting Resilient Infrastructure             
+                  Crafting Resilient Infrastructure
                 </h1>
-                <br/>
+                <br />
                 <p className="text-xl font-bold max-w-3xl mx-auto">
                   Havcon Infrastructures, established in 2022 by Civil Engineer Mr. Saurin Shah, reflects 15 years of field expertise. We specialize in delivering reliable, ethical, and cost-effective construction solutions, ensuring structural durability, design excellence, and complete client satisfaction across residential, commercial, and industrial projects in Gujarat
                 </p>
@@ -49,9 +53,9 @@ export default function AboutPage() {
 
       {/* Mission Section */}
       <motion.section className="py-10 lg:py-10 bg-gradient-to-br from-gray-50 to-slate-100"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <motion.div className="text-center space-y-4 mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -71,9 +75,9 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <motion.section className="py-10 lg:py-10"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <motion.div className="text-center space-y-4 mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -86,7 +90,7 @@ export default function AboutPage() {
             </h2>
           </motion.div>
           <motion.div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
-          initial={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}>
@@ -123,31 +127,135 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-              <Card  
-                key={index}              
-                className="text-center border-0 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                <CardContent className="p-8">
-                  <div className="space-y-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mx-auto">
-                      <value.icon className="h-8 w-8 text-white" />
+                <Card
+                  key={index}
+                  className="text-center border-0 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
+                >
+                  <CardContent className="p-8">
+                    <div className="space-y-4">
+                      <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mx-auto">
+                        <value.icon className="h-8 w-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-semibold">{value.title}</h3>
+                      <p className="text-gray-600">{value.description}</p>
                     </div>
-                    <h3 className="text-xl font-semibold">{value.title}</h3>
-                    <p className="text-gray-600">{value.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </motion.section>
 
+      {/* Certification Section */}
+      <motion.section
+        className="py-10 lg:py-10 bg-gradient-to-br from-gray-50 to-slate-100"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="mx-auto px-4 md:px-20">
+
+          {/* Heading */}
+          <motion.div
+            className="text-center space-y-4 mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Badge className="bg-red-600 hover:bg-red-800 text-white">
+              Certifications
+            </Badge>
+
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+              Certified for Quality & Safety
+            </h2>
+
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our certifications reflect our commitment to international standards in
+              quality management, occupational safety, and construction excellence.
+            </p>
+          </motion.div>
+
+          {/* Grid - 2 per row */}
+          <div className="grid gap-6 justify-center 
+    [grid-template-columns:repeat(auto-fit,minmax(260px,300px))]">
+
+            {[
+              {
+                img: "/certificates/iso-9001.jpg",
+                title: "ISO 9001:2015",
+              },
+              {
+                img: "/certificates/iso-45001.jpg",
+                title: "ISO 45001:2018",
+              },
+            ].map((cert, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="flex justify-center"
+              >
+                {/* Frame Effect */}
+                <div className="bg-gradient-to-br from-gray-400 to-gray-700 p-3 shadow-2xl">
+                  <div className="bg-white p-2 shadow-inner">
+                    <div
+                      className="relative w-[260px] h-[360px] cursor-pointer"
+                      onClick={() => setZoomImage(cert.img)}
+                    >
+                      <Image
+                        src={cert.img}
+                        alt={cert.title}
+                        fill
+                        className="object-contain transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+
+          </div>
+          {zoomImage && (
+            <div
+              className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+              onClick={() => setZoomImage(null)}
+            >
+              {/* Close Button */}
+              <button
+                className="absolute top-5 right-5 text-white text-3xl font-bold"
+                onClick={() => setZoomImage(null)}
+              >
+                ✕
+              </button>
+
+              {/* Image */}
+              <div
+                className="relative w-[95%] h-[90%]"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Image
+                  src={zoomImage}
+                  alt="Certificate"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </motion.section>
+
       {/* Team Section */}
       <motion.section className="py-10 lg:py-10 bg-gradient-to-br from-gray-50 to-slate-100"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}>
         <div className="mx-auto px-4 md:px-20">
           <motion.div className="text-center space-y-4 mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -175,18 +283,18 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-              <Card
-                key={index}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-0 cursor-pointer"
-              >
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-red-600 font-medium mb-2">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </CardContent>
-              </Card>
+                <Card
+                  key={index}
+                  className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-0 cursor-pointer"
+                >
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                    <p className="text-red-600 font-medium mb-2">
+                      {member.role}
+                    </p>
+                    <p className="text-gray-600 text-sm">{member.bio}</p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
@@ -202,9 +310,9 @@ export default function AboutPage() {
           <div className="text-center space-y-8 text-white">
             <motion.div className="text-center space-y-8 text-white"
               initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}>
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                 Ready to Work Together?
               </h2>

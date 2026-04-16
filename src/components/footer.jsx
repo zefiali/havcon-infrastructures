@@ -39,8 +39,8 @@ export function Footer() {
                 />
                 </span>
               </div>
-              <span className="text-black font-bold text-xl"><span className="text-red-600">Havcon</span> Infrastructures
-                <p className="text-xs text-red-800 font-semibold">ISO 9001:2015 Certified Company</p>
+              <span className="text-black font-bold text-xl"><span className="text-red-800">Havcon</span> Infrastructures
+                <p className="text-[0.625rem] text-red-800 font-semibold">ISO 9001:2015 | ISO 45001:2018 Certified Company</p>
               </span>
             </div>
             <p className="text-white max-w-sm">
