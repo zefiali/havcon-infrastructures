@@ -37,7 +37,7 @@ export function Header() {
             </div>
             <span className="font-bold text-xl">
               <span className="text-red-600">Havcon</span> Infrastructures
-              <p className="text-[0.625rem] text-red-600 font-semibold">ISO 9001:2015 | ISO 45001:2018 Certified Company</p>
+              <p className="text-[0.625rem] text-red-600 font-semibold">ISO 9001:2015 | ISO 45001:2018 Certified</p>
             </span>
           </Link>
 
