@@ -3,7 +3,7 @@ export const featuredProjects = [
     title: "Industrial Power Plant Infrastructure",
     category: "Current Projects",
     description:
-      "Specialized industrial power plant infrastructure development encompassing RCC roads, briquette storage, boiler house support, silo foundations, chimney base, conveyor systems, control room, drainage, and dust extraction with complete technical integration.Industrial power plant infrastructure development encompassing RCC roads, briquette storage, boiler house support, silo foundations, chimney base, conveyor systems, control room, drainage, and dust extraction.",
+      "Industrial power plant infrastructure development encompassing RCC roads, briquette storage, boiler house support, silo foundations, chimney base, conveyor systems, control room, drainage, and dust extraction.",
     fullDescription:
       "The project encompasses the complete development of industrial power plant infrastructure with multiple specialized structures and systems. Major components include construction of RCC access and internal roads for heavy equipment movement, a 30-meter by 25-meter briquette godown shed for fuel storage, Pre-Engineered Building (PEB) support structure for the boiler house, foundations and buildings for ESP (Electrostatic Precipitator) and ash collection silos, chimney foundation designed for industrial-grade thermal loads, integrated conveyor systems for material handling, control panel room for plant operations, comprehensive site drainage network for environmental compliance, and a dust extraction system ensuring air quality standards. The project integrates civil, structural, mechanical, and environmental engineering disciplines.",
     image: "./ProjectImgs/Sterling/main.jpg",
