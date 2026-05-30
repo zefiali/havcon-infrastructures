@@ -1,552 +1,607 @@
 export const featuredProjects = [
-    {
-      title: "India's 1st Old Age Homes",
-      category: "Current Projects",
-      description:
-        "Construction of India’s first old age home for disabled individuals, featuring two purpose-built residential blocks measuring 75m x 15m x 7m and 29m x 20m x 7.5m. Designed with universal accessibility, the facility includes structural, finishing, and essential service works.",
-      fullDescription:
-        "The project entails the construction of India’s first old age home specifically designed for disabled individuals, with two building blocks measuring 75 meters x 15 meters x 7 meters and 29 meters x 20 meters x 7.5 meters. The facility is being developed to offer a safe, accessible, and comfortable residential environment for elderly people with physical and mobility challenges. Both structures are constructed using durable materials with a focus on barrier-free access, including ramps, wide doorways, anti-skid flooring, and accessible toilets. The buildings feature residential rooms, medical support areas, dining and recreation zones, and staff quarters, all aligned with inclusive design principles.",
-      image: "./ProjectImgs/Png/main.jpg",
-      technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "AWS S3",
-        "WebRTC",
-        "Socket.io",
-      ],
-      sliderImages: [
-        {id: 1, bg: './ProjectImgs/Png/main.jpg' },
-        {id: 2, bg: './ProjectImgs/Png/img1.jpg' },
-        {id: 3, bg: './ProjectImgs/Png/img2.jpg' },
-        {id: 4, bg: './ProjectImgs/Png/img3.jpg' },
-        {id: 5, bg: './ProjectImgs/Png/img4.jpg' },
-        {id: 6, bg: './ProjectImgs/Png/img5.jpg' },
-      ],
-      results: [
-        "Two accessible residential blocks constructed as per design",
-        "Universal design features integrated throughout both buildings",
-        "Barrier-free environment achieved for elderly and disabled residents",
-        "Fully accessible rooms, toilets, and circulation spaces delivered",
-        "Civil, electrical, and plumbing works executed successfully",
-        "Safe, durable, and senior-friendly infrastructure established",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹1000 lakhs",
-      teamSize: "14 developers",
-      clientName: "Pradhu Nu Ghar",
-      location: "Jhagadia, Bharuch",
-      consultant: "-",
-      challenges: [
-        "Mobility limitations of residents",
-        "Complex space planning",
-        "Compliance with disability norms",
-        "Optimized circulation width",
-        "Road accessibility issues"
-      ],
-      solutions: [
-        "Barrier-free infrastructure",
-        "User-centric layout",
-        "Regulatory code adherence",
-        "AI-powered assessment engine",
-        "Temporary access creation"
-      ],
-      testimonial: {
-        text: "Despite many difficulties and revisions throughout the project, the team handled the project exceptionally well.",
-        author: "Mr. Mohan Nayar",
-        position: "Managing Trustee, Disable Welfare Trust of India",
-        rating: 5,
-        avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
-      },
+  {
+    title: "Industrial Power Plant Infrastructure",
+    category: "Current Projects",
+    description:
+      "Specialized industrial power plant infrastructure development encompassing RCC roads, briquette storage, boiler house support, silo foundations, chimney base, conveyor systems, control room, drainage, and dust extraction with complete technical integration.Industrial power plant infrastructure development encompassing RCC roads, briquette storage, boiler house support, silo foundations, chimney base, conveyor systems, control room, drainage, and dust extraction.",
+    fullDescription:
+      "The project encompasses the complete development of industrial power plant infrastructure with multiple specialized structures and systems. Major components include construction of RCC access and internal roads for heavy equipment movement, a 30-meter by 25-meter briquette godown shed for fuel storage, Pre-Engineered Building (PEB) support structure for the boiler house, foundations and buildings for ESP (Electrostatic Precipitator) and ash collection silos, chimney foundation designed for industrial-grade thermal loads, integrated conveyor systems for material handling, control panel room for plant operations, comprehensive site drainage network for environmental compliance, and a dust extraction system ensuring air quality standards. The project integrates civil, structural, mechanical, and environmental engineering disciplines.",
+    image: "./ProjectImgs/Sterling/main.jpg",
+    technologies: [
+    ],
+    sliderImages: [
+      { id: 1, bg: './ProjectImgs/Sterling/main.jpg' }
+    ],
+    results: [
+      "RCC roads constructed for safe heavy equipment access",
+      "30m × 25m briquette storage facility completed",
+      "Boiler house PEB support structure installed",
+      "Silo foundations and buildings for ESP and ash collection",
+      "Industrial-grade chimney foundation completed",
+      "Conveyor systems integrated for material flow",
+      "Control panel room installed and operational",
+      "Site drainage system ensuring environmental compliance",
+      "Dust extraction system operational",
+      "All structures meet industrial safety and quality standards"
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹400 lakhs",
+    teamSize: "18 engineers",
+    clientName: "Industrial Power Solutions",
+    location: "Gujarat",
+    consultant: "-",
+    challenges: [
+      "Complex multi-component coordination",
+      "Precision foundation requirements",
+      "Environmental compliance demands",
+      "Equipment installation sequencing",
+      "Safety protocols for thermal equipment"
+    ],
+    solutions: [
+      "Integrated project management system",
+      "Geotechnical precision planning",
+      "Environmental impact mitigation",
+      "Phased construction scheduling",
+      "Specialized safety certification"
+    ],
+    testimonial: {
+      text: "The team successfully coordinated multiple complex components across the power plant infrastructure. Their attention to detail and commitment to environmental standards was exceptional.",
+      author: "Plant Operations Manager",
+      position: "Industrial Power Solutions",
+      rating: 5,
+      avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
     },
-    {
-      title: "Commercial Building",
-      category: "Current Projects",
-      description:
-        "Turnkey development of 54 shop units, including civil, structural, electrical, and finishing works. Scope covers complete execution from design through construction to final handover, ensuring operational spaces ready for immediate use with strong emphasis on quality and timely delivery.",
-      fullDescription:
-        "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
-      image: "./ProjectImgs/Champaba/main.jpg",
-      technologies: [
-        "Flutter",
-        "Firebase",
-        "Google Fit API",
-        "Apple HealthKit",
-        "ML Kit",
-        "Cloud Functions",
-      ],
-      sliderImages: [
-        {id: 1, bg: './ProjectImgs/Champaba/main.jpg' },
-        {id: 2, bg: './ProjectImgs/Champaba/img1.jpg' },
-        {id: 3, bg: './ProjectImgs/Champaba/img2.png' },
-        {id: 4, bg: './ProjectImgs/Champaba/img3.jpg' },
-      ],
-      results: [
-        "54 fully functional shop units on turnkey basis",
-        "Infrastructure and utilities integrated into all 54 units",
-        "Efficient space utilization for maximum commercial functionality",
-        "All units equipped with essential amenities and connections",
-        "Civil, electrical, and finishing works executed as per schedule"
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹4000 lakhs",
-      teamSize: "10 developers",
-      clientName: "Champa Ba Estate-2",
-      location: "Savli, Vadodara",
-      consultant: "-",
-      challenges: [
-        "Varying shop dimensions",
-        "Resource coordination issues",
-        "Quality control concerns",
-        "Client design changes",
-      ],
-      solutions: [
-        "Modular design approach",
-        "Centralized project management",
-        "On-site supervision checks",
-        "Flexible change management",
-      ],
-      testimonial: {
-        text: "Their work on our project was outstanding. The team was respectful, professional, and ensured the worksite remained spotless and tidy every single day without fail.",
-        author: "Mr. Ashwin Mangukiya",
-        position: "Owner, Champa Ba Estate-2",
-        rating: 5,
-        avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
-      },
+  },
+  {
+    title: "Commercial Building",
+    category: "Current Projects",
+    description:
+      "Turnkey development of 54 shop units, including civil, structural, electrical, and finishing works. Scope covers complete execution from design through construction to final handover, ensuring operational spaces ready for immediate use with strong emphasis on quality and timely delivery.",
+    fullDescription:
+      "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
+    image: "./ProjectImgs/Champaba/main.jpg",
+    technologies: [
+      "Flutter",
+      "Firebase",
+      "Google Fit API",
+      "Apple HealthKit",
+      "ML Kit",
+      "Cloud Functions",
+    ],
+    sliderImages: [
+      { id: 1, bg: './ProjectImgs/Champaba/main.jpg' },
+      { id: 2, bg: './ProjectImgs/Champaba/img1.jpg' },
+      { id: 3, bg: './ProjectImgs/Champaba/img2.png' },
+      { id: 4, bg: './ProjectImgs/Champaba/img3.jpg' },
+    ],
+    results: [
+      "54 fully functional shop units on turnkey basis",
+      "Infrastructure and utilities integrated into all 54 units",
+      "Efficient space utilization for maximum commercial functionality",
+      "All units equipped with essential amenities and connections",
+      "Civil, electrical, and finishing works executed as per schedule"
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹4000 lakhs",
+    teamSize: "10 developers",
+    clientName: "Champa Ba Estate-2",
+    location: "Savli, Vadodara",
+    consultant: "-",
+    challenges: [
+      "Varying shop dimensions",
+      "Resource coordination issues",
+      "Quality control concerns",
+      "Client design changes",
+    ],
+    solutions: [
+      "Modular design approach",
+      "Centralized project management",
+      "On-site supervision checks",
+      "Flexible change management",
+    ],
+    testimonial: {
+      text: "Their work on our project was outstanding. The team was respectful, professional, and ensured the worksite remained spotless and tidy every single day without fail.",
+      author: "Mr. Ashwin Mangukiya",
+      position: "Owner, Champa Ba Estate-2",
+      rating: 5,
+      avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
     },
-    {
-      title: "Plant Building & Ancillary work",
-      category: "Completed Projects",
-      description:
-        "Construction of an industrial plant building measuring 30m x 15m x 24m, including structural, roofing, and flooring works suitable for heavy equipment and operations. Scope also includes all ancillary works such as utility connections, access infrastructure, and site development.",
-      fullDescription:
-        "The scope of work involves the construction of a main plant building with dimensions of 30 meters (length) x 15 meters (width) x 24 meters (height). The structure will be designed to accommodate industrial equipment and processes, with considerations for load-bearing capacity, ventilation, and operational efficiency.",
-      image: "./ProjectImgs/Aeidan/main.jpeg",
-      technologies: [
-      ],
-      sliderImages: [
-        {id: 1, bg: './ProjectImgs/Aeidan/main.jpeg' },
-        {id: 2, bg: './ProjectImgs/Aeidan/img1.jpeg' },
-        {id: 3, bg: './ProjectImgs/Aeidan/img2.jpeg' },
-        {id: 4, bg: './ProjectImgs/Aeidan/img3.jpeg' },
-        {id: 5, bg: './ProjectImgs/Aeidan/img4.jpeg' },
-        {id: 6, bg: './ProjectImgs/Aeidan/img5.jpeg' },
-      ],
-      results: [
-        "Completion of 30m x 15m x 24m industrial plant building within planned schedule and specifications.",
-        "Structural stability achieved with heavy-duty foundations suitable for industrial equipment.",
-        "Development of ancillary facilities like control rooms, storage areas, and service platforms.",
-        "Compliance with safety and environmental norms ensured throughout construction.",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹500 lakhs",
-      teamSize: "2 Civil Engg",
-      clientName: "Aeidan Industries",
-      location: "Jaghadiya, Gujarat",
-      consultant: "PMC",
-      challenges: [
-        "Limited site access",
-        "Safety compliance issues",
-        "Labor availability constraints",
-        "Design modifications mid-project",
-      ],
-      solutions: [
-        "Optimized logistics planning",
-        "Strict safety protocols",
-        "Skilled labor outsourcing",
-        "Flexible project management",
-      ],
-      testimonial: {
-        text: "We admire the team’s strong commitment to safety and quality. Their expertise managing complex projects with multiple agencies and ensuring timely delivery was commendable.",
-        author: "Mr. Kaiz Nandolia",
-        position: "Managing Director, Aeiden Industries",
-        rating: 5,
-        avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
-      },      
-    }
+  },
+  {
+    title: "India's 1st Old Age Homes",
+    category: "Current Projects",
+    description:
+      "Construction of India’s first old age home for disabled individuals, featuring two purpose-built residential blocks measuring 75m x 15m x 7m and 29m x 20m x 7.5m. Designed with universal accessibility, the facility includes structural, finishing, and essential service works.",
+    fullDescription:
+      "The project entails the construction of India’s first old age home specifically designed for disabled individuals, with two building blocks measuring 75 meters x 15 meters x 7 meters and 29 meters x 20 meters x 7.5 meters. The facility is being developed to offer a safe, accessible, and comfortable residential environment for elderly people with physical and mobility challenges. Both structures are constructed using durable materials with a focus on barrier-free access, including ramps, wide doorways, anti-skid flooring, and accessible toilets. The buildings feature residential rooms, medical support areas, dining and recreation zones, and staff quarters, all aligned with inclusive design principles.",
+    image: "./ProjectImgs/Png/main.jpg",
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "AWS S3",
+      "WebRTC",
+      "Socket.io",
+    ],
+    sliderImages: [
+      { id: 1, bg: './ProjectImgs/Png/main.jpg' },
+      { id: 2, bg: './ProjectImgs/Png/img1.jpg' },
+      { id: 3, bg: './ProjectImgs/Png/img2.jpg' },
+      { id: 4, bg: './ProjectImgs/Png/img3.jpg' },
+      { id: 5, bg: './ProjectImgs/Png/img4.jpg' },
+      { id: 6, bg: './ProjectImgs/Png/img5.jpg' },
+    ],
+    results: [
+      "Two accessible residential blocks constructed as per design",
+      "Universal design features integrated throughout both buildings",
+      "Barrier-free environment achieved for elderly and disabled residents",
+      "Fully accessible rooms, toilets, and circulation spaces delivered",
+      "Civil, electrical, and plumbing works executed successfully",
+      "Safe, durable, and senior-friendly infrastructure established",
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹1000 lakhs",
+    teamSize: "14 developers",
+    clientName: "Pradhu Nu Ghar",
+    location: "Jhagadia, Bharuch",
+    consultant: "-",
+    challenges: [
+      "Mobility limitations of residents",
+      "Complex space planning",
+      "Compliance with disability norms",
+      "Optimized circulation width",
+      "Road accessibility issues"
+    ],
+    solutions: [
+      "Barrier-free infrastructure",
+      "User-centric layout",
+      "Regulatory code adherence",
+      "AI-powered assessment engine",
+      "Temporary access creation"
+    ],
+    testimonial: {
+      text: "Despite many difficulties and revisions throughout the project, the team handled the project exceptionally well.",
+      author: "Mr. Mohan Nayar",
+      position: "Managing Trustee, Disable Welfare Trust of India",
+      rating: 5,
+      avatar: "./ProjectImgs/team_photo/dummy_avatar.jpg",
+    },
+  }
 ];
 
 export const AllProjects = [
-   {
-      title: "India's 1st Old Age Homes",
-      category: "Current Projects",
-      description:
-        "Construction of India’s first old age home for disabled individuals, featuring two purpose-built residential blocks measuring 75m x 15m x 7m and 29m x 20m x 7.5m. Designed with universal accessibility, the facility includes structural, finishing, and essential service works.",
-      fullDescription:
-        "The project entails the construction of India’s first old age home specifically designed for disabled individuals, with two building blocks measuring 75 meters x 15 meters x 7 meters and 29 meters x 20 meters x 7.5 meters. The facility is being developed to offer a safe, accessible, and comfortable residential environment for elderly people with physical and mobility challenges. Both structures are constructed using durable materials with a focus on barrier-free access, including ramps, wide doorways, anti-skid flooring, and accessible toilets. The buildings feature residential rooms, medical support areas, dining and recreation zones, and staff quarters, all aligned with inclusive design principles.",
-      image: "../ProjectImgs/Png/main.jpg",
-      technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "AWS S3",
-        "WebRTC",
-        "Socket.io",
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Png/main.jpg' },
-        {id: 2, bg: '../ProjectImgs/Png/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Png/img2.jpg' },
-        {id: 4, bg: '../ProjectImgs/Png/img3.jpg' },
-        {id: 5, bg: '../ProjectImgs/Png/img4.jpg' },
-        {id: 6, bg: '../ProjectImgs/Png/img5.jpg' },
-      ],
-      results: [
-        "Two accessible residential blocks constructed as per design",
-        "Universal design features integrated throughout both buildings",
-        "Barrier-free environment achieved for elderly and disabled residents",
-        "Fully accessible rooms, toilets, and circulation spaces delivered",
-        "Civil, electrical, and plumbing works executed successfully",
-        "Safe, durable, and senior-friendly infrastructure established",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹1000 lakhs",
-      teamSize: "14 developers",
-      clientName: "Pradhu Nu Ghar",
-      location: "Jhagadia, Bharuch",
-      consultant: "-",
-      challenges: [
-        "Mobility limitations of residents",
-        "Complex space planning",
-        "Compliance with disability norms",
-        "Optimized circulation width",
-        "Road accessibility issues"
-      ],
-      solutions: [
-        "Barrier-free infrastructure",
-        "User-centric layout",
-        "Regulatory code adherence",
-        "AI-powered assessment engine",
-        "Temporary access creation"
-      ],
-      testimonial: {
-        text: "Despite many difficulties and revisions throughout the project, the team handled the project exceptionally well.",
-        author: "Mr. Mohan Nayar",
-        position: "Managing Trustee, Disable Welfare Trust of India",
-      },
+  {
+    title: "Industrial Power Plant Infrastructure",
+    category: "Current Projects",
+    description:
+      "Industrial power plant infrastructure development encompassing RCC roads, briquette storage, boiler house support, silo foundations, chimney base, conveyor systems, control room, drainage, and dust extraction.",
+    fullDescription:
+      "The project encompasses the complete development of industrial power plant infrastructure with multiple specialized structures and systems. Major components include construction of RCC access and internal roads for heavy equipment movement, a 30-meter by 25-meter briquette godown shed for fuel storage, Pre-Engineered Building (PEB) support structure for the boiler house, foundations and buildings for ESP (Electrostatic Precipitator) and ash collection silos, chimney foundation designed for industrial-grade thermal loads, integrated conveyor systems for material handling, control panel room for plant operations, comprehensive site drainage network for environmental compliance, and a dust extraction system ensuring air quality standards. The project integrates civil, structural, mechanical, and environmental engineering disciplines.",
+    image: "../ProjectImgs/Sterling/main.jpg",
+    technologies: [
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Sterling/main.jpg' }
+    ],
+    results: [
+      "RCC roads constructed for safe heavy equipment access",
+      "30m × 25m briquette storage facility completed",
+      "Boiler house PEB support structure installed",
+      "Silo foundations and buildings for ESP and ash collection",
+      "Industrial-grade chimney foundation completed",
+      "Conveyor systems integrated for material flow",
+      "Control panel room installed and operational",
+      "Site drainage system ensuring environmental compliance",
+      "Dust extraction system operational",
+      "All structures meet industrial safety and quality standards"
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹400 lakhs",
+    teamSize: "5 engineers",
+    clientName: "Sterling Boitech Ltd.",
+    location: "Karakhadi, Gujarat",
+    consultant: "-",
+    challenges: [
+      "Complex multi-component coordination",
+      "Precision foundation requirements",
+      "Environmental compliance demands",
+      "Equipment installation sequencing",
+      "Safety protocols for thermal equipment"
+    ],
+    solutions: [
+      "Integrated project management system",
+      "Geotechnical precision planning",
+      "Environmental impact mitigation",
+      "Phased construction scheduling",
+      "Specialized safety certification"
+    ],
+    testimonial: {
+      text: "The team successfully coordinated multiple complex components across the power plant infrastructure. Their attention to detail and commitment to environmental standards was exceptional.",
+      author: "Plant Operations Manager",
+      position: "-",
     },
-    {
-      title: "Commercial Building",
-      category: "Current Projects",
-      description:
-        "Turnkey development of 54 shop units, including civil, structural, electrical, and finishing works. Scope covers complete execution from design through construction to final handover, ensuring operational spaces ready for immediate use with strong emphasis on quality and timely delivery.",
-      fullDescription:
-        "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
-      image: "../ProjectImgs/Champaba/main.jpg",
-      technologies: [
-        "Flutter",
-        "Firebase",
-        "Google Fit API",
-        "Apple HealthKit",
-        "ML Kit",
-        "Cloud Functions",
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Champaba/main.jpg' },
-        {id: 2, bg: '../ProjectImgs/Champaba/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Champaba/img2.png' },
-        {id: 4, bg: '../ProjectImgs/Champaba/img3.jpg' },
-      ],
-      results: [
-        "54 fully functional shop units on turnkey basis",
-        "Infrastructure and utilities integrated into all 54 units",
-        "Efficient space utilization for maximum commercial functionality",
-        "All units equipped with essential amenities and connections",
-        "Civil, electrical, and finishing works executed as per schedule"
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹4000 lakhs",
-      teamSize: "10 developers",
-      clientName: "Champa Ba Estate-2",
-      location: "Savli, Vadodara",
-      consultant: "-",
-      challenges: [
-        "Varying shop dimensions",
-        "Resource coordination issues",
-        "Quality control concerns",
-        "Client design changes",
-      ],
-      solutions: [
-        "Modular design approach",
-        "Centralized project management",
-        "On-site supervision checks",
-        "Flexible change management",
-      ],
-      testimonial: {
-        text: "Their work on our project was outstanding. The team was respectful, professional, and ensured the worksite remained spotless and tidy every single day without fail.",
-        author: "Mr. Ashwin Mangukiya",
-        position: "Owner, Champa Ba Estate-2",
-      },
+  },
+  {
+    title: "Commercial Building",
+    category: "Current Projects",
+    description:
+      "Turnkey development of 54 shop units, including civil, structural, electrical, and finishing works. Scope covers complete execution from design through construction to final handover, ensuring operational spaces ready for immediate use with strong emphasis on quality and timely delivery.",
+    fullDescription:
+      "The project involves the turnkey construction of 54 individual shop buildings and 52 industrial plots, delivered as fully functional units ready for immediate use. The scope includes comprehensive design, civil works, structural fabrication, electrical installations, plumbing, finishing, and site development, ensuring each shop is constructed to standard commercial specifications.",
+    image: "../ProjectImgs/Champaba/main.jpg",
+    technologies: [
+      "Flutter",
+      "Firebase",
+      "Google Fit API",
+      "Apple HealthKit",
+      "ML Kit",
+      "Cloud Functions",
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Champaba/main.jpg' },
+      { id: 2, bg: '../ProjectImgs/Champaba/img1.jpg' },
+      { id: 3, bg: '../ProjectImgs/Champaba/img2.png' },
+      { id: 4, bg: '../ProjectImgs/Champaba/img3.jpg' },
+    ],
+    results: [
+      "54 fully functional shop units on turnkey basis",
+      "Infrastructure and utilities integrated into all 54 units",
+      "Efficient space utilization for maximum commercial functionality",
+      "All units equipped with essential amenities and connections",
+      "Civil, electrical, and finishing works executed as per schedule"
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹4000 lakhs",
+    teamSize: "10 developers",
+    clientName: "Champa Ba Estate-2",
+    location: "Savli, Vadodara",
+    consultant: "-",
+    challenges: [
+      "Varying shop dimensions",
+      "Resource coordination issues",
+      "Quality control concerns",
+      "Client design changes",
+    ],
+    solutions: [
+      "Modular design approach",
+      "Centralized project management",
+      "On-site supervision checks",
+      "Flexible change management",
+    ],
+    testimonial: {
+      text: "Their work on our project was outstanding. The team was respectful, professional, and ensured the worksite remained spotless and tidy every single day without fail.",
+      author: "Mr. Ashwin Mangukiya",
+      position: "Owner, Champa Ba Estate-2",
     },
-    {
-      title: "Plant Building & Ancillary work",
-      category: "Completed Projects",
-      description:
-        "Construction of an industrial plant building measuring 30m x 15m x 24m, including structural, roofing, and flooring works suitable for heavy equipment and operations. Scope also includes all ancillary works such as utility connections, access infrastructure, and site development.",
-      fullDescription:
-        "The scope of work involves the construction of a main plant building with dimensions of 30 meters (length) x 15 meters (width) x 24 meters (height). The structure will be designed to accommodate industrial equipment and processes, with considerations for load-bearing capacity, ventilation, and operational efficiency.",
-      image: "../ProjectImgs/Aeidan/main.jpeg",
-      technologies: [
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Aeidan/main.jpeg' },
-        {id: 2, bg: '../ProjectImgs/Aeidan/img1.jpeg' },
-        {id: 3, bg: '../ProjectImgs/Aeidan/img2.jpeg' },
-        {id: 4, bg: '../ProjectImgs/Aeidan/img3.jpeg' },
-        {id: 5, bg: '../ProjectImgs/Aeidan/img4.jpeg' },
-        {id: 6, bg: '../ProjectImgs/Aeidan/img5.jpeg' },
-      ],
-      results: [
-        "Completion of 30m x 15m x 24m industrial plant building within planned schedule and specifications.",
-        "Structural stability achieved with heavy-duty foundations suitable for industrial equipment.",
-        "Development of ancillary facilities like control rooms, storage areas, and service platforms.",
-        "Compliance with safety and environmental norms ensured throughout construction.",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹500 lakhs",
-      teamSize: "2 Civil Engg",
-      clientName: "Aeidan Industries",
-      location: "Jaghadiya, Gujarat",
-      consultant: "PMC",
-      challenges: [
-        "Limited site access",
-        "Safety compliance issues",
-        "Labor availability constraints",
-        "Design modifications mid-project",
-      ],
-      solutions: [
-        "Optimized logistics planning",
-        "Strict safety protocols",
-        "Skilled labor outsourcing",
-        "Flexible project management",
-      ],
-      testimonial: {
-        text: "We admire the team’s strong commitment to safety and quality. Their expertise managing complex projects with multiple agencies and ensuring timely delivery was commendable.",
-        author: "Mr. Kaiz Nandolia",
-        position: "Managing Director, Aeiden Industries",
-      },
+  },
+  {
+    title: "India's 1st Old Age Homes",
+    category: "Current Projects",
+    description:
+      "Construction of India’s first old age home for disabled individuals, featuring two purpose-built residential blocks measuring 75m x 15m x 7m and 29m x 20m x 7.5m. Designed with universal accessibility, the facility includes structural, finishing, and essential service works.",
+    fullDescription:
+      "The project entails the construction of India’s first old age home specifically designed for disabled individuals, with two building blocks measuring 75 meters x 15 meters x 7 meters and 29 meters x 20 meters x 7.5 meters. The facility is being developed to offer a safe, accessible, and comfortable residential environment for elderly people with physical and mobility challenges. Both structures are constructed using durable materials with a focus on barrier-free access, including ramps, wide doorways, anti-skid flooring, and accessible toilets. The buildings feature residential rooms, medical support areas, dining and recreation zones, and staff quarters, all aligned with inclusive design principles.",
+    image: "../ProjectImgs/Png/main.jpg",
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "AWS S3",
+      "WebRTC",
+      "Socket.io",
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Png/main.jpg' },
+      { id: 2, bg: '../ProjectImgs/Png/img1.jpg' },
+      { id: 3, bg: '../ProjectImgs/Png/img2.jpg' },
+      { id: 4, bg: '../ProjectImgs/Png/img3.jpg' },
+      { id: 5, bg: '../ProjectImgs/Png/img4.jpg' },
+      { id: 6, bg: '../ProjectImgs/Png/img5.jpg' },
+    ],
+    results: [
+      "Two accessible residential blocks constructed as per design",
+      "Universal design features integrated throughout both buildings",
+      "Barrier-free environment achieved for elderly and disabled residents",
+      "Fully accessible rooms, toilets, and circulation spaces delivered",
+      "Civil, electrical, and plumbing works executed successfully",
+      "Safe, durable, and senior-friendly infrastructure established",
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹1000 lakhs",
+    teamSize: "14 developers",
+    clientName: "Pradhu Nu Ghar",
+    location: "Jhagadia, Bharuch",
+    consultant: "-",
+    challenges: [
+      "Mobility limitations of residents",
+      "Complex space planning",
+      "Compliance with disability norms",
+      "Optimized circulation width",
+      "Road accessibility issues"
+    ],
+    solutions: [
+      "Barrier-free infrastructure",
+      "User-centric layout",
+      "Regulatory code adherence",
+      "AI-powered assessment engine",
+      "Temporary access creation"
+    ],
+    testimonial: {
+      text: "Despite many difficulties and revisions throughout the project, the team handled the project exceptionally well.",
+      author: "Mr. Mohan Nayar",
+      position: "Managing Trustee, Disable Welfare Trust of India",
     },
-    {
-      title: "PEB Shed with RCC Work",
-      category: "Completed Projects",
-      description:
-        "Construction of a Pre-Engineered Building (PEB) shed measuring 50m x 51m x 7m, including internal RCC roads and associated ancillary works. Scope includes structural steel fabrication, foundation works, site development, and utility infrastructure.",
-      fullDescription:
-        "The project involves the construction of a Pre-Engineered Building (PEB) shed with dimensions of 50 meters in length, 51 meters in width, and 7 meters in height, designed for industrial operations such as manufacturing, warehousing, or assembly. The structure will comprise a prefabricated steel framework, roofing, cladding, and necessary foundation works to support dynamic industrial loads. In addition, the project includes the construction of internal RCC (Reinforced Cement Concrete) roads for durable and heavy-duty vehicle movement within the premises. Ancillary works include site leveling, drainage systems, utility connections (electrical, water, compressed air, etc.), peripheral development, and any supporting infrastructure such as office space, security cabins, and service areas. The entire development will adhere to relevant industrial standards and safety codes.",
-      image: "../ProjectImgs/Grapehen/main.jpeg",
-      technologies: [
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Grapehen/main.jpeg' },
-        {id: 2, bg: '../ProjectImgs/Grapehen/img1.jpeg' },
-        {id: 3, bg: '../ProjectImgs/Grapehen/img2.jpeg' },
-        {id: 4, bg: '../ProjectImgs/Grapehen/img3.jpeg' },
-        {id: 5, bg: '../ProjectImgs/Grapehen/img4.jpeg' },
-        {id: 6, bg: '../ProjectImgs/Grapehen/img5.jpeg' },
-      ],
-      results: [
-        "PEB shed: 50m x 51m x 7m dimensions.",
-        "RCC foundations suitable for industrial load requirements.",
-        "Ancillary works including utilities, drainage, and boundary development.",
-        "Site grading and leveling for proper building alignment and drainage",
-        "Compliance with industrial safety and construction quality standards"
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹350 lakhs",
-      teamSize: "12 developers",
-      clientName: "Grapehene Composites",
-      location: "Savli, Gujarat",
-      consultant: "PMC",
-      challenges: [
-        "Weather-related delays",
-        "Design coordination gaps",
-        "Foundation soil weakness",
-        "PEB erection delays",
-      ],
-      solutions: [
-        "Contingency weather planning",
-        "Integrated project management",
-        "Geotechnical soil stabilization",
-        "Sequenced erection scheduling",
-      ],
-      testimonial: {
-        text: "",
-        author: "",
-        position: "",
-      },
+  },
+  {
+    title: "Plant Building & Ancillary work",
+    category: "Completed Projects",
+    description:
+      "Construction of an industrial plant building measuring 30m x 15m x 24m, including structural, roofing, and flooring works suitable for heavy equipment and operations. Scope also includes all ancillary works such as utility connections, access infrastructure, and site development.",
+    fullDescription:
+      "The scope of work involves the construction of a main plant building with dimensions of 30 meters (length) x 15 meters (width) x 24 meters (height). The structure will be designed to accommodate industrial equipment and processes, with considerations for load-bearing capacity, ventilation, and operational efficiency.",
+    image: "../ProjectImgs/Aeidan/main.jpeg",
+    technologies: [
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Aeidan/main.jpeg' },
+      { id: 2, bg: '../ProjectImgs/Aeidan/img1.jpeg' },
+      { id: 3, bg: '../ProjectImgs/Aeidan/img2.jpeg' },
+      { id: 4, bg: '../ProjectImgs/Aeidan/img3.jpeg' },
+      { id: 5, bg: '../ProjectImgs/Aeidan/img4.jpeg' },
+      { id: 6, bg: '../ProjectImgs/Aeidan/img5.jpeg' },
+    ],
+    results: [
+      "Completion of 30m x 15m x 24m industrial plant building within planned schedule and specifications.",
+      "Structural stability achieved with heavy-duty foundations suitable for industrial equipment.",
+      "Development of ancillary facilities like control rooms, storage areas, and service platforms.",
+      "Compliance with safety and environmental norms ensured throughout construction.",
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹500 lakhs",
+    teamSize: "2 Civil Engg",
+    clientName: "Aeidan Industries",
+    location: "Jaghadiya, Gujarat",
+    consultant: "PMC",
+    challenges: [
+      "Limited site access",
+      "Safety compliance issues",
+      "Labor availability constraints",
+      "Design modifications mid-project",
+    ],
+    solutions: [
+      "Optimized logistics planning",
+      "Strict safety protocols",
+      "Skilled labor outsourcing",
+      "Flexible project management",
+    ],
+    testimonial: {
+      text: "We admire the team’s strong commitment to safety and quality. Their expertise managing complex projects with multiple agencies and ensuring timely delivery was commendable.",
+      author: "Mr. Kaiz Nandolia",
+      position: "Managing Director, Aeiden Industries",
     },
-    {
-      title: "RCC Wall Compound",
-      category: "Completed Projects",
-      description:
-        "Construction of an RCC (Reinforced Cement Concrete) compound wall with an approximate total length of 576 running meters (RM). The work includes excavation, foundation, reinforcement, concrete work, plastering, and finishing as per industrial safety and boundary requirements.",
-      fullDescription:
-        "The scope of work involves the construction of a Reinforced Cement Concrete (RCC) compound wall with an approximate length of 576 running meters (RM), designed to serve as a secure boundary for the industrial premises. The compound wall will be constructed using high-quality materials to ensure durability, structural integrity, and resistance to environmental conditions.",
-      image: "../ProjectImgs/Nandolia_Sayakha/main.jpg",
-      technologies: [
-        "React",
-        "Python",
-        "Django",
-        "PostgreSQL",
-        "WebRTC",
-        "HIPAA Compliance",
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Nandolia_Sayakha/main.jpg' },
-        {id: 2, bg: '../ProjectImgs/Nandolia_Sayakha/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Nandolia_Sayakha/img2.jpg' },
-        {id: 4, bg: '../ProjectImgs/Nandolia_Sayakha/img3.jpg' },
-        {id: 5, bg: '../ProjectImgs/Nandolia_Sayakha/img4.jpg' },
-        {id: 6, bg: '../ProjectImgs/Nandolia_Sayakha/img5.jpg' },
-      ],
-      results: [
-        "Completed 576 RM of RCC compound wall as planned.",
-        "Achieved stable and durable boundary for site security.",
-        "Maintained straight alignment and level across entire wall length",
-        "Materials utilized efficiently with minimal construction wastage",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹200 lakhs",
-      teamSize: "15 developers",
-      clientName: "Nandolia Organic Chemicals Pvt. Ltd.",
-      location: "Sayakha, Bharuch",
-      consultant: "Udgam Consultancy",
-      challenges: [
-        "Uneven site levels",
-        "Weather interruptions",
-        "Alignment deviations",
-        "Workplace safety risks",
-      ],
-      solutions: [
-        "Site grading plan",
-        "Monsoon-ready planning",
-        "String line checks",
-        "Strict safety protocols"
-      ],
-      testimonial: {
-        text: "The project had some minor delays, but the quality of finished product is outstanding. They were very responsive to our concern and made sure we were completely satisfied.",
-        author: "Mr. Abid Nandolia",
-        position: "Managing Director, Nandolia Organic Chemicals Pvt. Ltd.",
-      },
+  },
+  {
+    title: "PEB Shed with RCC Work",
+    category: "Completed Projects",
+    description:
+      "Construction of a Pre-Engineered Building (PEB) shed measuring 50m x 51m x 7m, including internal RCC roads and associated ancillary works. Scope includes structural steel fabrication, foundation works, site development, and utility infrastructure.",
+    fullDescription:
+      "The project involves the construction of a Pre-Engineered Building (PEB) shed with dimensions of 50 meters in length, 51 meters in width, and 7 meters in height, designed for industrial operations such as manufacturing, warehousing, or assembly. The structure will comprise a prefabricated steel framework, roofing, cladding, and necessary foundation works to support dynamic industrial loads. In addition, the project includes the construction of internal RCC (Reinforced Cement Concrete) roads for durable and heavy-duty vehicle movement within the premises. Ancillary works include site leveling, drainage systems, utility connections (electrical, water, compressed air, etc.), peripheral development, and any supporting infrastructure such as office space, security cabins, and service areas. The entire development will adhere to relevant industrial standards and safety codes.",
+    image: "../ProjectImgs/Grapehen/main.jpeg",
+    technologies: [
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Grapehen/main.jpeg' },
+      { id: 2, bg: '../ProjectImgs/Grapehen/img1.jpeg' },
+      { id: 3, bg: '../ProjectImgs/Grapehen/img2.jpeg' },
+      { id: 4, bg: '../ProjectImgs/Grapehen/img3.jpeg' },
+      { id: 5, bg: '../ProjectImgs/Grapehen/img4.jpeg' },
+      { id: 6, bg: '../ProjectImgs/Grapehen/img5.jpeg' },
+    ],
+    results: [
+      "PEB shed: 50m x 51m x 7m dimensions.",
+      "RCC foundations suitable for industrial load requirements.",
+      "Ancillary works including utilities, drainage, and boundary development.",
+      "Site grading and leveling for proper building alignment and drainage",
+      "Compliance with industrial safety and construction quality standards"
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹350 lakhs",
+    teamSize: "12 developers",
+    clientName: "Grapehene Composites",
+    location: "Savli, Gujarat",
+    consultant: "PMC",
+    challenges: [
+      "Weather-related delays",
+      "Design coordination gaps",
+      "Foundation soil weakness",
+      "PEB erection delays",
+    ],
+    solutions: [
+      "Contingency weather planning",
+      "Integrated project management",
+      "Geotechnical soil stabilization",
+      "Sequenced erection scheduling",
+    ],
+    testimonial: {
+      text: "",
+      author: "",
+      position: "",
     },
-    {
-      title: "Mill Structural Changes",
-      category: "Completed Projects",
-      description:
-        "An existing large oil mill was acquired by the client and underwent structural modifications to align with new production needs. The retrofitting included alterations to support layout changes, equipment installation, and process workflow improvements.",
-      fullDescription:
-        "The project involved the acquisition of a large, old oil mill by the client, which was subsequently repurposed and structurally modified to meet the functional and operational requirements of a new product line. The scope included a detailed structural assessment of the existing facility, followed by targeted reinforcements, demolitions, and retrofitting works to ensure compliance with modern industrial standards.",
-      image: "../ProjectImgs/Nadolia_Food/main.jpg",
-      technologies: [
-        "Next.js",
-        "Tailwind CSS",
-        "Stripe",
-        "Sanity CMS",
-        "Twilio",
-        "Google Maps API",
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Nadolia_Food/main.jpg' },
-        {id: 2, bg: '../ProjectImgs/Nadolia_Food/img1.jpg' },
-        {id: 3, bg: '../ProjectImgs/Nadolia_Food/img2.jpg' },
-        {id: 4, bg: '../ProjectImgs/Nadolia_Food/img3.jpg' },
-        {id: 5, bg: '../ProjectImgs/Nadolia_Food/img4.jpg' },
-        {id: 6, bg: '../ProjectImgs/Nadolia_Food/img5.jpg' },
-      ],
-      results: [
-        "Structural modifications completed to meet new production requirements",
-        "Equipment layout optimized for efficient production flow",
-        "Upgraded facility meets current safety and industrial standards",
-        "Retrofitting completed within timeline and budget constraints",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹100 lakhs",
-      teamSize: "6 developers",
-      clientName: "Nandolia Food Products",
-      location: "Sidhpur, Gujarat",
-      consultant: "PMC",
-      challenges: [
-        "Aging structural elements",
-        "Low load capacity",
-        "Work in old structure",
-        "Compliance with codes",
-      ],
-      solutions: [
-        "Detailed structural assessment",
-        "Structural reinforcement design",
-        "Careful phased execution",
-        "Standards-based execution",
-      ],
-      testimonial: {
-        text: "",
-        author: "",
-        position: "",
-      },
+  },
+  {
+    title: "RCC Wall Compound",
+    category: "Completed Projects",
+    description:
+      "Construction of an RCC (Reinforced Cement Concrete) compound wall with an approximate total length of 576 running meters (RM). The work includes excavation, foundation, reinforcement, concrete work, plastering, and finishing as per industrial safety and boundary requirements.",
+    fullDescription:
+      "The scope of work involves the construction of a Reinforced Cement Concrete (RCC) compound wall with an approximate length of 576 running meters (RM), designed to serve as a secure boundary for the industrial premises. The compound wall will be constructed using high-quality materials to ensure durability, structural integrity, and resistance to environmental conditions.",
+    image: "../ProjectImgs/Nandolia_Sayakha/main.jpg",
+    technologies: [
+      "React",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "WebRTC",
+      "HIPAA Compliance",
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Nandolia_Sayakha/main.jpg' },
+      { id: 2, bg: '../ProjectImgs/Nandolia_Sayakha/img1.jpg' },
+      { id: 3, bg: '../ProjectImgs/Nandolia_Sayakha/img2.jpg' },
+      { id: 4, bg: '../ProjectImgs/Nandolia_Sayakha/img3.jpg' },
+      { id: 5, bg: '../ProjectImgs/Nandolia_Sayakha/img4.jpg' },
+      { id: 6, bg: '../ProjectImgs/Nandolia_Sayakha/img5.jpg' },
+    ],
+    results: [
+      "Completed 576 RM of RCC compound wall as planned.",
+      "Achieved stable and durable boundary for site security.",
+      "Maintained straight alignment and level across entire wall length",
+      "Materials utilized efficiently with minimal construction wastage",
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹200 lakhs",
+    teamSize: "15 developers",
+    clientName: "Nandolia Organic Chemicals Pvt. Ltd.",
+    location: "Sayakha, Bharuch",
+    consultant: "Udgam Consultancy",
+    challenges: [
+      "Uneven site levels",
+      "Weather interruptions",
+      "Alignment deviations",
+      "Workplace safety risks",
+    ],
+    solutions: [
+      "Site grading plan",
+      "Monsoon-ready planning",
+      "String line checks",
+      "Strict safety protocols"
+    ],
+    testimonial: {
+      text: "The project had some minor delays, but the quality of finished product is outstanding. They were very responsive to our concern and made sure we were completely satisfied.",
+      author: "Mr. Abid Nandolia",
+      position: "Managing Director, Nandolia Organic Chemicals Pvt. Ltd.",
     },
-    {
-      title: "Solar Farm Road Work",
-      category: "Completed Projects",
-      description:
-        "Construction of internal and approach roads for a solar farm, enabling safe and efficient access for installation, maintenance, and operations.",
-      fullDescription:
-        "The project involves the construction of internal and approach roads within a solar farm site to facilitate the transportation of solar panels, equipment, and maintenance vehicles. The road network is critical for enabling uninterrupted operations during both the installation phase and long-term plant maintenance.",
-      image: "../ProjectImgs/Kp_Solar/main.jpg",
-      technologies: [
-        "Next.js",
-        "Framer Motion",
-        "Contentful",
-        "Vercel",
-        "Adobe Creative Suite",
-        "HubSpot",
-      ],
-      sliderImages: [
-        {id: 1, bg: '../ProjectImgs/Kp_Solar/main.jpg' },
-        {id: 2, bg: '../ProjectImgs/Kp_Solar/img1.jpg' },
-      ],
-      results: [
-        "All internal roads constructed as per solar farm layout.",
-        "Road surface withstands transport and installation loads effectively.",
-        "Completed earthwork, GSB, WMM, and final surface layers.",
-        "Roads comply with renewable energy infrastructure standards",
-      ],
-      link: "#",
-      github: "#",
-      duration: "₹50 lakhs",
-      teamSize: "8 designers & developers",
-      clientName: "KP Solarism",
-      location: "Padra, Gujarat",
-      consultant: "-",
-      challenges: [
-        "Remote site location",
-        "Drainage issues during rain",
-        "Weather-related delays",
-        "Dust and erosion",
-      ],
-      solutions: [
-        "Logistics planning strategy",
-        "Proper slope grading",
-        "Flexible work scheduling",
-        "Surface binding treatment",
-      ],
-      testimonial: {
-        text: "",
-        author: "",
-        position: "",
-      },
-    }
+  },
+  {
+    title: "Mill Structural Changes",
+    category: "Completed Projects",
+    description:
+      "An existing large oil mill was acquired by the client and underwent structural modifications to align with new production needs. The retrofitting included alterations to support layout changes, equipment installation, and process workflow improvements.",
+    fullDescription:
+      "The project involved the acquisition of a large, old oil mill by the client, which was subsequently repurposed and structurally modified to meet the functional and operational requirements of a new product line. The scope included a detailed structural assessment of the existing facility, followed by targeted reinforcements, demolitions, and retrofitting works to ensure compliance with modern industrial standards.",
+    image: "../ProjectImgs/Nadolia_Food/main.jpg",
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "Stripe",
+      "Sanity CMS",
+      "Twilio",
+      "Google Maps API",
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Nadolia_Food/main.jpg' },
+      { id: 2, bg: '../ProjectImgs/Nadolia_Food/img1.jpg' },
+      { id: 3, bg: '../ProjectImgs/Nadolia_Food/img2.jpg' },
+      { id: 4, bg: '../ProjectImgs/Nadolia_Food/img3.jpg' },
+      { id: 5, bg: '../ProjectImgs/Nadolia_Food/img4.jpg' },
+      { id: 6, bg: '../ProjectImgs/Nadolia_Food/img5.jpg' },
+    ],
+    results: [
+      "Structural modifications completed to meet new production requirements",
+      "Equipment layout optimized for efficient production flow",
+      "Upgraded facility meets current safety and industrial standards",
+      "Retrofitting completed within timeline and budget constraints",
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹100 lakhs",
+    teamSize: "6 developers",
+    clientName: "Nandolia Food Products",
+    location: "Sidhpur, Gujarat",
+    consultant: "PMC",
+    challenges: [
+      "Aging structural elements",
+      "Low load capacity",
+      "Work in old structure",
+      "Compliance with codes",
+    ],
+    solutions: [
+      "Detailed structural assessment",
+      "Structural reinforcement design",
+      "Careful phased execution",
+      "Standards-based execution",
+    ],
+    testimonial: {
+      text: "",
+      author: "",
+      position: "",
+    },
+  },
+  {
+    title: "Solar Farm Road Work",
+    category: "Completed Projects",
+    description:
+      "Construction of internal and approach roads for a solar farm, enabling safe and efficient access for installation, maintenance, and operations.",
+    fullDescription:
+      "The project involves the construction of internal and approach roads within a solar farm site to facilitate the transportation of solar panels, equipment, and maintenance vehicles. The road network is critical for enabling uninterrupted operations during both the installation phase and long-term plant maintenance.",
+    image: "../ProjectImgs/Kp_Solar/main.jpg",
+    technologies: [
+      "Next.js",
+      "Framer Motion",
+      "Contentful",
+      "Vercel",
+      "Adobe Creative Suite",
+      "HubSpot",
+    ],
+    sliderImages: [
+      { id: 1, bg: '../ProjectImgs/Kp_Solar/main.jpg' },
+      { id: 2, bg: '../ProjectImgs/Kp_Solar/img1.jpg' },
+    ],
+    results: [
+      "All internal roads constructed as per solar farm layout.",
+      "Road surface withstands transport and installation loads effectively.",
+      "Completed earthwork, GSB, WMM, and final surface layers.",
+      "Roads comply with renewable energy infrastructure standards",
+    ],
+    link: "#",
+    github: "#",
+    duration: "₹50 lakhs",
+    teamSize: "8 designers & developers",
+    clientName: "KP Solarism",
+    location: "Padra, Gujarat",
+    consultant: "-",
+    challenges: [
+      "Remote site location",
+      "Drainage issues during rain",
+      "Weather-related delays",
+      "Dust and erosion",
+    ],
+    solutions: [
+      "Logistics planning strategy",
+      "Proper slope grading",
+      "Flexible work scheduling",
+      "Surface binding treatment",
+    ],
+    testimonial: {
+      text: "",
+      author: "",
+      position: "",
+    },
+  }
 ];
 
 export const categories = [
-    "All",
-    "Current Projects",
-    "Completed Projects"
+  "All",
+  "Current Projects",
+  "Completed Projects"
 ];

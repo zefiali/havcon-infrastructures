@@ -6,8 +6,8 @@ export const teamMembers = [
         bio: "15+ years managing civil engineering projects and business development",
     },
     {
-        name: "Chandraprakash Vishwakarma",
-        role: "Sr. Engineer / Project Manager",
+        name: "Shiv Vivek Shyam",
+        role: "Project Manager",
         image: "../ProjectImgs/team_photo/dummy_avatar.jpg",
         bio: "Senior Engineer/PM driving successful project planning, execution, and delivery",
     },
@@ -36,10 +36,10 @@ export const teamMembers = [
         bio: "Purchase Head managing procurement and supplier relationships.",
     },
     {
-        name: "Nafis Rana",
-        role: "Jr. Engineer",
+        name: "Surodip Srakar",
+        role: "Safety Engineer",
         image: "../ProjectImgs/team_photo/dummy_avatar.jpg",
-        bio: "Junior Engineer supporting project delivery and execution.",
+        bio: "Safety Engineer ensuring project compliance and safety.",
     },
     {
         name: "Vikram Vasava",
@@ -47,4 +47,10 @@ export const teamMembers = [
         image: "../ProjectImgs/team_photo/dummy_avatar.jpg",
         bio: "Site Supervisor ensuring project compliance and safety.",
     },
+    {
+        name: "Manish Gandhi",
+        role: "Store Manager",
+        image: "../ProjectImgs/team_photo/dummy_avatar.jpg",
+        bio: "Store Manager overseeing inventory and supply chain operations.",
+    }
 ]

@@ -4,6 +4,17 @@ export const clientLogos = [
     {
       name: "",
       icon: <Image
+        src="/client_logos/sterling.jpg"
+        alt="Sterling Boitech Ltd."
+        width={500}
+        height={500}
+        className="relative max-w-full max-h-full"
+      />,
+      color: "bg-green-100 text-green-800",
+    },
+    {
+      name: "",
+      icon: <Image
         src="/client_logos/Aiedan_logo.png"
         alt="Aiedan Industries"
         width={500}
@@ -66,7 +77,7 @@ export const clientLogos = [
         className="relative max-w-full max-h-full"
       />,
       color: "bg-gray-100 text-gray-800",
-    },
+    }
   ];
 
   export const jobClientLogos = [

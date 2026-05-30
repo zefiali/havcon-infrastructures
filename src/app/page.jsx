@@ -361,7 +361,7 @@ export default function HomePage() {
               Our landmark clients are the foundation of our success — industry leaders who value precision, quality, and timely delivery.
             </p>
           </motion.div>
-          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12"
+          <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
