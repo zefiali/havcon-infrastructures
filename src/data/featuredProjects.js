@@ -28,7 +28,7 @@ export const featuredProjects = [
     github: "#",
     duration: "₹400 lakhs",
     teamSize: "18 engineers",
-    clientName: "Industrial Power Solutions",
+    clientName: "Sterling Boitech Ltd.",
     location: "Gujarat",
     consultant: "-",
     challenges: [
